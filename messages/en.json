@@ -835,7 +835,7 @@
       "intro": "Use this page for general questions, corrections, or feedback about the calculators and guides.",
       "lastUpdated": "Last updated: June 13, 2026",
       "emailLabel": "Temporary contact email",
-      "emailNotice": "REQUIRED BEFORE LAUNCH: configure NEXT_PUBLIC_CONTACT_EMAIL with the real site-owner support email.",
+      "emailNotice": "To contact us, email the address above. This form is currently a front-end demo and does not send messages.",
       "formTitle": "Send a demo message",
       "formNotice": "This form is a visual demo only. It does not send data to a server or email service.",
       "demoNotice": "Demo only: submitting this form does not send email and does not store the message in a server or database.",

@@ -835,7 +835,7 @@
       "intro": "Utiliza esta página para preguntas generales, correcciones o comentarios sobre las calculadoras y guías.",
       "lastUpdated": "Última actualización: 13 de junio de 2026",
       "emailLabel": "Email de contacto temporal",
-      "emailNotice": "REQUERIDO ANTES DEL LANZAMIENTO: configura NEXT_PUBLIC_CONTACT_EMAIL con el email real del propietario.",
+      "emailNotice": "Para contactarnos, escribe a la dirección de correo indicada arriba. Este formulario es actualmente una demostración de interfaz y no envía mensajes.",
       "formTitle": "Enviar un mensaje de demostración",
       "formNotice": "Este formulario es solo una demostración visual. No envía datos a un servidor ni a un servicio de email.",
       "demoNotice": "Solo demostración: el formulario no envía email ni guarda el mensaje en un servidor o base de datos.",
