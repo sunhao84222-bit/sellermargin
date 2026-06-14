@@ -153,7 +153,6 @@ export default function PaymentFeeCalculator({ locale, messages }: PaymentFeeCal
           <p className="mt-4 max-w-3xl text-base leading-7 text-ink-500">{copy.hero.subtitle}</p>
           <div className="mt-6 max-w-xs rounded-lg border border-slate-200 bg-slate-50 p-4">
             <CurrencySelector messages={messages} showNotice />
-            <p className="mt-3 text-xs font-semibold text-ink-500">{copy.hero.lastUpdated}</p>
           </div>
         </div>
       </section>
@@ -161,9 +160,9 @@ export default function PaymentFeeCalculator({ locale, messages }: PaymentFeeCal
       <section className="bg-slate-50 py-12">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[390px_1fr] lg:px-8">
           <div className="min-w-0 space-y-6">
-            <section className="rounded-lg border border-emerald-200 bg-emerald-50 p-5">
-              <h2 className="text-lg font-bold text-emerald-950">{copy.notice.title}</h2>
-              <p className="mt-3 text-sm font-semibold leading-6 text-emerald-950">{copy.notice.body}</p>
+            <section className="rounded-lg border border-amber-200 bg-amber-50 p-5">
+              <h2 className="text-lg font-bold text-amber-950">{copy.notice.title}</h2>
+              <p className="mt-3 text-sm font-semibold leading-6 text-amber-950">{copy.notice.body}</p>
             </section>
 
             <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">

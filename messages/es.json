@@ -116,14 +116,17 @@
     },
     "waitlist": {
       "title": "Únete a la lista de acceso temprano Pro",
-      "subtitle": "No hay servicio de email conectado en esta primera versión. El estado demo se guarda localmente en este navegador.",
-      "email": "Email",
+      "subtitle": "SellerMargin Pro todavía está en planificación. Puedes escribirnos sobre tu tipo de vendedor, las plataformas que utilizas y las funciones que más te interesan.",
+      "email": "Tu email",
       "emailPlaceholder": "you@example.com",
       "sellerType": "Tipo de vendedor",
-      "submit": "Unirse a la lista",
-      "submitting": "Guardando estado de demostración...",
-      "success": "Thanks! You are on the early access list.",
-      "demoNotice": "Este formulario de demostración no envía ni almacena emails en un servidor en V1.",
+      "submit": "Enviar un email para mostrar interés",
+      "demoNotice": "Esta versión no recopila ni guarda tu email en un servidor. El botón abre un borrador en tu aplicación de correo y tú decides si lo envías.",
+      "recipientLabel": "Destinatario",
+      "mailtoSubject": "Interés en SellerMargin Pro",
+      "mailtoIntro": "Quiero compartir mi interés en SellerMargin Pro.",
+      "platformsPrompt": "Plataformas que utilizo:",
+      "featuresPrompt": "Funciones Pro que me resultarían más útiles:",
       "sellerTypes": [
         "Shopify seller",
         "Amazon seller",
@@ -142,9 +145,9 @@
   },
   "modal": {
     "title": "Pro llegará pronto",
-    "body": "Esta primera versión no incluye login, pagos, exportaciones ni integración real de email. Únete a la lista demo para marcar tu interés localmente.",
+    "body": "SellerMargin Pro todavía está en planificación. Utiliza el formulario de interés para abrir un borrador de email y contarnos qué plataformas y funciones son más importantes para ti.",
     "close": "Cerrar",
-    "cta": "Ir a la lista"
+    "cta": "Ir al formulario de interés"
   },
   "placeholder": {
     "badge": "Esqueleto de página",
@@ -162,7 +165,7 @@
     },
     "notice": {
       "title": "Supuestos editables",
-      "body": "Las tarifas son estimaciones editables. Las comisiones pueden variar por país, categoría, tipo de cuenta, método de pago y cambios de política. Última revisión de los supuestos: 2026-06."
+      "body": "Las tarifas predeterminadas son estimaciones editables. Las comisiones de plataforma y pago, los impuestos y los costes logísticos pueden variar según el país, la categoría, el tipo de cuenta, el método de pago y los cambios de política. Ajusta los datos según tu información real."
     },
     "currency": {
       "label": "Moneda"
@@ -322,7 +325,7 @@
     },
     "notice": {
       "title": "Estimación editable",
-      "body": "Los supuestos de comisiones y costes son estimaciones editables. Los costes de plataforma, pago, publicidad, reembolsos y gestión pueden variar según el país, la cuenta, la categoría y las políticas. Verifica los datos importantes en fuentes oficiales actuales."
+      "body": "Las tarifas predeterminadas son estimaciones editables. Las comisiones de plataforma y pago, los impuestos y los costes logísticos pueden variar según el país, la categoría, el tipo de cuenta, el método de pago y los cambios de política. Ajusta los datos según tu información real."
     },
     "sections": {
       "inputs": "Economía del producto",
@@ -464,7 +467,7 @@
     },
     "notice": {
       "title": "Supuestos editables",
-      "body": "Los supuestos de tarifas son estimaciones editables. Las comisiones pueden variar según el país, la moneda, la tarjeta, la cuenta, la transacción y las políticas. Verifica siempre las tarifas actuales. Última revisión de los supuestos: 2026-06."
+      "body": "Las tarifas predeterminadas son estimaciones editables. Las comisiones de plataforma y pago, los impuestos y los costes logísticos pueden variar según el país, la categoría, el tipo de cuenta, el método de pago y los cambios de política. Ajusta los datos según tu información real."
     },
     "sections": {
       "inputs": "Configuración de transacciones",
@@ -606,7 +609,7 @@
     },
     "notice": {
       "title": "Aviso de estimación",
-      "body": "Esta calculadora es solo una estimación. Los aranceles, IVA, GST, normas aduaneras y costes de envío varían según el país, producto, código HS y políticas. Verifica los datos importantes con fuentes oficiales o profesionales cualificados. Última revisión de los supuestos: 2026-06."
+      "body": "Las tarifas predeterminadas son estimaciones editables. Las comisiones de plataforma y pago, los impuestos y los costes logísticos pueden variar según el país, la categoría, el tipo de cuenta, el método de pago y los cambios de política. Ajusta los datos según tu información real."
     },
     "sections": {
       "product": "Producto",
@@ -868,12 +871,12 @@
         {
           "title": "Almacenamiento local del navegador",
           "paragraphs": [
-            "SellerMargin puede usar localStorage para recordar datos recientes de las calculadoras, preferencias de idioma y el estado de la lista de espera de demostración."
+            "SellerMargin puede usar localStorage para recordar datos recientes de las calculadoras y preferencias de idioma."
           ],
           "bullets": [
             "Esta información permanece en el navegador hasta que elimines los datos del sitio.",
             "Las contraseñas y los datos de pago no se guardan en localStorage.",
-            "Los formularios de contacto y lista de espera de demostración no envían mensajes ni emails a un servidor o base de datos."
+            "El formulario de contacto de demostración no envía mensajes. El formulario de interés Pro abre un borrador en tu aplicación de correo y SellerMargin no guarda tu email en sus servidores."
           ]
         },
         {

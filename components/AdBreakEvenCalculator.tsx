@@ -113,7 +113,6 @@ export default function AdBreakEvenCalculator({ locale, messages }: AdBreakEvenC
             </div>
             <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
               <CurrencySelector messages={messages} showNotice />
-              <p className="mt-3 text-xs font-medium text-ink-500">{copy.hero.lastUpdated}</p>
             </div>
           </div>
           <div className="mt-8">

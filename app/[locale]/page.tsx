@@ -7,6 +7,7 @@ import ToolCard from "@/components/ToolCard";
 import WaitlistForm from "@/components/WaitlistForm";
 import { createPageMetadata } from "@/lib/seo";
 import { getLocaleContext, type LocaleParams } from "@/lib/page-helpers";
+import { getContactEmail } from "@/lib/site";
 
 type HomePageProps = {
   params: LocaleParams;
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale, messages } = await getLocaleContext(params);
+  const contactEmail = getContactEmail();
 
   return (
     <>
@@ -120,7 +122,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="text-3xl font-bold text-ink-950">{messages.home.waitlist.title}</h2>
             <p className="mt-4 text-base leading-7 text-ink-500">{messages.home.waitlist.subtitle}</p>
           </div>
-          <WaitlistForm messages={messages} />
+          <WaitlistForm messages={messages} contactEmail={contactEmail} />
         </div>
       </section>
 

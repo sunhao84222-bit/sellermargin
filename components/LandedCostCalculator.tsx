@@ -184,7 +184,6 @@ export default function LandedCostCalculator({ locale, messages }: LandedCostCal
           <p className="mt-4 max-w-3xl text-base leading-7 text-ink-500">{copy.hero.subtitle}</p>
           <div className="mt-6 max-w-xs rounded-lg border border-slate-200 bg-slate-50 p-4">
             <CurrencySelector messages={messages} showNotice />
-            <p className="mt-3 text-xs font-semibold text-ink-500">{copy.hero.lastUpdated}</p>
           </div>
         </div>
       </section>

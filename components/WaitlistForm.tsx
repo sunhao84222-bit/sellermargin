@@ -1,46 +1,38 @@
 "use client";
 
 import { useState } from "react";
-import { useLocalStorage } from "@/hooks/useLocalStorage";
 import type { Messages } from "@/lib/locales";
 
 type WaitlistFormProps = {
   messages: Messages;
+  contactEmail: string;
 };
 
-export default function WaitlistForm({ messages }: WaitlistFormProps) {
+export default function WaitlistForm({ messages, contactEmail }: WaitlistFormProps) {
   const [email, setEmail] = useState("");
   const [sellerType, setSellerType] = useState(messages.home.waitlist.sellerTypes[0]);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { value: demoState, setValue: setDemoState } = useLocalStorage(
-    "sellerMargin.waitlistDemo",
-    { joined: false, updatedAt: "" },
-    {
-      legacyKeys: ["sellermargin_waitlist_demo"],
-      deserialize: (rawValue) => {
-        const parsed = JSON.parse(rawValue) as { joined?: boolean; email?: unknown; updatedAt?: string };
-        return {
-          joined: parsed.joined === true || typeof parsed.email === "string",
-          updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : "",
-        };
-      },
-    },
-  );
-  const submitted = demoState.joined;
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!email.trim() || submitted || isSubmitting) {
+    if (!email.trim()) {
       return;
     }
 
-    setIsSubmitting(true);
-    await new Promise((resolve) => window.setTimeout(resolve, 250));
-    setDemoState({
-      joined: true,
-      updatedAt: new Date().toISOString(),
-    });
-    setIsSubmitting(false);
+    const subject = encodeURIComponent(messages.home.waitlist.mailtoSubject);
+    const body = encodeURIComponent(
+      [
+        messages.home.waitlist.mailtoIntro,
+        "",
+        `${messages.home.waitlist.email}: ${email.trim()}`,
+        `${messages.home.waitlist.sellerType}: ${sellerType}`,
+        "",
+        messages.home.waitlist.platformsPrompt,
+        "",
+        messages.home.waitlist.featuresPrompt,
+      ].join("\n"),
+    );
+
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -48,6 +40,10 @@ export default function WaitlistForm({ messages }: WaitlistFormProps) {
       <div>
         <h2 className="text-xl font-bold text-ink-950">{messages.home.waitlist.title}</h2>
         <p className="mt-2 text-sm leading-6 text-ink-500">{messages.home.waitlist.subtitle}</p>
+        <p className="mt-3 text-xs font-medium text-ink-500">
+          {messages.home.waitlist.recipientLabel}:{" "}
+          <span className="break-all font-semibold text-ink-700">{contactEmail}</span>
+        </p>
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -82,16 +78,10 @@ export default function WaitlistForm({ messages }: WaitlistFormProps) {
       <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
         <button
           type="submit"
-          disabled={submitted || isSubmitting}
-          className="inline-flex h-11 items-center justify-center rounded-md bg-ink-950 px-5 text-sm font-bold text-white transition hover:bg-ink-800 focus:outline-none focus:ring-4 focus:ring-slate-200 disabled:cursor-not-allowed disabled:bg-slate-400"
+          className="inline-flex h-11 items-center justify-center rounded-md bg-ink-950 px-5 text-sm font-bold text-white transition hover:bg-ink-800 focus:outline-none focus:ring-4 focus:ring-slate-200"
         >
-          {isSubmitting ? messages.home.waitlist.submitting : messages.home.waitlist.submit}
+          {messages.home.waitlist.submit}
         </button>
-        {submitted ? (
-          <p className="rounded-md bg-mint-50 px-3 py-2 text-sm font-semibold text-mint-700" role="status">
-            {messages.home.waitlist.success}
-          </p>
-        ) : null}
       </div>
       <p className="mt-4 text-xs font-medium leading-5 text-ink-500">{messages.home.waitlist.demoNotice}</p>
     </form>

@@ -116,14 +116,17 @@
     },
     "waitlist": {
       "title": "Join the Pro early access list",
-      "subtitle": "No email service is connected in this first version. Your demo status is stored locally in this browser.",
-      "email": "Email",
+      "subtitle": "SellerMargin Pro is still being planned. Email us about your seller type, the platforms you use, and the features you would value most.",
+      "email": "Your email",
       "emailPlaceholder": "you@example.com",
       "sellerType": "Seller type",
-      "submit": "Join waitlist",
-      "submitting": "Saving demo status...",
-      "success": "Thanks! You are on the early access list.",
-      "demoNotice": "This demo form does not send or store emails on a server in V1.",
+      "submit": "Send an email to express interest",
+      "demoNotice": "This version does not collect or store your email on a server. The button opens a draft in your email application, and you choose whether to send it.",
+      "recipientLabel": "Email recipient",
+      "mailtoSubject": "SellerMargin Pro interest",
+      "mailtoIntro": "I would like to share my interest in SellerMargin Pro.",
+      "platformsPrompt": "Platforms I use:",
+      "featuresPrompt": "Pro features I would find most useful:",
       "sellerTypes": [
         "Shopify seller",
         "Amazon seller",
@@ -142,9 +145,9 @@
   },
   "modal": {
     "title": "Pro is coming soon",
-    "body": "This first version does not include login, payment, exports, or a real email integration. Join the demo waitlist to mark your interest locally.",
+    "body": "SellerMargin Pro is still being planned. Use the interest form to open an email draft and tell us which platforms and features matter most to you.",
     "close": "Close",
-    "cta": "Go to waitlist"
+    "cta": "Go to interest form"
   },
   "placeholder": {
     "badge": "Page skeleton",
@@ -162,7 +165,7 @@
     },
     "notice": {
       "title": "Editable assumptions",
-      "body": "Fee assumptions are editable estimates. Platform fees may vary by country, category, account type, payment method, and policy changes. Fee assumptions last reviewed: 2026-06."
+      "body": "Default fees are editable estimates. Platform fees, payment fees, taxes, and logistics costs may vary by country, category, account type, payment method, and policy changes. Adjust the inputs based on your own data."
     },
     "currency": {
       "label": "Currency"
@@ -322,7 +325,7 @@
     },
     "notice": {
       "title": "Editable estimate",
-      "body": "Fee and cost assumptions are editable estimates. Platform, payment, advertising, refund, and fulfillment costs can vary by country, account, category, and policy changes. Verify important numbers with current official sources."
+      "body": "Default fees are editable estimates. Platform fees, payment fees, taxes, and logistics costs may vary by country, category, account type, payment method, and policy changes. Adjust the inputs based on your own data."
     },
     "sections": {
       "inputs": "Product economics",
@@ -464,7 +467,7 @@
     },
     "notice": {
       "title": "Editable fee assumptions",
-      "body": "Fee assumptions are editable estimates. Payment processor fees vary by country, currency, card type, account type, transaction type, and policy updates. Always verify current rates with each provider. Fee assumptions last reviewed: 2026-06."
+      "body": "Default fees are editable estimates. Platform fees, payment fees, taxes, and logistics costs may vary by country, category, account type, payment method, and policy changes. Adjust the inputs based on your own data."
     },
     "sections": {
       "inputs": "Transaction settings",
@@ -606,7 +609,7 @@
     },
     "notice": {
       "title": "Estimation notice",
-      "body": "This calculator is for estimation only. Duty, VAT, GST, customs rules, and shipping charges vary by country, product category, HS code, and policy updates. Always verify important numbers with official customs sources or a qualified professional. Fee assumptions last reviewed: 2026-06."
+      "body": "Default fees are editable estimates. Platform fees, payment fees, taxes, and logistics costs may vary by country, category, account type, payment method, and policy changes. Adjust the inputs based on your own data."
     },
     "sections": {
       "product": "Product",
@@ -868,12 +871,12 @@
         {
           "title": "Local browser storage",
           "paragraphs": [
-            "SellerMargin may use localStorage to remember recent calculator inputs, language preferences, and demo waitlist status on your device."
+            "SellerMargin may use localStorage to remember recent calculator inputs and language preferences on your device."
           ],
           "bullets": [
             "This information remains in the browser unless you clear site data.",
             "The first version does not use localStorage to store passwords or payment information.",
-            "Demo contact and waitlist forms do not send messages or email addresses to a server or database."
+            "The demo contact form does not send messages. The Pro interest form opens a draft in your email application and does not store your email on SellerMargin servers."
           ]
         },
         {
