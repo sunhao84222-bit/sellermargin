@@ -1,0 +1,1196 @@
+{
+  "brand": {
+    "name": "SellerMargin",
+    "tagline": "Herramientas de margen para vendedores ecommerce"
+  },
+  "meta": {
+    "title": "SellerMargin - Calculadoras de beneficio ecommerce",
+    "description": "Calculadoras gratuitas para vendedores ecommerce que comparan comisiones, pagos, publicidad, coste puesto en destino y márgenes reales."
+  },
+  "nav": {
+    "tools": "Herramientas",
+    "guides": "Guías",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "joinWaitlist": "Unirse a Pro",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "primaryNavigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil"
+  },
+  "footer": {
+    "tools": "Herramientas",
+    "company": "Empresa",
+    "legal": "Legal",
+    "guides": "Guías",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "disclaimer": "Aviso legal",
+    "shortDisclaimer": "Las calculadoras de SellerMargin son solo para planificación y estimación. Las comisiones, impuestos, aranceles, envíos y costes publicitarios pueden cambiar.",
+    "copyright": "Todos los derechos reservados."
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "zh": "中文",
+    "es": "Español"
+  },
+  "currency": {
+    "label": "Moneda",
+    "notice": "La moneda solo cambia el formato de los números. SellerMargin no convierte tipos de cambio."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Herramientas gratuitas de planificación",
+      "title": "Calcula tu beneficio ecommerce real antes de escalar",
+      "subtitle": "Calculadoras gratuitas para vendedores ecommerce. Compara comisiones de plataforma, pagos, publicidad, costes puestos en destino y márgenes reales en Shopify, Amazon, Etsy, eBay y TikTok Shop.",
+      "primaryCta": "Empezar a calcular",
+      "secondaryCta": "Unirse a Pro"
+    },
+    "toolsSection": {
+      "title": "Elige una calculadora",
+      "subtitle": "Empieza con supuestos editables y compara los números antes de lanzar o aumentar inversión publicitaria."
+    },
+    "tools": [
+      {
+        "name": "Calculadora de beneficio multiplataforma",
+        "description": "Compara el beneficio neto estimado en Shopify, Amazon, Etsy, eBay y TikTok Shop.",
+        "href": "/multi-platform-profit-calculator",
+        "label": "MP"
+      },
+      {
+        "name": "Calculadora de punto de equilibrio publicitario",
+        "description": "Estima cuánto puedes gastar en anuncios antes de que una venta deje de ser rentable.",
+        "href": "/ad-spend-break-even-calculator",
+        "label": "AD"
+      },
+      {
+        "name": "Calculadora Stripe vs PayPal",
+        "description": "Compara supuestos de procesamiento de pagos antes de elegir una configuración de checkout.",
+        "href": "/stripe-vs-paypal-fee-calculator",
+        "label": "FX"
+      },
+      {
+        "name": "Calculadora de coste puesto en destino",
+        "description": "Planifica coste de producto, flete, aranceles y otros supuestos en un solo lugar.",
+        "href": "/landed-cost-calculator",
+        "label": "LC"
+      }
+    ],
+    "toolOpen": "Abrir calculadora",
+    "why": {
+      "title": "Por qué usar SellerMargin",
+      "items": [
+        {
+          "title": "Sin registro",
+          "description": "Abre una herramienta y prueba escenarios sin crear una cuenta."
+        },
+        {
+          "title": "Supuestos editables",
+          "description": "Las tarifas predeterminadas son puntos de partida, no afirmaciones oficiales."
+        },
+        {
+          "title": "Pensado para vendedores con anuncios",
+          "description": "Planifica margen y punto de equilibrio antes de escalar inversión."
+        },
+        {
+          "title": "Compara plataformas antes de lanzar",
+          "description": "Evalúa diferencias de plataforma, pago, fulfilment y costes desde el inicio."
+        }
+      ]
+    },
+    "pro": {
+      "eyebrow": "Próximamente",
+      "title": "Funciones Pro para flujos de trabajo más pesados",
+      "subtitle": "Las funciones de pago futuras se centrarán en guardar trabajo, exportar informes y manejar más SKUs.",
+      "button": "Unirse a Pro",
+      "features": [
+        "Guardar historial de cálculos",
+        "Exportar CSV",
+        "Exportar informe PDF",
+        "Calculadora SKU por lotes",
+        "Informes marca blanca para agencias"
+      ]
+    },
+    "waitlist": {
+      "title": "Únete a la lista de acceso temprano Pro",
+      "subtitle": "No hay servicio de email conectado en esta primera versión. El estado demo se guarda localmente en este navegador.",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "sellerType": "Tipo de vendedor",
+      "submit": "Unirse a la lista",
+      "submitting": "Guardando estado de demostración...",
+      "success": "Thanks! You are on the early access list.",
+      "demoNotice": "Este formulario de demostración no envía ni almacena emails en un servidor en V1.",
+      "sellerTypes": [
+        "Shopify seller",
+        "Amazon seller",
+        "Etsy seller",
+        "eBay seller",
+        "TikTok Shop seller",
+        "Multi-platform seller",
+        "Agency",
+        "Other"
+      ]
+    },
+    "disclaimer": {
+      "title": "Aviso de planificación",
+      "body": "Estas calculadoras sirven únicamente para planificación y estimación. Las comisiones de plataforma y pago, los impuestos, aranceles, envíos y costes publicitarios pueden cambiar. Verifica siempre los datos importantes en fuentes oficiales o con un profesional cualificado."
+    }
+  },
+  "modal": {
+    "title": "Pro llegará pronto",
+    "body": "Esta primera versión no incluye login, pagos, exportaciones ni integración real de email. Únete a la lista demo para marcar tu interés localmente.",
+    "close": "Cerrar",
+    "cta": "Ir a la lista"
+  },
+  "placeholder": {
+    "badge": "Esqueleto de página",
+    "calculatorBadge": "Esqueleto de calculadora",
+    "calculatorBody": "La interfaz de la calculadora y las fórmulas no están implementadas intencionalmente en esta primera versión. Los supuestos de tarifas serán editables cuando se desarrolle esta herramienta.",
+    "pageBody": "Esta página es un esqueleto de contenido para la primera versión. El texto detallado puede añadirse en un prompt posterior.",
+    "backHome": "Volver al inicio"
+  },
+  "multiPlatform": {
+    "hero": {
+      "eyebrow": "Comparación de margen multiplataforma",
+      "title": "Calculadora de beneficio multiplataforma para vendedores ecommerce",
+      "subtitle": "Compara el mismo producto en Shopify, Etsy, eBay, Amazon y TikTok Shop con supuestos de tarifas editables.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026"
+    },
+    "notice": {
+      "title": "Supuestos editables",
+      "body": "Las tarifas son estimaciones editables. Las comisiones pueden variar por país, categoría, tipo de cuenta, método de pago y cambios de política. Última revisión de los supuestos: 2026-06."
+    },
+    "currency": {
+      "label": "Moneda"
+    },
+    "sections": {
+      "inputs": "Datos del producto",
+      "platforms": "Plataformas a comparar",
+      "feeAssumptions": "Supuestos de tarifas editables",
+      "results": "Resultados comparativos",
+      "summary": "Mejores opciones",
+      "formulas": "Notas de fórmula",
+      "example": "Ejemplo de cálculo",
+      "mistakes": "Errores comunes",
+      "faq": "FAQ",
+      "related": "Herramientas relacionadas",
+      "pro": "Funciones Pro"
+    },
+    "inputs": {
+      "sellingPrice": "Precio de venta",
+      "productCost": "Coste del producto",
+      "shippingCost": "Envío pagado por el vendedor",
+      "packagingCost": "Coste de embalaje",
+      "adCostPerOrder": "Coste publicitario por pedido",
+      "refundRate": "Tasa de reembolso",
+      "discountRate": "Tasa de descuento",
+      "otherVariableCost": "Otro coste variable"
+    },
+    "refundReserveNote": "La reserva para reembolsos se estima de forma conservadora sobre los ingresos netos. Es una reserva de planificación, no una predicción exacta.",
+    "platforms": {
+      "shopify": "Shopify",
+      "etsy": "Etsy",
+      "ebay": "eBay",
+      "amazon": "Amazon",
+      "tiktok": "TikTok Shop"
+    },
+    "feeFields": {
+      "paymentFeePercent": "Porcentaje de comisión de pago",
+      "fixedPaymentFee": "Comisión fija de pago",
+      "thirdPartyTransactionFeePercent": "Comisión por transacción de terceros",
+      "marketplaceTransactionFeePercent": "Porcentaje de comisión por transacción",
+      "listingFee": "Tarifa de publicación",
+      "finalValueFeePercent": "Porcentaje de comisión sobre el valor final",
+      "fixedOrderFee": "Tarifa fija por pedido",
+      "promotedListingAdFeePercent": "Comisión opcional de anuncios promocionados",
+      "referralFeePercent": "Porcentaje de comisión por referencia",
+      "fulfillmentFeePerUnit": "Tarifa de gestión por unidad",
+      "storageOrOtherFeePerUnit": "Almacenamiento u otra tarifa por unidad",
+      "otherFixedPlatformFee": "Otra comisión fija de plataforma",
+      "affiliateCommissionPercent": "Porcentaje de comisión de afiliados"
+    },
+    "results": {
+      "grossRevenue": "Ingresos brutos",
+      "platform": "Plataforma",
+      "discountAmount": "Importe del descuento",
+      "netRevenue": "Ingresos netos",
+      "platformFee": "Comisión de plataforma",
+      "paymentFee": "Comisión de pago",
+      "fulfillmentFee": "Tarifa de gestión",
+      "productCost": "Coste del producto",
+      "shippingCost": "Coste de envío",
+      "packagingCost": "Coste de embalaje",
+      "adCost": "Coste publicitario",
+      "refundReserve": "Reserva para reembolsos",
+      "otherVariableCost": "Otro coste variable",
+      "totalCost": "Coste total",
+      "netProfit": "Beneficio neto",
+      "profitMargin": "Margen de beneficio",
+      "grossRoas": "ROAS sobre ingresos brutos",
+      "netRevenueRoas": "ROAS sobre ingresos netos",
+      "poas": "POAS",
+      "bestNetProfit": "Mejor plataforma por beneficio neto",
+      "bestMargin": "Mejor plataforma por margen",
+      "lowestFee": "Plataforma con menores comisiones"
+    },
+    "badges": {
+      "bestProfit": "Mejor beneficio",
+      "bestMargin": "Mejor margen",
+      "lowestFee": "Menor comisión"
+    },
+    "actions": {
+      "reset": "Reset demo inputs",
+      "saved": "Saved locally",
+      "editable": "Editable",
+      "selectAtLeastOne": "Select at least one platform."
+    },
+    "validation": {
+      "required": "This field is required.",
+      "invalidNumber": "Enter a valid number.",
+      "nonNegative": "Enter zero or a positive number.",
+      "positive": "Enter a number greater than zero.",
+      "selectAtLeastOne": "Select at least one platform.",
+      "percentLikelyFraction": "Did you mean 30%? Enter 30 for thirty percent.",
+      "percentVeryHigh": "This percentage is very high. Please confirm it is correct.",
+      "netRevenueNonPositive": "Net revenue is 0 or negative after discount. Lower the discount or increase the selling price before comparing margins."
+    },
+    "formulas": [
+      "Discount amount = Selling price x Discount rate",
+      "Net revenue = Selling price - Discount amount",
+      "Refund reserve = Net revenue x Refund rate",
+      "Platform fee = Net revenue x platform fee percentage + fixed platform fees. TikTok Shop can also include an editable affiliate commission.",
+      "Payment fee = Net revenue x payment fee percentage + fixed payment fee",
+      "Total cost = product cost + shipping + packaging + ad cost + refund reserve + platform fee + payment fee + fulfillment fee + other variable cost",
+      "Net profit = Net revenue - Total cost",
+      "Profit margin = Net profit / Net revenue x 100",
+      "Gross revenue ROAS = Selling price / Ad cost; net revenue ROAS = Net revenue / Ad cost; POAS = Net profit / Ad cost. If ad cost is 0, all three are N/A."
+    ],
+    "example": {
+      "body": "If a product sells for 49.99 with a 10% discount and 8.00 ad cost per order, this calculator first finds net revenue, then subtracts product cost, shipping, packaging, refund reserve, ad cost, and the editable fee assumptions for each platform."
+    },
+    "mistakes": [
+      "Treating default fee assumptions as official rates instead of editable estimates.",
+      "Forgetting fixed order, listing, payment, or fulfillment fees.",
+      "Ignoring discounts, refunds, and seller-paid shipping.",
+      "Comparing ROAS without checking whether the order is profitable after platform fees."
+    ],
+    "faq": [
+      {
+        "question": "¿Por qué cambia mi beneficio entre plataformas?",
+        "answer": "Each marketplace can have different referral, transaction, payment, listing, fulfillment, and promotional fee assumptions."
+      },
+      {
+        "question": "¿Son exactos los supuestos de comisiones de plataforma?",
+        "answer": "They are editable planning assumptions, not official long-term fee schedules. Verify important numbers with each platform."
+      },
+      {
+        "question": "¿Incluye IVA, impuesto sobre ventas o impuesto sobre la renta?",
+        "answer": "No. This calculator is for operating margin estimates and does not provide tax, accounting, legal, or financial advice."
+      },
+      {
+        "question": "¿Cómo debo estimar el coste publicitario por pedido?",
+        "answer": "Use your average cost to acquire one order from paid ads, or test several scenarios before scaling spend."
+      },
+      {
+        "question": "¿Qué margen de beneficio es adecuado para un vendedor ecommerce?",
+        "answer": "It depends on category, fulfillment model, returns, ad intensity, and growth stage. Use the calculator to compare scenarios rather than relying on a single benchmark."
+      }
+    ],
+    "pro": {
+      "subtitle": "These workflow features are planned for a later Pro version and are not active in this build.",
+      "buttons": [
+        "Save calculation history - Pro",
+        "Export CSV - Pro",
+        "Export PDF - Pro",
+        "Batch calculation - Pro"
+      ],
+      "modalTitle": "Pro feature coming soon",
+      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "close": "Close"
+    }
+  },
+  "adBreakEven": {
+    "hero": {
+      "eyebrow": "Planificación del punto de equilibrio publicitario",
+      "title": "Calculadora de ROAS de equilibrio y gasto publicitario",
+      "subtitle": "Estima cuánto puedes gastar en anuncios, qué ROAS evita pérdidas y qué ROAS necesitas para alcanzar un beneficio objetivo.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026"
+    },
+    "notice": {
+      "title": "Estimación editable",
+      "body": "Los supuestos de comisiones y costes son estimaciones editables. Los costes de plataforma, pago, publicidad, reembolsos y gestión pueden variar según el país, la cuenta, la categoría y las políticas. Verifica los datos importantes en fuentes oficiales actuales."
+    },
+    "sections": {
+      "inputs": "Economía del producto",
+      "target": "Beneficio objetivo",
+      "currentMetrics": "Métricas publicitarias actuales",
+      "results": "Resultados de equilibrio",
+      "warnings": "Advertencias",
+      "formulas": "Notas de fórmula",
+      "example": "Ejemplo de cálculo",
+      "mistakes": "Errores comunes",
+      "faq": "FAQ",
+      "related": "Herramientas relacionadas",
+      "pro": "Funciones Pro"
+    },
+    "inputs": {
+      "sellingPrice": "Precio de venta",
+      "productCost": "Coste del producto",
+      "shippingCost": "Coste de envío",
+      "packagingCost": "Coste de embalaje",
+      "platformFeePercent": "Porcentaje de comisión de plataforma",
+      "paymentFeePercent": "Porcentaje de comisión de pago",
+      "fixedPaymentFee": "Comisión fija de pago",
+      "otherVariableCost": "Otro coste variable",
+      "targetProfitPerOrder": "Beneficio objetivo por pedido",
+      "targetProfitMarginPercent": "Porcentaje de margen objetivo",
+      "currentRoas": "ROAS actual",
+      "currentCpa": "CPA actual"
+    },
+    "targetModes": {
+      "profitAmount": "Beneficio objetivo por pedido",
+      "marginPercent": "Porcentaje de margen objetivo"
+    },
+    "outputs": {
+      "revenue": "Ingresos",
+      "variableCostBeforeAds": "Coste variable antes de anuncios",
+      "contributionMarginBeforeAds": "Margen de contribución antes de anuncios",
+      "breakEvenAdSpendPerOrder": "Gasto publicitario de equilibrio por pedido",
+      "maxCpaAtBreakEven": "CPA máximo de equilibrio",
+      "breakEvenRoas": "ROAS de equilibrio",
+      "targetProfit": "Beneficio objetivo",
+      "targetAdSpendPerOrder": "Gasto publicitario objetivo por pedido",
+      "targetCpa": "CPA objetivo",
+      "targetRoas": "ROAS objetivo",
+      "breakEvenAcos": "ACoS de equilibrio",
+      "targetAcos": "ACoS objetivo",
+      "profitStatus": "Estado de rentabilidad",
+      "platformFee": "Comisión de plataforma",
+      "paymentFee": "Comisión de pago"
+    },
+    "warnings": {
+      "revenueNonPositive": "El precio de venta debe ser mayor que cero para calcular ROAS o margen.",
+      "contributionMarginNonPositive": "This product is not profitable before advertising based on your current inputs.",
+      "targetAdSpendNonPositive": "Your target profit is higher than the available contribution margin. You may need to increase price, reduce costs, or lower the target margin."
+    },
+    "validation": {
+      "required": "This field is required.",
+      "invalidNumber": "Enter a valid number.",
+      "nonNegative": "Enter zero or a positive number.",
+      "sellingPricePositive": "Selling price must be greater than zero.",
+      "percentLikelyFraction": "Did you mean 30%? Enter 30 for thirty percent.",
+      "percentVeryHigh": "This percentage is very high. Please confirm it is correct."
+    },
+    "statuses": {
+      "profitable": "Profitable",
+      "aboveBreakEvenBelowTarget": "Above break-even but below target",
+      "breakingEven": "Breaking even",
+      "losingMoney": "Losing money",
+      "notAvailable": "Introduce el ROAS actual para evaluar el estado."
+    },
+    "actions": {
+      "reset": "Reset demo inputs",
+      "saved": "Saved locally"
+    },
+    "formulas": [
+      "Revenue = Selling price",
+      "Platform fee = Revenue x platform fee percentage",
+      "Payment fee = Revenue x payment fee percentage + fixed payment fee",
+      "Variable cost before ads = product cost + shipping + packaging + platform fee + payment fee + other variable cost",
+      "Contribution margin before ads = Revenue - variable cost before ads",
+      "Break-even ad spend per order = Contribution margin before ads",
+      "Max CPA at break-even = Break-even ad spend per order",
+      "Break-even ROAS = Revenue / break-even ad spend per order",
+      "Target profit = fixed target profit per order, or Revenue x target profit margin",
+      "Target ad spend per order = Contribution margin before ads - target profit",
+      "Target ROAS = Revenue / target ad spend per order",
+      "Break-even ACoS = Break-even ad spend per order / Revenue",
+      "Target ACoS = Target ad spend per order / Revenue"
+    ],
+    "example": {
+      "body": "If revenue is 50.00 and variable cost before ads is 30.00, contribution margin before ads is 20.00. That means break-even ad spend and max CPA are 20.00. If target profit is 8.00, target ad spend is 12.00 and target ROAS is revenue divided by 12.00."
+    },
+    "mistakes": [
+      "Using ROAS without subtracting platform and payment fees first.",
+      "Forgetting fixed payment fees or other variable costs.",
+      "Setting a target profit higher than the available contribution margin.",
+      "Treating break-even ROAS as a target instead of the minimum line before losses."
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es el ROAS de equilibrio?",
+        "answer": "Break-even ROAS is the ROAS where revenue divided by ad spend just covers the variable cost structure before profit."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre ROAS y ACoS?",
+        "answer": "ROAS is revenue divided by ad spend. ACoS is ad spend divided by revenue. They describe the same relationship from opposite directions."
+      },
+      {
+        "question": "¿Cómo calculo el CPA máximo?",
+        "answer": "For one order, max CPA at break-even is the contribution margin before ads."
+      },
+      {
+        "question": "¿Por qué mi ROAS objetivo es tan alto?",
+        "answer": "Target ROAS rises when costs are high, contribution margin is low, or the target profit is close to the available margin."
+      },
+      {
+        "question": "¿Cómo puedo reducir mi ROAS de equilibrio?",
+        "answer": "Increase price, reduce product or fulfillment costs, reduce platform/payment fees, or improve conversion so each order can support more ad spend."
+      }
+    ],
+    "pro": {
+      "subtitle": "These workflow features are planned for a later Pro version and are not active in this build.",
+      "buttons": [
+        "Save scenario history - Pro",
+        "Export CSV - Pro",
+        "Export PDF - Pro",
+        "Batch ad scenarios - Pro"
+      ],
+      "modalTitle": "Pro feature coming soon",
+      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "close": "Close"
+    }
+  },
+  "paymentFees": {
+    "hero": {
+      "eyebrow": "Comparación de comisiones de pago",
+      "title": "Calculadora de comisiones Stripe vs PayPal para vendedores online",
+      "subtitle": "Compara supuestos editables de Stripe, PayPal y Shopify Payments para estimar comisiones, importe neto recibido y posibles ahorros.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026"
+    },
+    "notice": {
+      "title": "Supuestos editables",
+      "body": "Los supuestos de tarifas son estimaciones editables. Las comisiones pueden variar según el país, la moneda, la tarjeta, la cuenta, la transacción y las políticas. Verifica siempre las tarifas actuales. Última revisión de los supuestos: 2026-06."
+    },
+    "sections": {
+      "inputs": "Configuración de transacciones",
+      "assumptions": "Supuestos editables de comisiones",
+      "results": "Resultados por proveedor",
+      "summary": "Resumen de costes",
+      "formulas": "Notas de fórmulas",
+      "example": "Ejemplo de cálculo",
+      "mistakes": "Errores comunes",
+      "faq": "FAQ",
+      "related": "Herramientas relacionadas",
+      "pro": "Funciones Pro"
+    },
+    "inputs": {
+      "transactionAmount": "Importe por transacción",
+      "numberOfTransactions": "Número mensual de transacciones",
+      "currency": "Moneda",
+      "percentageFee": "Comisión porcentual",
+      "fixedFee": "Comisión fija",
+      "internationalCardSurchargePercent": "Recargo porcentual por tarjeta internacional",
+      "currencyConversionFeePercent": "Porcentaje de conversión de moneda",
+      "refundRetainedPercentageFee": "Porcentaje retenido en reembolsos",
+      "refundNonRefundableFixedFee": "Tarifa fija no reembolsable por devolución",
+      "chargebackFixedFee": "Tarifa fija por contracargo",
+      "optionalExtraFeePercent": "Porcentaje de comisión extra opcional",
+      "refundRate": "Tasa de reembolso",
+      "chargebackRate": "Tasa de contracargo"
+    },
+    "providers": {
+      "stripe": "Stripe",
+      "paypal": "PayPal",
+      "shopifyPayments": "Shopify Payments"
+    },
+    "outputs": {
+      "grossTransactionVolume": "Volumen bruto de transacciones",
+      "baseFeePerTransaction": "Tarifa base por transacción",
+      "extraPercentageFeePerTransaction": "Tarifas porcentuales extra por transacción",
+      "feePerTransaction": "Comisión por transacción",
+      "estimatedRefundCost": "Coste estimado de reembolsos",
+      "estimatedChargebackCost": "Coste estimado de contracargos",
+      "totalFees": "Comisiones totales",
+      "netReceived": "Importe neto recibido",
+      "effectiveFeeRate": "Tasa efectiva de comisión",
+      "differenceVsLowestCostProvider": "Diferencia frente al proveedor más económico",
+      "monthlyEstimatedFees": "Comisiones mensuales estimadas",
+      "annualEstimatedFees": "Comisiones anuales estimadas",
+      "lowestCostProvider": "Proveedor más económico",
+      "highestCostProvider": "Proveedor más costoso",
+      "estimatedMonthlySavings": "Ahorro mensual estimado",
+      "estimatedAnnualSavings": "Ahorro anual estimado",
+      "estimatedRefundTransactions": "Transacciones reembolsadas estimadas",
+      "estimatedChargebackTransactions": "Contracargos estimados"
+    },
+    "validation": {
+      "required": "This field is required.",
+      "invalidNumber": "Enter a valid number.",
+      "nonNegative": "Enter zero or a positive number.",
+      "positive": "Enter a number greater than zero.",
+      "positiveInteger": "Enter a whole number greater than zero.",
+      "percentLikelyFraction": "Did you mean 30%? Enter 30 for thirty percent.",
+      "percentVeryHigh": "This percentage is very high. Please confirm it is correct.",
+      "transactionAmountNonPositive": "Transaction amount must be greater than zero.",
+      "numberOfTransactionsNonPositive": "Number of transactions must be greater than zero.",
+      "refundRateNegative": "La tasa de reembolso no puede ser negativa.",
+      "chargebackRateNegative": "La tasa de contracargo no puede ser negativa.",
+      "extremePercentage": "Uno o más porcentajes son iguales o superiores al 1000 %. Comprueba si los valores son intencionales."
+    },
+    "actions": {
+      "reset": "Reset demo inputs",
+      "saved": "Saved locally",
+      "editable": "Editable"
+    },
+    "riskNote": "Las estimaciones de reembolsos y contracargos incluyen solo los costes de pago editables. No estiman ingresos devueltos, producto perdido, logística ni efectos específicos de cada proveedor.",
+    "refundRetainedPercentageFeeTooltip": "Este porcentaje es una estimación editable de la comisión que el proveedor conserva o no devuelve al procesar un reembolso. Las reglas varían según el proveedor y la región.",
+    "formulas": [
+      "Gross transaction volume = Transaction amount x Number of transactions",
+      "Base fee per transaction = Transaction amount x Percentage fee + Fixed fee",
+      "Extra percentage fee per transaction = Transaction amount x (international surcharge + currency conversion fee + optional extra fee)",
+      "Estimated refund cost = Estimated refunded volume x Refund retained percentage fee + Estimated refunded transactions x Non-refundable fixed fee per refund",
+      "Estimated chargeback cost = Number of transactions x Chargeback rate x Fixed fee per chargeback",
+      "Total fees = (Base fee + Extra percentage fee) x Number of transactions + Estimated refund cost + Estimated chargeback cost",
+      "Net received = Gross transaction volume - Total fees",
+      "Effective fee rate = Total fees / Gross transaction volume x 100",
+      "Lowest-cost provider = provider with the lowest total fees",
+      "Savings = Highest total fees - Lowest total fees",
+      "Monthly estimated fees = Total fees",
+      "Annual estimated fees = Monthly estimated fees x 12"
+    ],
+    "example": {
+      "body": "If each order is 50.00 and there are 500 transactions, gross transaction volume is 25,000.00. A 2.9% fee plus a 0.30 fixed fee creates a per-transaction fee of 1.75 before any optional extra percentage, then total monthly fees are that amount multiplied by 500."
+    },
+    "mistakes": [
+      "Treating editable assumptions as official current rates.",
+      "Forgetting fixed fees when average order value is low.",
+      "Comparing only percentage fees while ignoring currency, card type, account type, and transaction type.",
+      "Ignoring refunds, chargebacks, and currency conversion policies that may change final cost."
+    ],
+    "faq": [
+      {
+        "question": "¿Por qué difieren las comisiones de Stripe y PayPal?",
+        "answer": "Payment providers can price differently based on country, currency, card network, account type, transaction type, risk rules, and policy changes."
+      },
+      {
+        "question": "¿Son oficiales estos supuestos de comisiones de pago?",
+        "answer": "No. They are editable planning assumptions, not official fee schedules. Always verify current rates with each provider."
+      },
+      {
+        "question": "¿Incluyen estas comisiones la conversión de moneda?",
+        "answer": "Only if you enter an estimated currency conversion cost in the optional extra fee percentage. Currency conversion rules vary by provider and transaction."
+      },
+      {
+        "question": "¿Cambian los reembolsos y contracargos el coste final?",
+        "answer": "They can. This calculator keeps refund and chargeback rates visible for scenario planning, but it does not hard-code provider-specific refund or chargeback penalties."
+      },
+      {
+        "question": "¿Cómo pueden los vendedores online reducir las comisiones de pago?",
+        "answer": "Compare providers, increase average order value, reduce refunds and chargebacks, review account pricing, and verify whether local payment methods or plans lower your effective fee rate."
+      }
+    ],
+    "pro": {
+      "subtitle": "These workflow features are planned for a later Pro version and are not active in this build.",
+      "buttons": [
+        "Save provider scenarios - Pro",
+        "Export CSV - Pro",
+        "Export PDF - Pro",
+        "Batch checkout comparison - Pro"
+      ],
+      "modalTitle": "Pro feature coming soon",
+      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "close": "Close"
+    }
+  },
+  "landedCost": {
+    "hero": {
+      "eyebrow": "Planificación de costes de importación",
+      "title": "Calculadora de coste puesto en destino para importadores y vendedores ecommerce",
+      "subtitle": "Estima el coste unitario real desde la compra al proveedor hasta el transporte, aduanas, preparación y venta.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026"
+    },
+    "notice": {
+      "title": "Aviso de estimación",
+      "body": "Esta calculadora es solo una estimación. Los aranceles, IVA, GST, normas aduaneras y costes de envío varían según el país, producto, código HS y políticas. Verifica los datos importantes con fuentes oficiales o profesionales cualificados. Última revisión de los supuestos: 2026-06."
+    },
+    "sections": {
+      "product": "Producto",
+      "logistics": "Logística internacional",
+      "import": "Costes de importación",
+      "selling": "Costes de venta",
+      "results": "Resultados por unidad",
+      "warnings": "Advertencias de precio",
+      "breakdown": "Desglose de costes",
+      "formulas": "Notas de fórmulas",
+      "example": "Ejemplo de cálculo",
+      "mistakes": "Errores comunes",
+      "faq": "FAQ",
+      "related": "Herramientas relacionadas",
+      "pro": "Funciones Pro"
+    },
+    "inputs": {
+      "productUnitCost": "Coste unitario del producto",
+      "quantity": "Cantidad",
+      "currency": "Moneda",
+      "hsCode": "Código HS",
+      "hsCodePlaceholder": "Nota opcional",
+      "supplierCountry": "País del proveedor",
+      "destinationCountry": "País de destino",
+      "internationalFreightCost": "Coste del transporte internacional",
+      "insuranceCost": "Coste del seguro",
+      "freightType": "Tipo de transporte",
+      "customsDutyRate": "Tasa arancelaria",
+      "importTaxRate": "Tasa de impuesto de importación / IVA / GST",
+      "includeImportTaxAsCost": "Incluir IVA/GST como coste",
+      "customsValuationMethod": "Método de valoración aduanera",
+      "customsBrokerFee": "Tarifa del agente de aduanas",
+      "otherImportFees": "Otras tasas de importación",
+      "sellingPricePerUnit": "Precio de venta por unidad",
+      "platformFeePercent": "Porcentaje de comisión de plataforma",
+      "paymentFeePercent": "Porcentaje de comisión de pago",
+      "fixedPaymentFee": "Comisión fija de pago",
+      "adCostPerOrder": "Coste publicitario por pedido",
+      "refundRate": "Tasa de reembolso",
+      "domesticDeliveryCostPerUnit": "Entrega nacional por unidad",
+      "packagingCostPerUnit": "Embalaje por unidad",
+      "warehousePrepCostPerUnit": "Almacén o preparación por unidad",
+      "otherCostPerUnit": "Otro coste por unidad",
+      "targetMarginPercent": "Porcentaje de margen objetivo"
+    },
+    "customsValuationMethods": {
+      "cif": "CIF: producto + flete + seguro",
+      "fob": "FOB: solo valor del producto"
+    },
+    "customsValuationNote": "Elige la base de planificación adecuada. Las reglas reales de valoración varían según país y producto.",
+    "importTaxTreatmentNote": "Si el VAT/GST es recuperable, selecciona No para mostrarlo sin sumarlo al coste puesto en destino. Confirma el tratamiento con un profesional.",
+    "freightTypes": {
+      "sea": "Marítimo",
+      "air": "Aéreo",
+      "express": "Exprés",
+      "other": "Otro"
+    },
+    "toggle": {
+      "yes": "Sí",
+      "no": "No"
+    },
+    "outputs": {
+      "totalProductCost": "Coste total del producto",
+      "freightPerUnit": "Transporte por unidad",
+      "insurancePerUnit": "Seguro por unidad",
+      "customsValuePerUnit": "Valor aduanero por unidad",
+      "dutyPerUnit": "Arancel por unidad",
+      "importTaxPerUnit": "Impuesto de importación / IVA / GST por unidad",
+      "brokerFeePerUnit": "Agente de aduanas por unidad",
+      "otherImportFeesPerUnit": "Otras tasas de importación por unidad",
+      "landedCostPerUnit": "Coste puesto en destino por unidad",
+      "platformFeePerUnit": "Comisión de plataforma por unidad",
+      "paymentFeePerUnit": "Comisión de pago por unidad",
+      "sellingFeesPerUnit": "Comisiones de venta por unidad",
+      "refundReservePerUnit": "Reserva para reembolsos por unidad",
+      "fixedCostPerUnit": "Coste fijo por unidad antes de costes porcentuales de venta",
+      "variableSellingRateCostPercent": "Tasa variable de costes de venta",
+      "totalCostPerUnit": "Coste total por unidad",
+      "netProfitPerUnit": "Beneficio neto por unidad",
+      "profitMargin": "Margen de beneficio",
+      "breakEvenSellingPrice": "Precio de venta de equilibrio",
+      "suggestedPriceFor30PercentMargin": "Precio sugerido para un margen del 30%",
+      "suggestedPriceFor50PercentMargin": "Precio sugerido para un margen del 50%",
+      "suggestedPriceForTargetMargin": "Precio sugerido para el margen objetivo"
+    },
+    "breakdown": {
+      "cost": "Componente de coste",
+      "amount": "Importe por unidad",
+      "status": "Estado en el coste puesto en destino",
+      "included": "Incluido",
+      "excluded": "Mostrado, no incluido"
+    },
+    "validation": {
+      "required": "This field is required.",
+      "invalidNumber": "Enter a valid number.",
+      "nonNegative": "Enter zero or a positive number.",
+      "positiveInteger": "Enter a whole number greater than zero.",
+      "invalidCustomsValuationMethod": "Select either CIF or FOB.",
+      "invalidFreightType": "Select Sea, Air, Express, or Other.",
+      "percentLikelyFraction": "Did you mean 30%? Enter 30 for thirty percent.",
+      "percentVeryHigh": "This percentage is very high. Please confirm it is correct.",
+      "quantityNonPositive": "Quantity must be greater than zero.",
+      "targetMarginInvalid": "Target margin must be below 100%.",
+      "breakEvenDenominatorNonPositive": "Las tasas variables no dejan un precio de equilibrio válido. Reduce su suma por debajo del 100 %.",
+      "breakEvenDenominatorNearZero": "La proporción de costes variables es extremadamente alta y el precio calculado puede no ser realista.",
+      "targetDenominatorNonPositive": "El margen objetivo y las tasas variables deben sumar menos del 100 % para calcular el precio sugerido."
+    },
+    "actions": {
+      "reset": "Reset demo inputs",
+      "saved": "Saved locally"
+    },
+    "formulas": [
+      "Total product cost = Product unit cost x Quantity",
+      "Freight per unit = International freight cost / Quantity",
+      "Insurance per unit = Insurance cost / Quantity",
+      "CIF customs value = Product unit cost + Freight per unit + Insurance per unit; FOB customs value = Product unit cost",
+      "Duty per unit = Customs value per unit x Customs duty rate",
+      "Import tax per unit = (Customs value per unit + Duty per unit) x Import tax rate",
+      "Broker fee per unit = Customs broker fee / Quantity",
+      "Other import fees per unit = Other import fees / Quantity",
+      "Landed cost per unit = Product unit cost + freight + insurance + duty + included import tax + broker fee + other import fees",
+      "Selling fees per unit = Selling price x Platform fee percentage + Selling price x Payment fee percentage + Fixed payment fee",
+      "Refund reserve = Selling price x Refund rate",
+      "Total cost per unit = Landed cost + selling fees + ad cost + refund reserve + domestic delivery + packaging + warehouse/prep + other cost",
+      "Net profit per unit = Selling price - Total cost per unit",
+      "Profit margin = Net profit per unit / Selling price x 100",
+      "Fixed cost per unit excludes platform fee, percentage payment fee, and refund reserve",
+      "Variable selling rate = Platform fee rate + Payment fee rate + Refund rate",
+      "Break-even selling price = Fixed cost per unit / (1 - Variable selling rate)",
+      "Suggested price for target margin = Fixed cost per unit / (1 - Variable selling rate - Target margin)"
+    ],
+    "example": {
+      "body": "For 100 units at 10.00 each, 500.00 freight, and 100.00 insurance, freight is 5.00 per unit and insurance is 1.00 per unit. Customs value is 16.00 per unit. At 5% duty, duty is 0.80. At 10% import tax, tax is 1.68 before deciding whether VAT/GST is included in landed cost."
+    },
+    "mistakes": [
+      "Dividing freight or broker fees by the wrong quantity.",
+      "Applying duty only to product cost while customs value may also include freight and insurance.",
+      "Automatically treating recoverable VAT or GST as a permanent cost.",
+      "Pricing from landed cost alone while ignoring payment fees, advertising, refunds, domestic delivery, and preparation costs."
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es el coste puesto en destino?",
+        "answer": "Landed cost is the estimated unit cost after product purchase, international freight, insurance, duty, selected import tax treatment, customs brokerage, and other import fees."
+      },
+      {
+        "question": "¿Por qué importa el coste puesto en destino a los vendedores ecommerce?",
+        "answer": "It shows the cost of getting inventory ready for sale, helping sellers avoid pricing products from supplier cost alone."
+      },
+      {
+        "question": "¿Cómo encuentro mi tasa arancelaria?",
+        "answer": "Use the product HS code and verify the applicable rate with the destination country's official customs source or a qualified customs professional."
+      },
+      {
+        "question": "¿Debe incluirse el IVA o GST como coste?",
+        "answer": "It depends on whether the tax is recoverable, your registration status, local rules, and accounting treatment. Confirm with a qualified professional."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre coste puesto en destino y coste total de venta?",
+        "answer": "Landed cost covers getting the product imported and ready. Total selling cost also includes platform, payment, advertising, refunds, domestic delivery, packaging, warehouse, and other per-order costs."
+      }
+    ],
+    "pro": {
+      "subtitle": "These workflow features are planned for a later Pro version and are not active in this build.",
+      "buttons": [
+        "Save import scenarios - Pro",
+        "Export CSV - Pro",
+        "Export PDF - Pro",
+        "Batch SKU landed cost - Pro"
+      ],
+      "modalTitle": "Pro feature coming soon",
+      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "close": "Close"
+    }
+  },
+  "infoPages": {
+    "about": {
+      "eyebrow": "Acerca de SellerMargin",
+      "title": "Herramientas prácticas de planificación para vendedores ecommerce",
+      "intro": "SellerMargin es un sitio gratuito de calculadoras para planificar beneficio, publicidad, comisiones y coste puesto en destino.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "sections": [
+        {
+          "title": "Qué te ayuda a estimar el sitio",
+          "paragraphs": [
+            "Las calculadoras ayudan a estimar el beneficio del producto, el punto de equilibrio publicitario, las comisiones de plataforma y pago, y el coste puesto en destino."
+          ],
+          "bullets": [
+            "Compara el beneficio estimado entre plataformas ecommerce.",
+            "Calcula métricas publicitarias de equilibrio y objetivo.",
+            "Compara supuestos editables de comisiones de pago.",
+            "Estima costes de importación y venta por unidad."
+          ]
+        },
+        {
+          "title": "La primera versión no requiere cuenta",
+          "paragraphs": [
+            "La primera versión funciona sin registro. Los datos recientes pueden guardarse localmente en el navegador."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Estimaciones de planificación, no asesoramiento profesional",
+          "paragraphs": [
+            "Los resultados sirven solo para planificación y estimación. SellerMargin no ofrece asesoramiento financiero, fiscal, legal ni contable."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Posibles funciones Pro futuras",
+          "paragraphs": [
+            "Versiones futuras podrían añadir funciones de pago opcionales que no están activas actualmente."
+          ],
+          "bullets": [
+            "Historial de cálculos guardado",
+            "Cálculos de SKU por lotes",
+            "Exportaciones CSV y PDF",
+            "Informes de marca blanca"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "title": "Contactar con SellerMargin",
+      "intro": "Utiliza esta página para preguntas generales, correcciones o comentarios sobre las calculadoras y guías.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "emailLabel": "Email de contacto temporal",
+      "emailNotice": "REQUERIDO ANTES DEL LANZAMIENTO: configura NEXT_PUBLIC_CONTACT_EMAIL con el email real del propietario.",
+      "formTitle": "Enviar un mensaje de demostración",
+      "formNotice": "Este formulario es solo una demostración visual. No envía datos a un servidor ni a un servicio de email.",
+      "demoNotice": "Solo demostración: el formulario no envía email ni guarda el mensaje en un servidor o base de datos.",
+      "fields": {
+        "name": "Nombre",
+        "email": "Email",
+        "topic": "Tema",
+        "message": "Mensaje",
+        "namePlaceholder": "Tu nombre",
+        "emailPlaceholder": "you@example.com",
+        "topicPlaceholder": "¿Sobre qué quieres escribir?",
+        "messagePlaceholder": "Escribe tu mensaje"
+      },
+      "submit": "Enviar mensaje de demostración",
+      "success": "Demostración completada. El mensaje no se envió ni se guardó."
+    },
+    "privacyPolicy": {
+      "eyebrow": "Información legal",
+      "title": "Política de privacidad",
+      "intro": "Esta política describe el tratamiento limitado de datos en la primera versión de SellerMargin.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "sections": [
+        {
+          "title": "Cuentas y procesamiento de las calculadoras",
+          "paragraphs": [
+            "La primera versión no requiere una cuenta. Los datos y resultados de las calculadoras se procesan generalmente en tu navegador."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Almacenamiento local del navegador",
+          "paragraphs": [
+            "SellerMargin puede usar localStorage para recordar datos recientes de las calculadoras, preferencias de idioma y el estado de la lista de espera de demostración."
+          ],
+          "bullets": [
+            "Esta información permanece en el navegador hasta que elimines los datos del sitio.",
+            "Las contraseñas y los datos de pago no se guardan en localStorage.",
+            "Los formularios de contacto y lista de espera de demostración no envían mensajes ni emails a un servidor o base de datos."
+          ]
+        },
+        {
+          "title": "Información que no se recopila",
+          "paragraphs": [
+            "SellerMargin no recopila datos de tarjetas de pago ni guarda contraseñas de cuentas en esta versión."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Posibles analytics futuros",
+          "paragraphs": [
+            "V1 no utiliza cookies no esenciales, analytics ni seguimiento publicitario.",
+            "Si una versión futura incorpora analytics, email, pagos, cuentas, seguimiento publicitario u otros scripts de terceros, esta política deberá actualizarse y se habilitará el consentimiento cuando sea necesario."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Contacto",
+          "paragraphs": [
+            "Los usuarios pueden contactar con el propietario mediante la página de Contacto para consultas o solicitudes de privacidad."
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Información legal",
+      "title": "Términos de uso",
+      "intro": "Estos términos describen las condiciones de uso de las calculadoras, guías y estimaciones de SellerMargin.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "sections": [
+        {
+          "title": "Servicio proporcionado tal cual",
+          "paragraphs": [
+            "Al utilizar este sitio web, aceptas estas condiciones.",
+            "Las herramientas y el contenido de SellerMargin se proporcionan \"tal cual\" y \"según disponibilidad\"."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Sin garantía de exactitud",
+          "paragraphs": [
+            "SellerMargin no garantiza que los cálculos, supuestos, comisiones, fórmulas o contenidos estén completos, actualizados o libres de errores."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Tus decisiones empresariales",
+          "paragraphs": [
+            "Los usuarios son responsables de revisar los datos y tomar sus propias decisiones empresariales."
+          ],
+          "bullets": [
+            "Verifica tarifas y políticas importantes en fuentes oficiales.",
+            "Consulta a profesionales cualificados cuando se requiera experiencia especializada."
+          ]
+        },
+        {
+          "title": "Sin asesoramiento profesional",
+          "paragraphs": [
+            "SellerMargin no ofrece asesoramiento financiero, fiscal, legal ni contable."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Limitación de responsabilidad",
+          "paragraphs": [
+            "El propietario del sitio no se responsabiliza de decisiones empresariales basadas en las estimaciones generadas por el sitio."
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "disclaimer": {
+      "eyebrow": "Información legal",
+      "title": "Aviso legal sobre calculadoras y contenido",
+      "intro": "SellerMargin ofrece herramientas de estimación y contenido educativo únicamente con fines de planificación.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "sections": [
+        {
+          "title": "Solo estimaciones",
+          "paragraphs": [
+            "Todos los resultados son estimaciones basadas en los datos y supuestos introducidos por el usuario."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Los costes y las reglas pueden cambiar",
+          "paragraphs": [
+            "Las comisiones de plataforma y pago, impuestos, aranceles, envíos y costes publicitarios pueden cambiar."
+          ],
+          "bullets": [
+            "Las reglas pueden variar según el país.",
+            "Las plataformas pueden aplicar reglas distintas según la categoría o el tipo de cuenta.",
+            "Los métodos de pago pueden tener estructuras de comisiones diferentes.",
+            "Los valores predeterminados son supuestos editables y no son tarifas oficiales garantizadas a largo plazo."
+          ]
+        },
+        {
+          "title": "Verifica la información importante",
+          "paragraphs": [
+            "Verifica los supuestos importantes en fuentes oficiales o con profesionales cualificados."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "Sin asesoramiento profesional",
+          "paragraphs": [
+            "Este sitio web no ofrece asesoramiento legal, fiscal, financiero ni contable."
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías para vendedores",
+      "title": "Guías de beneficio ecommerce",
+      "intro": "Explicaciones prácticas para entender costes, margen de contribución, eficiencia publicitaria y precios.",
+      "featuredLabel": "Guía disponible",
+      "articleTitle": "Cómo calcular el beneficio ecommerce después de publicidad",
+      "articleDescription": "Una guía sobre costes, fórmulas, ejemplos y errores comunes al medir el beneficio después de publicidad.",
+      "readGuide": "Leer la guía",
+      "toolsTitle": "Calcula tu propio escenario",
+      "toolsIntro": "Abre directamente una calculadora para comparar plataformas, objetivos publicitarios, comisiones de pago o costes de importación.",
+      "futureTitle": "Próximas guías",
+      "futureBody": "Podrán añadirse más guías en el futuro. El contenido no publicado no se presenta como terminado."
+    },
+    "profitAfterAdsGuide": {
+      "eyebrow": "Guía de rentabilidad ecommerce",
+      "title": "Cómo calcular el beneficio ecommerce después de publicidad",
+      "intro": "Los ingresos y el beneficio bruto pueden parecer saludables mientras la publicidad, los pagos, la plataforma, los reembolsos y la gestión reducen lo que queda de cada pedido.",
+      "lastUpdated": "Última actualización: 13 de junio de 2026",
+      "sections": {
+        "introduction": {
+          "title": "1. Introducción",
+          "paragraphs": [
+            "Profit after ads is the amount left after subtracting the costs required to produce, sell, fulfill, and acquire an order.",
+            "Use assumptions that match your product, platform, payment method, fulfillment model, and advertising performance."
+          ]
+        },
+        "grossProfit": {
+          "title": "2. Por qué el beneficio bruto no es suficiente",
+          "paragraphs": [
+            "Gross profit may subtract only product cost and does not show whether an order remains profitable after selling and acquisition costs.",
+            "Platform fees, payment fees, shipping, refunds, advertising, and import costs can materially change profit."
+          ]
+        },
+        "keyCosts": {
+          "title": "3. Costes clave que debes incluir",
+          "intro": "Use costs that belong to one completed order and keep assumptions consistent.",
+          "items": [
+            {
+              "title": "Coste del producto",
+              "body": "Supplier or manufacturing cost for the units sold."
+            },
+            {
+              "title": "Envío",
+              "body": "Seller-paid delivery, fulfillment, postage, or shipping subsidies."
+            },
+            {
+              "title": "Comisiones de plataforma",
+              "body": "Marketplace commissions, transaction charges, and other platform deductions."
+            },
+            {
+              "title": "Comisiones de pago",
+              "body": "Percentage and fixed fees charged by the payment processor."
+            },
+            {
+              "title": "Reserva para reembolsos",
+              "body": "An allowance for expected refunds and related costs."
+            },
+            {
+              "title": "Gasto publicitario",
+              "body": "The average advertising cost required to acquire one order."
+            },
+            {
+              "title": "Costes de importación o puesta en destino",
+              "body": "Freight, insurance, duty, tax treatment, brokerage, and import costs allocated per unit."
+            }
+          ]
+        },
+        "formula": {
+          "title": "4. Fórmula básica",
+          "lines": [
+            "Net revenue = Selling price - discounts",
+            "Profit after ads = Net revenue - product cost - shipping - platform fees - payment fees - refund reserve - ad spend - other variable costs",
+            "Profit margin = Profit after ads / Net revenue x 100"
+          ]
+        },
+        "example": {
+          "title": "5. Ejemplo de cálculo",
+          "paragraphs": [
+            "Suppose net revenue is 50.00, product cost is 16.00, shipping and packaging are 6.00, platform and payment fees are 6.50, refund reserve is 1.50, and ad spend is 10.00."
+          ],
+          "steps": [
+            "Total variable cost = 40.00",
+            "Profit after ads = 10.00",
+            "Profit margin = 20%"
+          ]
+        },
+        "calculators": {
+          "title": "6. Cómo usar las calculadoras del sitio",
+          "intro": "Use the calculators for planning and verify important assumptions before acting.",
+          "links": [
+            {
+              "href": "/multi-platform-profit-calculator",
+              "title": "Calculadora de beneficio multiplataforma",
+              "body": "Compare estimated order profit across platform scenarios."
+            },
+            {
+              "href": "/ad-spend-break-even-calculator",
+              "title": "Calculadora de ROAS de equilibrio",
+              "body": "Calculate break-even and target advertising metrics."
+            },
+            {
+              "href": "/stripe-vs-paypal-fee-calculator",
+              "title": "Calculadora de comisiones Stripe vs PayPal",
+              "body": "Compare payment fee assumptions and net received."
+            },
+            {
+              "href": "/landed-cost-calculator",
+              "title": "Calculadora de coste puesto en destino",
+              "body": "Allocate import and selling costs per unit."
+            }
+          ]
+        },
+        "mistakes": {
+          "title": "7. Errores comunes",
+          "items": [
+            "Using revenue or gross profit as final profit.",
+            "Ignoring fixed fees, refunds, packaging, or shipping.",
+            "Using ROAS without contribution margin.",
+            "Treating assumptions as guaranteed official rates.",
+            "Forgetting that rules can change."
+          ]
+        },
+        "faq": {
+          "title": "8. Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Debo calcular el beneficio con ingresos brutos o netos?",
+              "answer": "Use net revenue after discounts for the margin denominator, and keep refunds or refund reserves visible as a separate assumption."
+            },
+            {
+              "question": "¿Es el ROAS lo mismo que el beneficio?",
+              "answer": "No. ROAS compares revenue with ad spend, while profit also subtracts product, fulfillment, platform, payment, refund, and other costs."
+            },
+            {
+              "question": "¿Con qué frecuencia debo actualizar el cálculo?",
+              "answer": "Update it whenever prices, advertising costs, fees, shipping, refunds, or supplier costs change materially."
+            },
+            {
+              "question": "¿Debo repartir los gastos generales entre los pedidos?",
+              "answer": "This guide focuses on variable order economics. Overhead can be allocated separately for a fuller operating view."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Convierte la fórmula en un escenario práctico",
+          "body": "Utiliza las calculadoras para probar tus cifras actuales y verifica los supuestos importantes antes de tomar decisiones.",
+          "label": "Abrir la calculadora de beneficio",
+          "href": "/multi-platform-profit-calculator"
+        },
+        "disclaimer": {
+          "title": "9. Aviso legal",
+          "paragraphs": [
+            "Esta guía y las calculadoras sirven únicamente para planificación y estimación. No prometen beneficios ni ofrecen asesoramiento profesional.",
+            "Verifica comisiones, tratamiento fiscal, reglas aduaneras y otros supuestos en fuentes oficiales o con profesionales cualificados."
+          ]
+        }
+      }
+    }
+  },
+  "pages": {
+    "multi-platform-profit-calculator": {
+      "title": "Calculadora de beneficio multiplataforma para vendedores ecommerce",
+      "description": "Compara el mismo producto en Shopify, Etsy, eBay, Amazon y TikTok Shop con supuestos de tarifas editables."
+    },
+    "ad-spend-break-even-calculator": {
+      "title": "Calculadora de ROAS de equilibrio y gasto publicitario",
+      "description": "Estima el gasto publicitario máximo, ROAS objetivo y de equilibrio, CPA máximo y ACoS objetivo y de equilibrio."
+    },
+    "stripe-vs-paypal-fee-calculator": {
+      "title": "Calculadora de comisiones Stripe vs PayPal para vendedores online",
+      "description": "Compara supuestos editables de Stripe, PayPal y Shopify Payments para estimar comisiones, importe neto y posibles ahorros."
+    },
+    "landed-cost-calculator": {
+      "title": "Calculadora de coste puesto en destino para importadores y ecommerce",
+      "description": "Estima producto, transporte, seguro, aduanas, impuestos, almacén, costes de venta, beneficio y precio sugerido por unidad."
+    },
+    "about": {
+      "title": "Acerca de SellerMargin",
+      "description": "Conoce las herramientas gratuitas de SellerMargin para planificar beneficio, publicidad, comisiones y coste puesto en destino."
+    },
+    "contact": {
+      "title": "Contactar con SellerMargin",
+      "description": "Contacta con SellerMargin para preguntas, correcciones o comentarios. El formulario actual es una demostración sin backend."
+    },
+    "privacy-policy": {
+      "title": "Política de privacidad",
+      "description": "Consulta cómo la primera versión gestiona datos locales de las calculadoras, idioma y estados de demostración."
+    },
+    "terms": {
+      "title": "Términos de uso",
+      "description": "Condiciones para utilizar las calculadoras, guías, supuestos y estimaciones de planificación de SellerMargin."
+    },
+    "disclaimer": {
+      "title": "Aviso legal sobre calculadoras y contenido",
+      "description": "Limitaciones importantes sobre estimaciones, comisiones cambiantes, aduanas, impuestos, envíos y publicidad."
+    },
+    "guides": {
+      "title": "Guías de beneficio ecommerce",
+      "description": "Guías prácticas para entender beneficio, costes, publicidad y precios en ecommerce."
+    },
+    "how-to-calculate-ecommerce-profit-after-ads": {
+      "title": "Cómo calcular el beneficio ecommerce después de publicidad",
+      "description": "Aprende qué costes incluir, la fórmula básica, un ejemplo y los errores comunes al calcular el beneficio después de publicidad."
+    }
+  }
+}

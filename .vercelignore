@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+outputs/
+work/
+
+.chrome-*/
+.edge-*/
+qa-*.png
+qa-*.log
+qa-*.err

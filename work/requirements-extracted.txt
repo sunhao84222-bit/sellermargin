@@ -1,0 +1,1129 @@
+SOURCE=C:\Users\Sun\Desktop\新建 DOCX 文档 (4).docx
+PARAGRAPHS=1128 TABLES=0 SECTIONS=1
+P0000	[Heading 1]	Prompt 1：项目骨架、多语言、首页
+P0001	[Normal (Web)]	请先阅读并严格执行本任务。 本次只完成项目骨架、多语言基础、首页和基础组件。不要开发计算器。
+P0002	[Heading 2]	项目目标
+P0003	[Normal (Web)]	我要开发一个面向海外跨境电商卖家的多语言工具网站。
+P0004	[Normal (Web)]	网站名称暂定：
+P0005	[Normal (Web)]	SellerMargin
+P0006	[Normal (Web)]	网站用途：
+P0007	[Normal (Web)]	帮助 Shopify、Amazon、Etsy、eBay、TikTok Shop 等平台卖家计算真实利润、平台费用、支付手续费、广告回本点、ROAS、到岸成本和多平台净利润对比。
+P0008	[Normal (Web)]	第一版是公开访问的工具站，不做登录、不做支付、不做数据库、不做真实会员系统。 第一版目标是验证需求、获取 SEO 流量、收集 Pro 等候名单，并为后续会员功能预留入口。
+P0009	[Heading 2]	技术栈
+P0010	[Normal (Web)]	请使用：
+P0011	[Normal]	Next.js App Router
+P0012	[Normal]	TypeScript
+P0013	[Normal]	Tailwind CSS
+P0014	[Normal]	React components
+P0015	[Normal]	Vercel 部署友好结构
+P0016	[Normal]	静态优先架构
+P0017	[Normal]	多语言路由
+P0018	[Normal (Web)]	不要使用：
+P0019	[Normal]	数据库
+P0020	[Normal]	登录系统
+P0021	[Normal]	Stripe
+P0022	[Normal]	Paddle
+P0023	[Normal]	Lemon Squeezy
+P0024	[Normal]	AdSense
+P0025	[Normal]	真实邮件营销工具
+P0026	[Normal]	复杂后端 API
+P0027	[Normal (Web)]	第一版只允许使用：
+P0028	[Normal]	前端计算
+P0029	[Normal]	静态页面
+P0030	[Normal]	localStorage 保存 demo 状态
+P0031	[Normal]	多语言翻译文件
+P0032	[Heading 2]	多语言要求
+P0033	[Normal (Web)]	第一版支持三种语言：
+P0034	[Normal]	英文：en
+P0035	[Normal]	简体中文：zh
+P0036	[Normal]	西班牙语：es
+P0037	[Normal (Web)]	默认语言是英文。
+P0038	[Normal (Web)]	URL 结构：
+P0039	[Normal]	/en
+P0040	[Normal]	/zh
+P0041	[Normal]	/es
+P0042	[Normal (Web)]	示例：
+P0043	[Normal]	/en/multi-platform-profit-calculator
+P0044	[Normal]	/zh/multi-platform-profit-calculator
+P0045	[Normal]	/es/multi-platform-profit-calculator
+P0046	[Normal (Web)]	如果访问根路径 /，请默认跳转到 /en，或者显示英文首页。
+P0047	[Normal (Web)]	多语言具体要求：
+P0048	[Normal]	所有页面标题、按钮、表单字段、说明文字、FAQ、免责声明都要支持多语言。
+P0049	[Normal]	计算逻辑不能和语言绑定。
+P0050	[Normal]	翻译文本不要直接硬编码在组件里。
+P0051	[Normal]	请使用 messages 文件，例如：
+P0052	[Normal]	messages/en.json
+P0053	[Normal]	messages/zh.json
+P0054	[Normal]	messages/es.json
+P0055	[Normal]	导航栏右侧需要有语言切换器。
+P0056	[Normal]	用户选择语言后，可以用 localStorage 保存偏好。
+P0057	[Normal]	货币选择和语言选择要分开，不要因为用户选择中文就默认人民币。
+P0058	[Normal (Web)]	如果一次性完整西班牙语内容太重，可以先保留基础西班牙语结构和英文占位，但不能破坏 /es 路由。
+P0059	[Heading 2]	项目结构建议
+P0060	[Normal (Web)]	请创建类似以下结构：
+P0061	[Normal (Web)]	app/ [locale]/ layout.tsx page.tsx multi-platform-profit-calculator/page.tsx ad-spend-break-even-calculator/page.tsx stripe-vs-paypal-fee-calculator/page.tsx landed-cost-calculator/page.tsx about/page.tsx contact/page.tsx privacy-policy/page.tsx terms/page.tsx disclaimer/page.tsx guides/page.tsx guides/how-to-calculate-ecommerce-profit-after-ads/page.tsx
+P0062	[Normal (Web)]	components/ Header.tsx Footer.tsx LanguageSwitcher.tsx ToolCard.tsx CalculatorLayout.tsx NumberInput.tsx ResultCard.tsx ResultTable.tsx FormulaBlock.tsx FAQSection.tsx RelatedTools.tsx WaitlistForm.tsx ProFeatureModal.tsx DisclaimerBox.tsx
+P0063	[Normal (Web)]	lib/ calculators.ts defaultFees.ts formatters.ts seo.ts locales.ts
+P0064	[Normal (Web)]	messages/ en.json zh.json es.json
+P0065	[Normal (Web)]	public/ robots.txt
+P0066	[Heading 2]	全局开发原则
+P0067	[Normal (Web)]	请严格遵守：
+P0068	[Normal]	不要把平台费率写成绝对准确的官方事实。
+P0069	[Normal]	所有平台费用、支付费用、履约费用都必须是“可编辑默认假设值”。
+P0070	[Normal]	默认费率必须放在 lib/defaultFees.ts 中，不要深度硬编码在 UI 组件里。
+P0071	[Normal]	每个计算器页面都必须提示：费用假设可编辑，平台费用可能因国家、类目、账号类型、支付方式和政策变化而不同。
+P0072	[Normal]	不提供金融、税务、法律、会计建议。
+P0073	[Normal]	不显示虚假的用户数量、虚假的评价、虚假的收入案例。
+P0074	[Normal]	不要写 “Used by 500+ sellers” 这类未经验证的社会证明。
+P0075	[Normal]	不要承诺计算结果绝对准确。
+P0076	[Normal]	不要做登录系统。
+P0077	[Normal]	不要做支付系统。
+P0078	[Normal]	不要做数据库。
+P0079	[Normal]	不要做真实 CSV / PDF 导出，只做 “Pro 功能即将上线” 的提示。
+P0080	[Normal]	计算逻辑必须和 UI 分离。
+P0081	[Normal]	所有计算公式要有注释。
+P0082	[Normal]	所有输入要有校验。
+P0083	[Normal]	要防止除以 0。
+P0084	[Normal]	要支持移动端。
+P0085	[Normal]	要保证 Vercel 可以部署。
+P0086	[Heading 2]	设计要求
+P0087	[Normal (Web)]	整体风格：
+P0088	[Normal]	简洁
+P0089	[Normal]	专业
+P0090	[Normal]	商务感
+P0091	[Normal]	SaaS 风格
+P0092	[Normal]	适合海外卖家
+P0093	[Normal]	不花哨
+P0094	[Normal]	不卡通
+P0095	[Normal]	不使用大量动画
+P0096	[Normal (Web)]	视觉建议：
+P0097	[Normal]	背景：白色或浅灰
+P0098	[Normal]	主文字：深蓝黑或深灰
+P0099	[Normal]	主色：青绿色或蓝色
+P0100	[Normal]	字体：Inter 或系统字体
+P0101	[Normal]	卡片式布局
+P0102	[Normal]	表格清晰
+P0103	[Normal]	按钮明显但不过度夸张
+P0104	[Normal]	移动端优先
+P0105	[Heading 2]	本次需要完成的页面
+P0106	[Normal (Web)]	本次只完成这些：
+P0107	[Normal]	/en 首页
+P0108	[Normal]	/zh 首页
+P0109	[Normal]	/es 首页
+P0110	[Normal]	Header
+P0111	[Normal]	Footer
+P0112	[Normal]	LanguageSwitcher
+P0113	[Normal]	ToolCard
+P0114	[Normal]	WaitlistForm
+P0115	[Normal]	ProFeatureModal
+P0116	[Normal]	DisclaimerBox
+P0117	[Normal]	About / Contact / Privacy / Terms / Disclaimer 的空页面骨架
+P0118	[Normal]	四个计算器页面的空页面骨架，不要实现计算器逻辑
+P0119	[Heading 2]	首页内容要求
+P0120	[Normal (Web)]	首页包含以下模块：
+P0121	[Heading 3]	Hero 区域
+P0122	[Normal (Web)]	英文标题：
+P0123	[Normal (Web)]	Calculate Your Real Ecommerce Profit Before You Scale
+P0124	[Normal (Web)]	英文副标题：
+P0125	[Normal (Web)]	Free calculators for ecommerce sellers. Compare platform fees, payment fees, ad spend, landed costs, and true margins across Shopify, Amazon, Etsy, eBay, and TikTok Shop.
+P0126	[Normal (Web)]	中文标题：
+P0127	[Normal (Web)]	在扩大投放前，先算清楚你的真实利润
+P0128	[Normal (Web)]	中文副标题：
+P0129	[Normal (Web)]	面向跨境卖家的免费计算工具，帮助你对比 Shopify、Amazon、Etsy、eBay、TikTok Shop 的平台费用、支付费用、广告成本、到岸成本和真实利润率。
+P0130	[Normal (Web)]	CTA：
+P0131	[Normal]	Start calculating
+P0132	[Normal]	Join Pro waitlist
+P0133	[Heading 3]	工具卡片区域
+P0134	[Normal (Web)]	展示 4 个工具：
+P0135	[Normal]	Multi-platform Profit Calculator
+P0136	[Normal]	Ad Spend Break-even Calculator
+P0137	[Normal]	Stripe vs PayPal Fee Calculator
+P0138	[Normal]	Landed Cost Calculator
+P0139	[Normal (Web)]	每个工具卡片包含：
+P0140	[Normal]	工具名称
+P0141	[Normal]	一句话说明
+P0142	[Normal]	Open calculator 链接
+P0143	[Normal]	图标或简洁图形
+P0144	[Heading 3]	为什么使用本网站
+P0145	[Normal (Web)]	展示 4 个卖点：
+P0146	[Normal]	No signup required
+P0147	[Normal]	Editable fee assumptions
+P0148	[Normal]	Built for sellers who run ads
+P0149	[Normal]	Compare platforms before you launch
+P0150	[Heading 3]	Pro 功能预告
+P0151	[Normal (Web)]	展示未来会员功能：
+P0152	[Normal]	Save calculation history
+P0153	[Normal]	Export CSV
+P0154	[Normal]	Export PDF report
+P0155	[Normal]	Batch SKU calculator
+P0156	[Normal]	Remove ads
+P0157	[Normal]	White-label reports for agencies
+P0158	[Normal (Web)]	按钮：
+P0159	[Normal (Web)]	Join Pro waitlist
+P0160	[Heading 3]	等候名单表单
+P0161	[Normal (Web)]	字段：
+P0162	[Normal]	Email
+P0163	[Normal]	Seller type 下拉选项：
+P0164	[Normal]	Shopify seller
+P0165	[Normal]	Amazon seller
+P0166	[Normal]	Etsy seller
+P0167	[Normal]	eBay seller
+P0168	[Normal]	TikTok Shop seller
+P0169	[Normal]	Agency
+P0170	[Normal]	Other
+P0171	[Normal (Web)]	第一版不接真实邮件服务。
+P0172	[Normal (Web)]	提交后显示：
+P0173	[Normal (Web)]	英文：
+P0174	[Normal (Web)]	Thanks! You are on the early access list.
+P0175	[Normal (Web)]	中文：
+P0176	[Normal (Web)]	谢谢！你已加入早期访问名单。
+P0177	[Normal (Web)]	西班牙语如果暂时不能完整翻译，可以先使用英文占位，但结构要支持后续替换。
+P0178	[Heading 3]	首页免责声明
+P0179	[Normal (Web)]	显示：
+P0180	[Normal (Web)]	These calculators are for planning and estimation purposes only. Platform fees, payment fees, taxes, customs duties, shipping costs, and advertising costs may change. Always verify important numbers with official sources or a qualified professional.
+P0181	[Heading 2]	Header 要求
+P0182	[Normal (Web)]	导航栏包含：
+P0183	[Normal]	Logo / SellerMargin
+P0184	[Normal]	Tools
+P0185	[Normal]	Guides
+P0186	[Normal]	About
+P0187	[Normal]	Contact
+P0188	[Normal]	Language switcher
+P0189	[Normal]	CTA：Join Pro Waitlist
+P0190	[Normal (Web)]	移动端需要 hamburger menu。
+P0191	[Heading 2]	Footer 要求
+P0192	[Normal (Web)]	页脚包含：
+P0193	[Normal]	Tools
+P0194	[Normal]	Guides
+P0195	[Normal]	About
+P0196	[Normal]	Contact
+P0197	[Normal]	Privacy Policy
+P0198	[Normal]	Terms
+P0199	[Normal]	Disclaimer
+P0200	[Normal]	简短免责声明
+P0201	[Heading 2]	本次不要做
+P0202	[Normal (Web)]	本次不要开发：
+P0203	[Normal]	多平台利润计算器逻辑
+P0204	[Normal]	广告回本计算器逻辑
+P0205	[Normal]	支付手续费计算器逻辑
+P0206	[Normal]	到岸成本计算器逻辑
+P0207	[Normal]	登录
+P0208	[Normal]	支付
+P0209	[Normal]	数据库
+P0210	[Normal]	真实邮件提交
+P0211	[Normal]	AdSense
+P0212	[Normal]	真实 CSV/PDF 导出
+P0213	[Heading 2]	验收标准
+P0214	[Normal (Web)]	完成后应满足：
+P0215	[Normal]	项目可以本地运行。
+P0216	[Normal]	/en、/zh、/es 路由可访问。
+P0217	[Normal]	根路径 / 能跳转到 /en 或显示英文首页。
+P0218	[Normal]	Header 和 Footer 正常显示。
+P0219	[Normal]	语言切换器可用。
+P0220	[Normal]	首页内容完整。
+P0221	[Normal]	WaitlistForm 提交后能显示成功状态。
+P0222	[Normal]	ProFeatureModal 可用。
+P0223	[Normal]	移动端显示正常。
+P0224	[Normal]	四个计算器页面有空页面骨架，但没有实现计算逻辑。
+P0225	[Normal]	About、Contact、Privacy、Terms、Disclaimer 页面有空页面骨架。
+P0226	[Normal]	没有虚假用户数和虚假评价。
+P0227	[Normal]	没有真实支付、登录、数据库、广告接入。
+P0228	[Normal (Web)]	完成后请停止，并告诉我：
+P0229	[Normal]	创建或修改了哪些文件。
+P0230	[Normal]	如何本地运行。
+P0231	[Normal]	如何测试语言切换。
+P0232	[Normal]	目前有哪些 TODO。
+P0233	[Normal]	下一步建议做哪个计算器。
+P0234	[Heading 1]	Prompt 2：多平台利润计算器
+P0235	[Normal (Web)]	请在现有项目基础上开发多平台利润计算器。 本次只完成这个计算器，不要开发其他计算器。
+P0236	[Heading 2]	页面路径
+P0237	[Normal (Web)]	请实现：
+P0238	[Normal]	/en/multi-platform-profit-calculator
+P0239	[Normal]	/zh/multi-platform-profit-calculator
+P0240	[Normal]	/es/multi-platform-profit-calculator
+P0241	[Normal (Web)]	如果西班牙语内容暂时不能完整翻译，可以先保留英文占位，但路由和翻译结构必须完整。
+P0242	[Heading 2]	页面标题
+P0243	[Normal (Web)]	英文：
+P0244	[Normal (Web)]	Multi-platform Profit Calculator for Ecommerce Sellers
+P0245	[Normal (Web)]	中文：
+P0246	[Normal (Web)]	跨平台电商利润计算器
+P0247	[Heading 2]	页面用途
+P0248	[Normal (Web)]	帮助用户比较同一个产品在 Shopify、Etsy、eBay、Amazon、TikTok Shop 上销售时的预估净利润。
+P0249	[Heading 2]	重要开发原则
+P0250	[Normal]	不要把平台费率写成绝对准确的官方事实。
+P0251	[Normal]	所有平台费用、支付费用、履约费用都必须是用户可编辑的默认假设值。
+P0252	[Normal]	默认费用必须放在 lib/defaultFees.ts。
+P0253	[Normal]	不要把默认费用深度硬编码在 UI 组件里。
+P0254	[Normal]	页面必须显示提示：费用假设可编辑，平台费用可能因国家、类目、账号类型、支付方式和政策变化而不同。
+P0255	[Normal]	计算逻辑必须放在 lib/calculators.ts 或单独 utility 文件里，不要直接写死在页面 UI 里。
+P0256	[Normal]	所有输入要校验。
+P0257	[Normal]	要防止除以 0。
+P0258	[Normal]	结果需要支持货币格式化和百分比格式化。
+P0259	[Normal]	支持移动端。
+P0260	[Heading 2]	输入项
+P0261	[Heading 3]	产品基础信息
+P0262	[Normal]	Selling price
+P0263	[Normal]	Product cost
+P0264	[Normal]	Seller-paid shipping cost
+P0265	[Normal]	Packaging cost
+P0266	[Normal]	Ad cost per order
+P0267	[Normal]	Refund rate
+P0268	[Normal]	Discount rate
+P0269	[Normal]	Other variable cost
+P0270	[Heading 3]	平台选择
+P0271	[Normal (Web)]	用户可以选择比较以下平台：
+P0272	[Normal]	Shopify
+P0273	[Normal]	Etsy
+P0274	[Normal]	eBay
+P0275	[Normal]	Amazon
+P0276	[Normal]	TikTok Shop
+P0277	[Normal (Web)]	默认至少选中 Shopify、Etsy、Amazon。
+P0278	[Heading 3]	平台费用假设
+P0279	[Normal (Web)]	每个平台费用都必须可编辑。
+P0280	[Normal (Web)]	Shopify 默认假设字段：
+P0281	[Normal]	Payment fee percentage
+P0282	[Normal]	Fixed payment fee
+P0283	[Normal]	Third-party transaction fee
+P0284	[Normal (Web)]	Etsy 默认假设字段：
+P0285	[Normal]	Marketplace transaction fee percentage
+P0286	[Normal]	Payment fee percentage
+P0287	[Normal]	Fixed payment fee
+P0288	[Normal]	Listing fee
+P0289	[Normal (Web)]	eBay 默认假设字段：
+P0290	[Normal]	Final value fee percentage
+P0291	[Normal]	Fixed order fee
+P0292	[Normal]	Optional promoted listing ad fee
+P0293	[Normal (Web)]	Amazon 默认假设字段：
+P0294	[Normal]	Referral fee percentage
+P0295	[Normal]	Fulfillment fee per unit
+P0296	[Normal]	Storage or other fee per unit
+P0297	[Normal (Web)]	TikTok Shop 默认假设字段：
+P0298	[Normal]	Referral fee percentage
+P0299	[Normal]	Payment fee percentage
+P0300	[Normal]	Fixed payment fee
+P0301	[Normal (Web)]	这些默认值只作为 editable estimates，不要写成官方长期准确费率。
+P0302	[Heading 2]	输出项
+P0303	[Normal (Web)]	对每个平台显示：
+P0304	[Normal]	Gross revenue
+P0305	[Normal]	Discount amount
+P0306	[Normal]	Net revenue
+P0307	[Normal]	Platform fee
+P0308	[Normal]	Payment fee
+P0309	[Normal]	Fulfillment fee
+P0310	[Normal]	Product cost
+P0311	[Normal]	Shipping cost
+P0312	[Normal]	Packaging cost
+P0313	[Normal]	Ad cost
+P0314	[Normal]	Refund reserve
+P0315	[Normal]	Other variable cost
+P0316	[Normal]	Total cost
+P0317	[Normal]	Net profit
+P0318	[Normal]	Profit margin
+P0319	[Normal]	Estimated ROAS
+P0320	[Normal (Web)]	额外显示：
+P0321	[Normal]	Best platform by net profit
+P0322	[Normal]	Best platform by margin
+P0323	[Normal]	Lowest fee platform
+P0324	[Heading 2]	公式
+P0325	[Normal (Web)]	Discount amount = Selling price × Discount rate
+P0326	[Normal (Web)]	Net revenue = Selling price − Discount amount
+P0327	[Normal (Web)]	Refund reserve = Net revenue × Refund rate
+P0328	[Normal (Web)]	Platform fee = Net revenue × Platform fee percentage + fixed platform fees
+P0329	[Normal (Web)]	Payment fee = Net revenue × Payment fee percentage + fixed payment fee
+P0330	[Normal (Web)]	Total cost = Product cost
+P0331	[Normal]	Seller-paid shipping
+P0332	[Normal]	Packaging cost
+P0333	[Normal]	Ad cost per order
+P0334	[Normal]	Refund reserve
+P0335	[Normal]	Platform fee
+P0336	[Normal]	Payment fee
+P0337	[Normal]	Fulfillment fee
+P0338	[Normal]	Other variable cost
+P0339	[Normal (Web)]	Net profit = Net revenue − Total cost
+P0340	[Normal (Web)]	Profit margin = Net profit ÷ Net revenue × 100
+P0341	[Normal (Web)]	Estimated ROAS = Net revenue ÷ Ad cost
+P0342	[Normal (Web)]	如果 Ad cost 为 0，ROAS 显示 N/A。
+P0343	[Normal (Web)]	如果 Net revenue <= 0，显示错误提示，不要继续正常计算利润率。
+P0344	[Heading 2]	结果展示
+P0345	[Normal (Web)]	使用对比表格。
+P0346	[Normal (Web)]	高亮：
+P0347	[Normal]	最高净利润平台
+P0348	[Normal]	最高利润率平台
+P0349	[Normal]	最低费用平台
+P0350	[Normal (Web)]	表格在移动端要可横向滚动，或者改成卡片式显示。
+P0351	[Heading 2]	页面内容结构
+P0352	[Normal (Web)]	本页面必须包含：
+P0353	[Normal]	SEO H1
+P0354	[Normal]	简短说明
+P0355	[Normal]	计算器表单
+P0356	[Normal]	结果区域
+P0357	[Normal]	公式说明
+P0358	[Normal]	示例计算
+P0359	[Normal]	常见错误
+P0360	[Normal]	FAQ
+P0361	[Normal]	相关工具
+P0362	[Normal]	Pro 功能预告
+P0363	[Normal]	Last updated
+P0364	[Normal]	免责声明
+P0365	[Heading 2]	FAQ
+P0366	[Normal (Web)]	英文 FAQ：
+P0367	[Normal]	Why is my profit different across platforms?
+P0368	[Normal]	Are the platform fee assumptions accurate?
+P0369	[Normal]	Does this include VAT, sales tax, or income tax?
+P0370	[Normal]	How should I estimate ad cost per order?
+P0371	[Normal]	What is a good profit margin for ecommerce sellers?
+P0372	[Normal (Web)]	中文 FAQ：
+P0373	[Normal]	为什么同一个产品在不同平台的利润不一样？
+P0374	[Normal]	这些平台费用假设是否准确？
+P0375	[Normal]	这个计算器是否包含 VAT、销售税或所得税？
+P0376	[Normal]	我应该如何估算每单广告成本？
+P0377	[Normal]	跨境电商卖家的合理利润率是多少？
+P0378	[Heading 2]	Pro 功能预告
+P0379	[Normal (Web)]	显示以下按钮，但不要实现真实功能：
+P0380	[Normal]	Save calculation history — Pro
+P0381	[Normal]	Export CSV — Pro
+P0382	[Normal]	Export PDF — Pro
+P0383	[Normal]	Batch calculation — Pro
+P0384	[Normal (Web)]	点击后弹窗：
+P0385	[Normal (Web)]	英文：
+P0386	[Normal (Web)]	This Pro feature is coming soon. Join the waitlist to get early access.
+P0387	[Normal (Web)]	中文：
+P0388	[Normal (Web)]	这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。
+P0389	[Heading 2]	localStorage
+P0390	[Normal (Web)]	请保存：
+P0391	[Normal]	用户最近一次输入
+P0392	[Normal]	用户选择的平台
+P0393	[Normal]	用户编辑过的费用假设
+P0394	[Normal (Web)]	不要保存敏感信息。
+P0395	[Heading 2]	验收标准
+P0396	[Normal (Web)]	完成后应满足：
+P0397	[Normal]	三种语言路径可访问。
+P0398	[Normal]	表单输入正常。
+P0399	[Normal]	用户可以选择多个平台比较。
+P0400	[Normal]	用户可以编辑所有费用假设。
+P0401	[Normal]	结果实时更新。
+P0402	[Normal]	净利润、利润率、ROAS 计算正确。
+P0403	[Normal]	Ad cost 为 0 时 ROAS 显示 N/A。
+P0404	[Normal]	Net revenue <= 0 时显示错误提示。
+P0405	[Normal]	最高净利润平台被高亮。
+P0406	[Normal]	最高利润率平台被高亮。
+P0407	[Normal]	最低费用平台被高亮。
+P0408	[Normal]	移动端显示正常。
+P0409	[Normal]	localStorage 能保存最近输入。
+P0410	[Normal]	页面有公式说明、示例、FAQ、免责声明。
+P0411	[Normal]	没有真实支付、登录、数据库、广告接入。
+P0412	[Normal (Web)]	完成后请停止，并告诉我：
+P0413	[Normal]	创建或修改了哪些文件。
+P0414	[Normal]	如何测试计算器。
+P0415	[Normal]	默认费用假设放在哪里。
+P0416	[Normal]	计算逻辑放在哪里。
+P0417	[Normal]	有哪些 TODO。
+P0418	[Heading 1]	Prompt 3：广告回本 ROAS 计算器
+P0419	[Normal (Web)]	请在现有项目基础上开发广告回本 ROAS 计算器。 本次只完成这个计算器，不要开发其他计算器。
+P0420	[Heading 2]	页面路径
+P0421	[Normal (Web)]	请实现：
+P0422	[Normal]	/en/ad-spend-break-even-calculator
+P0423	[Normal]	/zh/ad-spend-break-even-calculator
+P0424	[Normal]	/es/ad-spend-break-even-calculator
+P0425	[Heading 2]	页面标题
+P0426	[Normal (Web)]	英文：
+P0427	[Normal (Web)]	Break-even ROAS and Ad Spend Calculator
+P0428	[Normal (Web)]	中文：
+P0429	[Normal (Web)]	广告回本 ROAS 计算器
+P0430	[Heading 2]	页面用途
+P0431	[Normal (Web)]	帮助卖家计算：
+P0432	[Normal]	广告最多能花多少钱
+P0433	[Normal]	ROAS 达到多少才不会亏损
+P0434	[Normal]	要达到目标利润需要多少 ROAS
+P0435	[Normal]	Max CPA
+P0436	[Normal]	Break-even ACoS
+P0437	[Normal]	Target ACoS
+P0438	[Heading 2]	输入项
+P0439	[Heading 3]	产品经济模型
+P0440	[Normal]	Selling price
+P0441	[Normal]	Product cost
+P0442	[Normal]	Shipping cost
+P0443	[Normal]	Packaging cost
+P0444	[Normal]	Platform fee percentage
+P0445	[Normal]	Payment fee percentage
+P0446	[Normal]	Fixed payment fee
+P0447	[Normal]	Other variable cost
+P0448	[Heading 3]	目标利润
+P0449	[Normal (Web)]	支持两种模式：
+P0450	[Normal]	Target profit per order
+P0451	[Normal]	Target profit margin percentage
+P0452	[Normal (Web)]	用户可以切换模式。
+P0453	[Heading 3]	当前广告指标，可选
+P0454	[Normal]	Current ROAS
+P0455	[Normal]	Current CPA
+P0456	[Heading 2]	输出项
+P0457	[Normal]	Revenue
+P0458	[Normal]	Variable cost before ads
+P0459	[Normal]	Contribution margin before ads
+P0460	[Normal]	Break-even ad spend per order
+P0461	[Normal]	Max CPA at break-even
+P0462	[Normal]	Break-even ROAS
+P0463	[Normal]	Target ad spend per order
+P0464	[Normal]	Target CPA
+P0465	[Normal]	Target ROAS
+P0466	[Normal]	Break-even ACoS
+P0467	[Normal]	Target ACoS
+P0468	[Normal]	Profit status indicator
+P0469	[Heading 2]	正确公式
+P0470	[Normal (Web)]	Revenue = Selling price
+P0471	[Normal (Web)]	Platform fee = Revenue × Platform fee percentage
+P0472	[Normal (Web)]	Payment fee = Revenue × Payment fee percentage + Fixed payment fee
+P0473	[Normal (Web)]	Variable cost before ads = Product cost
+P0474	[Normal]	Shipping cost
+P0475	[Normal]	Packaging cost
+P0476	[Normal]	Platform fee
+P0477	[Normal]	Payment fee
+P0478	[Normal]	Other variable cost
+P0479	[Normal (Web)]	Contribution margin before ads = Revenue − Variable cost before ads
+P0480	[Normal (Web)]	Break-even ad spend per order = Contribution margin before ads
+P0481	[Normal (Web)]	Max CPA at break-even = Break-even ad spend per order
+P0482	[Normal (Web)]	Break-even ROAS = Revenue ÷ Break-even ad spend per order
+P0483	[Normal (Web)]	Target profit = 如果用户选择固定金额，则使用 Target profit per order 如果用户选择目标利润率，则 Revenue × Target profit margin
+P0484	[Normal (Web)]	Target ad spend per order = Contribution margin before ads − Target profit
+P0485	[Normal (Web)]	Target CPA = Target ad spend per order
+P0486	[Normal (Web)]	Target ROAS = Revenue ÷ Target ad spend per order
+P0487	[Normal (Web)]	Break-even ACoS = Break-even ad spend per order ÷ Revenue
+P0488	[Normal (Web)]	Target ACoS = Target ad spend per order ÷ Revenue
+P0489	[Heading 2]	边界处理
+P0490	[Normal (Web)]	如果 Contribution margin before ads <= 0：
+P0491	[Normal (Web)]	显示警告：
+P0492	[Normal (Web)]	This product is not profitable before advertising based on your current inputs.
+P0493	[Normal (Web)]	中文：
+P0494	[Normal (Web)]	根据当前输入，这个产品在投放广告前已经不盈利。
+P0495	[Normal (Web)]	如果 Target ad spend per order <= 0：
+P0496	[Normal (Web)]	显示警告：
+P0497	[Normal (Web)]	Your target profit is higher than the available contribution margin. You may need to increase price, reduce costs, or lower the target margin.
+P0498	[Normal (Web)]	中文：
+P0499	[Normal (Web)]	你的目标利润高于当前可用贡献毛利。你可能需要提高售价、降低成本或下调目标利润率。
+P0500	[Normal (Web)]	如果分母小于等于 0，不要计算 ROAS，显示 N/A 或警告。
+P0501	[Heading 2]	状态显示
+P0502	[Normal (Web)]	如果用户输入 Current ROAS：
+P0503	[Normal]	Current ROAS > Target ROAS：Profitable
+P0504	[Normal]	Current ROAS 在 Break-even ROAS 和 Target ROAS 之间：Above break-even but below target
+P0505	[Normal]	Current ROAS = Break-even ROAS：Breaking even
+P0506	[Normal]	Current ROAS < Break-even ROAS：Losing money
+P0507	[Normal (Web)]	中文对应：
+P0508	[Normal]	Profitable：盈利
+P0509	[Normal]	Above break-even but below target：高于回本线，但低于目标利润
+P0510	[Normal]	Breaking even：刚好回本
+P0511	[Normal]	Losing money：亏损
+P0512	[Heading 2]	页面内容结构
+P0513	[Normal (Web)]	本页面必须包含：
+P0514	[Normal]	SEO H1
+P0515	[Normal]	简短说明
+P0516	[Normal]	计算器表单
+P0517	[Normal]	结果区域
+P0518	[Normal]	公式说明
+P0519	[Normal]	示例计算
+P0520	[Normal]	常见错误
+P0521	[Normal]	FAQ
+P0522	[Normal]	相关工具
+P0523	[Normal]	Pro 功能预告
+P0524	[Normal]	Last updated
+P0525	[Normal]	免责声明
+P0526	[Heading 2]	FAQ
+P0527	[Normal (Web)]	英文 FAQ：
+P0528	[Normal]	What is break-even ROAS?
+P0529	[Normal]	What is the difference between ROAS and ACoS?
+P0530	[Normal]	How do I calculate max CPA?
+P0531	[Normal]	Why is my target ROAS so high?
+P0532	[Normal]	How can I lower my break-even ROAS?
+P0533	[Normal (Web)]	中文 FAQ：
+P0534	[Normal]	什么是 break-even ROAS？
+P0535	[Normal]	ROAS 和 ACoS 有什么区别？
+P0536	[Normal]	如何计算 Max CPA？
+P0537	[Normal]	为什么我的目标 ROAS 这么高？
+P0538	[Normal]	如何降低广告回本 ROAS？
+P0539	[Heading 2]	localStorage
+P0540	[Normal (Web)]	保存用户最近一次输入。
+P0541	[Heading 2]	验收标准
+P0542	[Normal (Web)]	完成后应满足：
+P0543	[Normal]	三种语言路径可访问。
+P0544	[Normal]	输入项正常。
+P0545	[Normal]	目标利润金额和目标利润率两种模式可切换。
+P0546	[Normal]	Contribution margin 计算正确。
+P0547	[Normal]	Break-even ROAS 计算正确。
+P0548	[Normal]	Target ROAS 计算正确。
+P0549	[Normal]	ACoS 计算正确。
+P0550	[Normal]	边界情况不会报错。
+P0551	[Normal]	状态提示显示正确。
+P0552	[Normal]	页面包含公式、示例、FAQ、免责声明。
+P0553	[Normal]	移动端显示正常。
+P0554	[Normal]	localStorage 能保存最近输入。
+P0555	[Normal]	没有真实支付、登录、数据库、广告接入。
+P0556	[Normal (Web)]	完成后请停止，并告诉我：
+P0557	[Normal]	创建或修改了哪些文件。
+P0558	[Normal]	如何测试计算器。
+P0559	[Normal]	计算逻辑放在哪里。
+P0560	[Normal]	有哪些 TODO。
+P0561	[Heading 1]	Prompt 4：Stripe vs PayPal 手续费计算器
+P0562	[Normal (Web)]	请在现有项目基础上开发 Stripe vs PayPal 手续费计算器。 本次只完成这个计算器，不要开发其他计算器。
+P0563	[Heading 2]	页面路径
+P0564	[Normal (Web)]	请实现：
+P0565	[Normal]	/en/stripe-vs-paypal-fee-calculator
+P0566	[Normal]	/zh/stripe-vs-paypal-fee-calculator
+P0567	[Normal]	/es/stripe-vs-paypal-fee-calculator
+P0568	[Heading 2]	页面标题
+P0569	[Normal (Web)]	英文：
+P0570	[Normal (Web)]	Stripe vs PayPal Fee Calculator for Online Sellers
+P0571	[Normal (Web)]	中文：
+P0572	[Normal (Web)]	Stripe vs PayPal 手续费计算器
+P0573	[Heading 2]	页面用途
+P0574	[Normal (Web)]	帮助卖家在不同支付费用假设下，对比 Stripe、PayPal、Shopify Payments 等支付方式的手续费和实际到账金额。
+P0575	[Heading 2]	重要开发原则
+P0576	[Normal]	不要写死“当前官方费率一定是多少”。
+P0577	[Normal]	所有费用必须可编辑。
+P0578	[Normal]	默认值放在 lib/defaultFees.ts。
+P0579	[Normal]	页面必须提示：费用假设是可编辑估算值，支付手续费可能因国家、货币、卡类型、账号类型、交易类型和政策变化而不同。
+P0580	[Normal]	不提供金融、税务、法律或会计建议。
+P0581	[Normal]	计算逻辑和 UI 分离。
+P0582	[Heading 2]	输入项
+P0583	[Normal]	Transaction amount
+P0584	[Normal]	Number of transactions
+P0585	[Normal]	Currency
+P0586	[Normal]	Stripe percentage fee
+P0587	[Normal]	Stripe fixed fee
+P0588	[Normal]	PayPal percentage fee
+P0589	[Normal]	PayPal fixed fee
+P0590	[Normal]	Shopify Payments percentage fee
+P0591	[Normal]	Shopify Payments fixed fee
+P0592	[Normal]	Optional extra fee percentage
+P0593	[Normal]	Refund rate
+P0594	[Normal]	Chargeback rate
+P0595	[Heading 2]	输出项
+P0596	[Normal (Web)]	对每个支付方式显示：
+P0597	[Normal]	Gross transaction volume
+P0598	[Normal]	Fee per transaction
+P0599	[Normal]	Total fees
+P0600	[Normal]	Net received
+P0601	[Normal]	Effective fee rate
+P0602	[Normal]	Difference vs lowest-cost provider
+P0603	[Normal]	Monthly estimated fees
+P0604	[Normal]	Annual estimated fees
+P0605	[Normal (Web)]	额外显示：
+P0606	[Normal]	Lowest-cost provider
+P0607	[Normal]	Highest-cost provider
+P0608	[Normal]	Estimated monthly savings
+P0609	[Normal]	Estimated annual savings
+P0610	[Heading 2]	公式
+P0611	[Normal (Web)]	Gross transaction volume = Transaction amount × Number of transactions
+P0612	[Normal (Web)]	Fee per transaction = Transaction amount × Percentage fee + Fixed fee + Optional extra fee
+P0613	[Normal (Web)]	Optional extra fee = Transaction amount × Optional extra fee percentage
+P0614	[Normal (Web)]	Total fees = Fee per transaction × Number of transactions
+P0615	[Normal (Web)]	Net received = Gross transaction volume − Total fees
+P0616	[Normal (Web)]	Effective fee rate = Total fees ÷ Gross transaction volume × 100
+P0617	[Normal (Web)]	Lowest-cost provider = 总费用最低的支付方式
+P0618	[Normal (Web)]	Savings = Highest total fees − Lowest total fees
+P0619	[Normal (Web)]	Monthly estimated fees = Total fees
+P0620	[Normal (Web)]	Annual estimated fees = Monthly estimated fees × 12
+P0621	[Heading 2]	边界处理
+P0622	[Normal (Web)]	如果 Transaction amount <= 0：
+P0623	[Normal (Web)]	显示错误：
+P0624	[Normal (Web)]	Transaction amount must be greater than zero.
+P0625	[Normal (Web)]	如果 Number of transactions <= 0：
+P0626	[Normal (Web)]	显示错误：
+P0627	[Normal (Web)]	Number of transactions must be greater than zero.
+P0628	[Normal (Web)]	如果 Gross transaction volume <= 0，不要计算 effective fee rate。
+P0629	[Heading 2]	页面提示
+P0630	[Normal (Web)]	页面醒目位置显示：
+P0631	[Normal (Web)]	英文：
+P0632	[Normal (Web)]	Fee assumptions are editable estimates. Payment processor fees vary by country, currency, card type, account type, transaction type, and policy updates. Always verify current rates with each provider.
+P0633	[Normal (Web)]	中文：
+P0634	[Normal (Web)]	费用假设是可编辑的估算值。支付手续费可能因国家、货币、银行卡类型、账号类型、交易类型和政策变化而不同。请始终以各支付服务商的官方最新费率为准。
+P0635	[Heading 2]	页面内容结构
+P0636	[Normal (Web)]	本页面必须包含：
+P0637	[Normal]	SEO H1
+P0638	[Normal]	简短说明
+P0639	[Normal]	计算器表单
+P0640	[Normal]	结果区域
+P0641	[Normal]	公式说明
+P0642	[Normal]	示例计算
+P0643	[Normal]	常见错误
+P0644	[Normal]	FAQ
+P0645	[Normal]	相关工具
+P0646	[Normal]	Pro 功能预告
+P0647	[Normal]	Last updated
+P0648	[Normal]	免责声明
+P0649	[Heading 2]	FAQ
+P0650	[Normal (Web)]	英文 FAQ：
+P0651	[Normal]	Why do Stripe and PayPal fees differ?
+P0652	[Normal]	Are these payment fee assumptions official?
+P0653	[Normal]	Do these fees include currency conversion?
+P0654	[Normal]	Do refunds and chargebacks change the final cost?
+P0655	[Normal]	How can online sellers reduce payment processing fees?
+P0656	[Normal (Web)]	中文 FAQ：
+P0657	[Normal]	为什么 Stripe 和 PayPal 的手续费不同？
+P0658	[Normal]	这些支付费用假设是官网吗？
+P0659	[Normal]	这些费用包含货币转换费吗？
+P0660	[Normal]	退款和拒付会影响最终成本吗？
+P0661	[Normal]	在线卖家如何降低支付手续费？
+P0662	[Heading 2]	localStorage
+P0663	[Normal (Web)]	保存用户最近一次输入和编辑过的费用假设。
+P0664	[Heading 2]	验收标准
+P0665	[Normal (Web)]	完成后应满足：
+P0666	[Normal]	三种语言路径可访问。
+P0667	[Normal]	用户可以编辑 Stripe、PayPal、Shopify Payments 的费用假设。
+P0668	[Normal]	总交易额计算正确。
+P0669	[Normal]	每笔手续费计算正确。
+P0670	[Normal]	总手续费计算正确。
+P0671	[Normal]	实际到账金额计算正确。
+P0672	[Normal]	有效费率计算正确。
+P0673	[Normal]	最低成本支付方式显示正确。
+P0674	[Normal]	月度和年度节省金额计算正确。
+P0675	[Normal]	输入非法值时显示错误。
+P0676	[Normal]	页面包含公式、示例、FAQ、免责声明。
+P0677	[Normal]	移动端显示正常。
+P0678	[Normal]	localStorage 能保存最近输入。
+P0679	[Normal]	没有真实支付、登录、数据库、广告接入。
+P0680	[Normal (Web)]	完成后请停止，并告诉我：
+P0681	[Normal]	创建或修改了哪些文件。
+P0682	[Normal]	如何测试计算器。
+P0683	[Normal]	默认费用假设放在哪里。
+P0684	[Normal]	计算逻辑放在哪里。
+P0685	[Normal]	有哪些 TODO。
+P0686	[Heading 1]	Prompt 5：到岸成本计算器
+P0687	[Normal (Web)]	请在现有项目基础上开发到岸成本计算器。 本次只完成这个计算器，不要开发其他计算器。
+P0688	[Heading 2]	页面路径
+P0689	[Normal (Web)]	请实现：
+P0690	[Normal]	/en/landed-cost-calculator
+P0691	[Normal]	/zh/landed-cost-calculator
+P0692	[Normal]	/es/landed-cost-calculator
+P0693	[Heading 2]	页面标题
+P0694	[Normal (Web)]	英文：
+P0695	[Normal (Web)]	Landed Cost Calculator for Importers and Ecommerce Sellers
+P0696	[Normal (Web)]	中文：
+P0697	[Normal (Web)]	到岸成本计算器
+P0698	[Heading 2]	页面用途
+P0699	[Normal (Web)]	帮助小型进口商和跨境卖家计算产品从采购到入库、清关、销售前的真实单位成本。
+P0700	[Heading 2]	输入项
+P0701	[Heading 3]	产品
+P0702	[Normal]	Product unit cost
+P0703	[Normal]	Quantity
+P0704	[Normal]	Currency
+P0705	[Normal]	HS code，可选，仅作备注，不自动查询
+P0706	[Normal]	Supplier country，可选
+P0707	[Normal]	Destination country，可选
+P0708	[Heading 3]	国际物流
+P0709	[Normal]	International freight cost
+P0710	[Normal]	Insurance cost
+P0711	[Normal]	Freight type:
+P0712	[Normal]	Sea
+P0713	[Normal]	Air
+P0714	[Normal]	Express
+P0715	[Normal]	Other
+P0716	[Heading 3]	进口费用
+P0717	[Normal]	Customs duty rate
+P0718	[Normal]	Import tax / VAT / GST rate
+P0719	[Normal]	Include VAT/GST as cost:
+P0720	[Normal]	Yes
+P0721	[Normal]	No
+P0722	[Normal]	Customs broker fee
+P0723	[Normal]	Other import fees
+P0724	[Heading 3]	销售费用
+P0725	[Normal]	Selling price per unit
+P0726	[Normal]	Platform fee percentage
+P0727	[Normal]	Payment fee percentage
+P0728	[Normal]	Fixed payment fee
+P0729	[Normal]	Ad cost per order
+P0730	[Normal]	Refund rate
+P0731	[Normal]	Domestic delivery cost per unit
+P0732	[Normal]	Packaging cost per unit
+P0733	[Normal]	Warehouse or prep cost per unit
+P0734	[Normal]	Other cost per unit
+P0735	[Normal]	Target margin percentage
+P0736	[Heading 2]	输出项
+P0737	[Normal]	Total product cost
+P0738	[Normal]	Freight per unit
+P0739	[Normal]	Insurance per unit
+P0740	[Normal]	Customs value
+P0741	[Normal]	Duty amount
+P0742	[Normal]	Import tax / VAT / GST amount
+P0743	[Normal]	Broker fee per unit
+P0744	[Normal]	Other import fees per unit
+P0745	[Normal]	Landed cost per unit
+P0746	[Normal]	Selling fees per unit
+P0747	[Normal]	Total cost per unit
+P0748	[Normal]	Net profit per unit
+P0749	[Normal]	Profit margin
+P0750	[Normal]	Break-even selling price
+P0751	[Normal]	Suggested price for 30% margin
+P0752	[Normal]	Suggested price for 50% margin
+P0753	[Normal]	Suggested price for user-defined target margin
+P0754	[Heading 2]	公式
+P0755	[Normal (Web)]	Total product cost = Product unit cost × Quantity
+P0756	[Normal (Web)]	Freight per unit = International freight cost ÷ Quantity
+P0757	[Normal (Web)]	Insurance per unit = Insurance cost ÷ Quantity
+P0758	[Normal (Web)]	Customs value per unit = Product unit cost + Freight per unit + Insurance per unit
+P0759	[Normal (Web)]	Duty per unit = Customs value per unit × Customs duty rate
+P0760	[Normal (Web)]	Import tax per unit = (Customs value per unit + Duty per unit) × Import tax rate
+P0761	[Normal (Web)]	如果 Include VAT/GST as cost = No：
+P0762	[Normal (Web)]	Import tax per unit 在结果中显示，但不计入 landed cost。
+P0763	[Normal (Web)]	Broker fee per unit = Customs broker fee ÷ Quantity
+P0764	[Normal (Web)]	Other import fees per unit = Other import fees ÷ Quantity
+P0765	[Normal (Web)]	Landed cost per unit = Product unit cost
+P0766	[Normal]	Freight per unit
+P0767	[Normal]	Insurance per unit
+P0768	[Normal]	Duty per unit
+P0769	[Normal]	Import tax per unit，如果用户选择计入
+P0770	[Normal]	Broker fee per unit
+P0771	[Normal]	Other import fees per unit
+P0772	[Normal (Web)]	Selling fees per unit = Selling price × Platform fee percentage
+P0773	[Normal]	Selling price × Payment fee percentage
+P0774	[Normal]	Fixed payment fee
+P0775	[Normal (Web)]	Refund reserve = Selling price × Refund rate
+P0776	[Normal (Web)]	Total cost per unit = Landed cost per unit
+P0777	[Normal]	Selling fees per unit
+P0778	[Normal]	Ad cost per order
+P0779	[Normal]	Refund reserve
+P0780	[Normal]	Domestic delivery cost per unit
+P0781	[Normal]	Packaging cost per unit
+P0782	[Normal]	Warehouse or prep cost per unit
+P0783	[Normal]	Other cost per unit
+P0784	[Normal (Web)]	Net profit per unit = Selling price − Total cost per unit
+P0785	[Normal (Web)]	Profit margin = Net profit per unit ÷ Selling price × 100
+P0786	[Normal (Web)]	Break-even selling price = Total cost per unit before profit
+P0787	[Normal (Web)]	Suggested price for target margin = Total cost per unit ÷ (1 − Target margin)
+P0788	[Heading 2]	边界处理
+P0789	[Normal (Web)]	如果 Quantity <= 0：
+P0790	[Normal (Web)]	显示错误：
+P0791	[Normal (Web)]	Quantity must be greater than zero.
+P0792	[Normal (Web)]	中文：
+P0793	[Normal (Web)]	数量必须大于 0。
+P0794	[Normal (Web)]	如果 target margin >= 100%：
+P0795	[Normal (Web)]	显示错误：
+P0796	[Normal (Web)]	Target margin must be below 100%.
+P0797	[Normal (Web)]	中文：
+P0798	[Normal (Web)]	目标利润率必须低于 100%。
+P0799	[Normal (Web)]	如果 Selling price <= 0，不要计算 profit margin，显示 N/A。
+P0800	[Heading 2]	页面内容结构
+P0801	[Normal (Web)]	本页面必须包含：
+P0802	[Normal]	SEO H1
+P0803	[Normal]	简短说明
+P0804	[Normal]	计算器表单
+P0805	[Normal]	结果区域
+P0806	[Normal]	成本拆解表格
+P0807	[Normal]	公式说明
+P0808	[Normal]	示例计算
+P0809	[Normal]	常见错误
+P0810	[Normal]	FAQ
+P0811	[Normal]	相关工具
+P0812	[Normal]	Pro 功能预告
+P0813	[Normal]	Last updated
+P0814	[Normal]	免责声明
+P0815	[Heading 2]	FAQ
+P0816	[Normal (Web)]	英文 FAQ：
+P0817	[Normal]	What is landed cost?
+P0818	[Normal]	Why does landed cost matter for ecommerce sellers?
+P0819	[Normal]	How do I find my customs duty rate?
+P0820	[Normal]	Should VAT or GST be included as cost?
+P0821	[Normal]	What is the difference between landed cost and total selling cost?
+P0822	[Normal (Web)]	中文 FAQ：
+P0823	[Normal]	什么是到岸成本？
+P0824	[Normal]	为什么到岸成本对跨境卖家很重要？
+P0825	[Normal]	如何查询关税税率？
+P0826	[Normal]	VAT 或 GST 是否应该计入成本？
+P0827	[Normal]	到岸成本和销售总成本有什么区别？
+P0828	[Heading 2]	页面提示
+P0829	[Normal (Web)]	显示：
+P0830	[Normal (Web)]	英文：
+P0831	[Normal (Web)]	This calculator is for estimation only. Duty, VAT, GST, customs rules, and shipping charges vary by country, product category, HS code, and policy updates. Always verify important numbers with official customs sources or a qualified professional.
+P0832	[Normal (Web)]	中文：
+P0833	[Normal (Web)]	本计算器仅用于估算。关税、VAT、GST、清关规则和物流费用会因国家、产品类别、HS 编码和政策变化而不同。请始终以海关官方信息或专业人士意见为准。
+P0834	[Heading 2]	localStorage
+P0835	[Normal (Web)]	保存用户最近一次输入。
+P0836	[Heading 2]	验收标准
+P0837	[Normal (Web)]	完成后应满足：
+P0838	[Normal]	三种语言路径可访问。
+P0839	[Normal]	Quantity <= 0 时不报错，显示错误。
+P0840	[Normal]	Freight per unit 计算正确。
+P0841	[Normal]	Duty per unit 计算正确。
+P0842	[Normal]	Import tax 计算正确。
+P0843	[Normal]	Include VAT/GST as cost 开关有效。
+P0844	[Normal]	Landed cost per unit 计算正确。
+P0845	[Normal]	Total cost per unit 计算正确。
+P0846	[Normal]	Net profit per unit 计算正确。
+P0847	[Normal]	Suggested price 计算正确。
+P0848	[Normal]	页面包含公式、示例、FAQ、免责声明。
+P0849	[Normal]	移动端显示正常。
+P0850	[Normal]	localStorage 能保存最近输入。
+P0851	[Normal]	没有真实支付、登录、数据库、广告接入。
+P0852	[Normal (Web)]	完成后请停止，并告诉我：
+P0853	[Normal]	创建或修改了哪些文件。
+P0854	[Normal]	如何测试计算器。
+P0855	[Normal]	计算逻辑放在哪里。
+P0856	[Normal]	有哪些 TODO。
+P0857	[Heading 1]	Prompt 6：法律页、About、Contact、Guides 页面
+P0858	[Normal (Web)]	请在现有项目基础上完善非计算器页面。 本次只完成法律页、信任页和指南页，不要开发新计算器。
+P0859	[Heading 2]	需要完成的页面
+P0860	[Normal (Web)]	请完成三种语言路径下的这些页面：
+P0861	[Normal]	/[locale]/about
+P0862	[Normal]	/[locale]/contact
+P0863	[Normal]	/[locale]/privacy-policy
+P0864	[Normal]	/[locale]/terms
+P0865	[Normal]	/[locale]/disclaimer
+P0866	[Normal]	/[locale]/guides
+P0867	[Normal]	/[locale]/guides/how-to-calculate-ecommerce-profit-after-ads
+P0868	[Heading 2]	About 页面
+P0869	[Normal (Web)]	内容要说明：
+P0870	[Normal]	SellerMargin 是一个面向电商卖家的免费计算工具站。
+P0871	[Normal]	网站帮助卖家估算利润、广告回本、平台费用、支付手续费和到岸成本。
+P0872	[Normal]	第一版不需要注册。
+P0873	[Normal]	计算结果仅供规划和估算。
+P0874	[Normal]	不提供金融、税务、法律、会计建议。
+P0875	[Normal]	未来可能推出 Pro 功能，例如保存历史、批量 SKU、CSV/PDF 导出和白标报告。
+P0876	[Normal (Web)]	不要写虚假团队、虚假用户数、虚假融资、虚假案例。
+P0877	[Heading 2]	Contact 页面
+P0878	[Normal (Web)]	内容包含：
+P0879	[Normal]	联系说明
+P0880	[Normal]	暂时邮箱：hello@example.com
+P0881	[Normal]	提醒：上线前替换为真实邮箱
+P0882	[Normal]	简单联系表单 UI 可以有，但不要接真实后端
+P0883	[Normal]	提交后只显示 demo success message
+P0884	[Heading 2]	Privacy Policy 页面
+P0885	[Normal (Web)]	必须说明：
+P0886	[Normal]	第一版不需要账号。
+P0887	[Normal]	计算器尽量在浏览器本地处理。
+P0888	[Normal]	localStorage 只用于保存最近输入、语言偏好和 demo 等候名单状态。
+P0889	[Normal]	不收集支付信息。
+P0890	[Normal]	不存储密码。
+P0891	[Normal]	后续可能添加 analytics。
+P0892	[Normal]	用户可通过 Contact 页面联系站点所有者。
+P0893	[Heading 2]	Terms 页面
+P0894	[Normal (Web)]	必须说明：
+P0895	[Normal]	工具按 “as-is” 提供。
+P0896	[Normal]	不保证计算结果完全准确。
+P0897	[Normal]	用户自行承担商业决策责任。
+P0898	[Normal]	不提供金融、税务、法律、会计建议。
+P0899	[Normal]	用户应核对官方来源和专业人士意见。
+P0900	[Normal]	站点所有者不对用户基于估算结果作出的商业决策负责。
+P0901	[Heading 2]	Disclaimer 页面
+P0902	[Normal (Web)]	必须说明：
+P0903	[Normal]	所有计算结果仅供估算。
+P0904	[Normal]	平台费用、支付费用、税费、关税、物流费、广告成本可能变化。
+P0905	[Normal]	不同国家、平台、类目、账号类型、支付方式可能有不同规则。
+P0906	[Normal]	用户应核对官方来源或咨询专业人士。
+P0907	[Normal]	本网站不提供法律、税务、金融、会计建议。
+P0908	[Heading 2]	Guides 首页
+P0909	[Normal (Web)]	创建简单指南索引页。
+P0910	[Normal (Web)]	包含第一篇指南卡片：
+P0911	[Normal (Web)]	How to Calculate Ecommerce Profit After Ads
+P0912	[Normal (Web)]	链接到：
+P0913	[Normal (Web)]	/[locale]/guides/how-to-calculate-ecommerce-profit-after-ads
+P0914	[Normal (Web)]	未来指南占位可以有，但不要写虚假内容。
+P0915	[Heading 2]	第一篇 Guide 页面
+P0916	[Normal (Web)]	标题：
+P0917	[Normal (Web)]	英文：
+P0918	[Normal (Web)]	How to Calculate Ecommerce Profit After Ads
+P0919	[Normal (Web)]	中文：
+P0920	[Normal (Web)]	如何计算广告后的电商真实利润
+P0921	[Normal (Web)]	内容结构：
+P0922	[Normal]	Introduction
+P0923	[Normal]	Why gross profit is not enough
+P0924	[Normal]	Key costs to include
+P0925	[Normal]	Product cost
+P0926	[Normal]	Shipping
+P0927	[Normal]	Platform fees
+P0928	[Normal]	Payment fees
+P0929	[Normal]	Refund reserve
+P0930	[Normal]	Ad spend
+P0931	[Normal]	Import or landed costs
+P0932	[Normal]	Basic formula
+P0933	[Normal]	Example calculation
+P0934	[Normal]	How to use the calculators on this site
+P0935	[Normal]	Common mistakes
+P0936	[Normal]	Disclaimer
+P0937	[Normal (Web)]	要求：
+P0938	[Normal]	内容实用
+P0939	[Normal]	不夸张
+P0940	[Normal]	不承诺收益
+P0941	[Normal]	不提供税务、法律、金融建议
+P0942	[Normal]	链接到四个计算器页面
+P0943	[Normal]	每种语言都要有页面结构
+P0944	[Normal]	英文和中文内容尽量完整
+P0945	[Normal]	西班牙语如暂时不能完整翻译，可以保留英文占位，但结构完整
+P0946	[Heading 2]	验收标准
+P0947	[Normal (Web)]	完成后应满足：
+P0948	[Normal]	所有页面三种语言路径可访问。
+P0949	[Normal]	Header/Footer 链接正常。
+P0950	[Normal]	法律页内容完整。
+P0951	[Normal]	About 不包含虚假用户数或虚假团队。
+P0952	[Normal]	Contact 表单不接真实后端。
+P0953	[Normal]	Guides 首页存在。
+P0954	[Normal]	第一篇 Guide 页面存在。
+P0955	[Normal]	Guide 页面链接到相关计算器。
+P0956	[Normal]	移动端显示正常。
+P0957	[Normal]	每页有基础 metadata。
+P0958	[Normal (Web)]	完成后请停止，并告诉我：
+P0959	[Normal]	创建或修改了哪些文件。
+P0960	[Normal]	如何测试这些页面。
+P0961	[Normal]	有哪些 TODO。
+P0962	[Heading 1]	Prompt 7：SEO、sitemap、robots、Vercel 部署检查
+P0963	[Normal (Web)]	请在现有项目基础上完成 SEO 和部署准备。 本次不要开发新功能，只做 SEO、metadata、sitemap、robots、部署检查。
+P0964	[Heading 2]	SEO 要求
+P0965	[Normal (Web)]	每个语言版本页面都要有：
+P0966	[Normal]	title
+P0967	[Normal]	meta description
+P0968	[Normal]	H1
+P0969	[Normal]	canonical
+P0970	[Normal]	hreflang
+P0971	[Normal]	Open Graph title
+P0972	[Normal]	Open Graph description
+P0973	[Normal]	内部链接
+P0974	[Normal]	清晰 heading 结构
+P0975	[Heading 2]	多语言 SEO
+P0976	[Normal (Web)]	必须支持：
+P0977	[Normal]	/en
+P0978	[Normal]	/zh
+P0979	[Normal]	/es
+P0980	[Normal (Web)]	每个页面都要有对应语言版本。
+P0981	[Normal (Web)]	请确保：
+P0982	[Normal]	canonical 指向当前语言页面。
+P0983	[Normal]	hreflang 包含 en、zh、es。
+P0984	[Normal]	sitemap 包含所有语言 URL。
+P0985	[Normal]	根路径 / 能正确处理。
+P0986	[Normal]	语言切换不会导致 404。
+P0987	[Heading 2]	需要生成或完善
+P0988	[Normal]	sitemap.xml
+P0989	[Normal]	robots.txt
+P0990	[Normal]	metadata helpers
+P0991	[Normal]	Open Graph metadata
+P0992	[Normal]	README.md
+P0993	[Normal]	Vercel 部署说明
+P0994	[Heading 2]	README 要求
+P0995	[Normal (Web)]	README 包含：
+P0996	[Normal]	项目介绍
+P0997	[Normal]	技术栈
+P0998	[Normal]	如何本地运行
+P0999	[Normal]	如何构建
+P1000	[Normal]	如何部署到 Vercel
+P1001	[Normal]	多语言结构说明
+P1002	[Normal]	默认费用假设位置
+P1003	[Normal]	V1 不包含的功能说明
+P1004	[Normal]	下一阶段 TODO
+P1005	[Heading 2]	技术检查
+P1006	[Normal (Web)]	请检查：
+P1007	[Normal]	npm run build 是否能通过
+P1008	[Normal]	TypeScript 是否有错误
+P1009	[Normal]	ESLint 是否有严重错误
+P1010	[Normal]	内部链接是否有明显错误
+P1011	[Normal]	移动端布局是否明显破坏
+P1012	[Normal]	localStorage 在服务端渲染时不会报错
+P1013	[Normal]	语言切换器是否正常
+P1014	[Normal]	Header/Footer 是否正常
+P1015	[Normal]	所有页面是否能访问
+P1016	[Heading 2]	验收标准
+P1017	[Normal (Web)]	完成后应满足：
+P1018	[Normal]	sitemap.xml 存在。
+P1019	[Normal]	robots.txt 存在。
+P1020	[Normal]	README.md 存在。
+P1021	[Normal]	每个页面有 metadata。
+P1022	[Normal]	多语言 hreflang 设置合理。
+P1023	[Normal]	npm run build 通过。
+P1024	[Normal]	没有明显 TypeScript 错误。
+P1025	[Normal]	没有明显 404 内部链接。
+P1026	[Normal]	Vercel 可以部署。
+P1027	[Normal]	没有新增登录、支付、数据库、广告功能。
+P1028	[Normal (Web)]	完成后请停止，并告诉我：
+P1029	[Normal]	修改了哪些文件。
+P1030	[Normal]	如何运行 build。
+P1031	[Normal]	如何部署到 Vercel。
+P1032	[Normal]	还有哪些 SEO TODO。
+P1033	[Heading 1]	Prompt 8：最终检查和修 Bug
+P1034	[Normal (Web)]	请对整个项目做最终检查和修 Bug。 本次不要添加大功能，只做检查、修复和整理。
+P1035	[Heading 2]	检查范围
+P1036	[Normal (Web)]	请检查：
+P1037	[Normal]	首页
+P1038	[Normal]	多平台利润计算器
+P1039	[Normal]	广告回本 ROAS 计算器
+P1040	[Normal]	Stripe vs PayPal 手续费计算器
+P1041	[Normal]	到岸成本计算器
+P1042	[Normal]	About
+P1043	[Normal]	Contact
+P1044	[Normal]	Privacy Policy
+P1045	[Normal]	Terms
+P1046	[Normal]	Disclaimer
+P1047	[Normal]	Guides
+P1048	[Normal]	第一篇 Guide
+P1049	[Normal]	Header
+P1050	[Normal]	Footer
+P1051	[Normal]	LanguageSwitcher
+P1052	[Normal]	WaitlistForm
+P1053	[Normal]	ProFeatureModal
+P1054	[Normal]	localStorage
+P1055	[Normal]	sitemap
+P1056	[Normal]	robots
+P1057	[Normal]	metadata
+P1058	[Normal]	README
+P1059	[Heading 2]	重点检查
+P1060	[Heading 3]	多语言
+P1061	[Normal]	/en、/zh、/es 是否都能访问
+P1062	[Normal]	语言切换是否正常
+P1063	[Normal]	不同语言页面是否不会 404
+P1064	[Normal]	翻译缺失时是否有 fallback
+P1065	[Heading 3]	计算器
+P1066	[Normal (Web)]	检查所有计算器是否：
+P1067	[Normal]	输入为空时不崩溃
+P1068	[Normal]	输入非法值时有提示
+P1069	[Normal]	不会除以 0
+P1070	[Normal]	结果格式正确
+P1071	[Normal]	百分比格式正确
+P1072	[Normal]	货币格式正确
+P1073	[Normal]	localStorage 不会在 SSR 阶段报错
+P1074	[Normal]	移动端可用
+P1075	[Heading 3]	内容
+P1076	[Normal (Web)]	检查是否存在：
+P1077	[Normal]	虚假用户数
+P1078	[Normal]	虚假评价
+P1079	[Normal]	虚假收入案例
+P1080	[Normal]	“保证准确”
+P1081	[Normal]	“保证盈利”
+P1082	[Normal]	“官方费率永久准确”
+P1083	[Normal]	金融、税务、法律、会计建议
+P1084	[Normal (Web)]	如果有，请删除或改成谨慎表述。
+P1085	[Heading 3]	UI
+P1086	[Normal (Web)]	检查：
+P1087	[Normal]	移动端导航
+P1088	[Normal]	表格溢出
+P1089	[Normal]	按钮状态
+P1090	[Normal]	Pro 弹窗
+P1091	[Normal]	FAQ 展开/显示
+P1092	[Normal]	Footer 链接
+P1093	[Normal]	表单布局
+P1094	[Heading 3]	SEO
+P1095	[Normal (Web)]	检查：
+P1096	[Normal]	title
+P1097	[Normal]	meta description
+P1098	[Normal]	canonical
+P1099	[Normal]	hreflang
+P1100	[Normal]	sitemap
+P1101	[Normal]	robots
+P1102	[Normal]	H1
+P1103	[Normal]	内部链接
+P1104	[Heading 3]	构建
+P1105	[Normal (Web)]	运行：
+P1106	[Normal]	npm run build
+P1107	[Normal (Web)]	如有错误，请修复。
+P1108	[Heading 2]	不要做
+P1109	[Normal (Web)]	本次不要添加：
+P1110	[Normal]	登录
+P1111	[Normal]	支付
+P1112	[Normal]	数据库
+P1113	[Normal]	真实邮件服务
+P1114	[Normal]	AdSense
+P1115	[Normal]	新计算器
+P1116	[Normal]	AI 内容生成功能
+P1117	[Normal]	管理后台
+P1118	[Heading 2]	最终输出
+P1119	[Normal (Web)]	完成后请输出：
+P1120	[Normal]	修复了哪些问题。
+P1121	[Normal]	修改了哪些文件。
+P1122	[Normal]	npm run build 是否通过。
+P1123	[Normal]	如何本地运行。
+P1124	[Normal]	如何部署到 Vercel。
+P1125	[Normal]	还有哪些下一阶段 TODO。
+P1126	[Normal]	是否可以作为公开 MVP 上线。

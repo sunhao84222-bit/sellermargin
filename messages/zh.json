@@ -1,0 +1,1196 @@
+{
+  "brand": {
+    "name": "SellerMargin",
+    "tagline": "面向跨境卖家的利润工具"
+  },
+  "meta": {
+    "title": "SellerMargin - 跨境电商利润计算工具",
+    "description": "面向跨境卖家的免费规划计算工具，用于对比平台费用、支付手续费、广告成本、到岸成本和真实利润率。"
+  },
+  "nav": {
+    "tools": "工具",
+    "guides": "指南",
+    "about": "关于",
+    "contact": "联系",
+    "joinWaitlist": "加入 Pro 等候名单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "primaryNavigation": "主导航",
+    "mobileNavigation": "移动端导航"
+  },
+  "footer": {
+    "tools": "工具",
+    "company": "公司",
+    "legal": "法律",
+    "guides": "指南",
+    "about": "关于",
+    "contact": "联系",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "disclaimer": "免责声明",
+    "shortDisclaimer": "SellerMargin 计算器仅用于规划和估算。费用、税费、关税、运费和广告成本都可能变化。",
+    "copyright": "保留所有权利。"
+  },
+  "language": {
+    "label": "语言",
+    "en": "English",
+    "zh": "中文",
+    "es": "Español"
+  },
+  "currency": {
+    "label": "货币",
+    "notice": "切换货币只会改变数字显示格式；SellerMargin 不进行汇率换算。"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "免费利润规划工具",
+      "title": "在扩大投放前，先算清楚你的真实利润",
+      "subtitle": "面向跨境卖家的免费计算工具，帮助你对比 Shopify、Amazon、Etsy、eBay、TikTok Shop 的平台费用、支付费用、广告成本、到岸成本和真实利润率。",
+      "primaryCta": "开始计算",
+      "secondaryCta": "加入 Pro 等候名单"
+    },
+    "toolsSection": {
+      "title": "选择一个工具",
+      "subtitle": "从可编辑的费用假设开始，在上线或加大广告投放之前先比较关键数字。"
+    },
+    "tools": [
+      {
+        "name": "多平台利润计算器",
+        "description": "对比 Shopify、Amazon、Etsy、eBay 和 TikTok Shop 的预估净利润。",
+        "href": "/multi-platform-profit-calculator",
+        "label": "MP"
+      },
+      {
+        "name": "广告回本计算器",
+        "description": "估算单笔订单在不亏损前可承受的广告花费。",
+        "href": "/ad-spend-break-even-calculator",
+        "label": "AD"
+      },
+      {
+        "name": "Stripe vs PayPal 手续费计算器",
+        "description": "在选择收款方案前，并排预览支付手续费假设。",
+        "href": "/stripe-vs-paypal-fee-calculator",
+        "label": "FX"
+      },
+      {
+        "name": "到岸成本计算器",
+        "description": "把产品成本、运输、关税和其他到岸成本假设放在一起规划。",
+        "href": "/landed-cost-calculator",
+        "label": "LC"
+      }
+    ],
+    "toolOpen": "打开计算器",
+    "why": {
+      "title": "为什么使用 SellerMargin",
+      "items": [
+        {
+          "title": "无需注册",
+          "description": "打开工具即可测试场景，不需要创建账号。"
+        },
+        {
+          "title": "费用假设可编辑",
+          "description": "默认费率只是起点，不代表官方准确承诺。"
+        },
+        {
+          "title": "为投放广告的卖家设计",
+          "description": "在扩大投放前先规划利润和回本点。"
+        },
+        {
+          "title": "上线前比较平台",
+          "description": "提前考虑平台、支付、履约和成本差异。"
+        }
+      ]
+    },
+    "pro": {
+      "eyebrow": "即将上线",
+      "title": "为更复杂工作流准备的 Pro 功能",
+      "subtitle": "未来付费功能会聚焦保存历史、导出报告和处理更多 SKU。",
+      "button": "加入 Pro 等候名单",
+      "features": [
+        "保存计算历史",
+        "导出 CSV",
+        "导出 PDF 报告",
+        "批量 SKU 计算器",
+        "面向代理商的白标报告"
+      ]
+    },
+    "waitlist": {
+      "title": "加入 Pro 早期访问名单",
+      "subtitle": "第一版不接入真实邮件服务。演示状态会保存在当前浏览器本地。",
+      "email": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "sellerType": "卖家类型",
+      "submit": "加入等候名单",
+      "submitting": "正在保存演示状态...",
+      "success": "谢谢！你已加入早期访问名单。",
+      "demoNotice": "V1 演示表单不会发送邮件，也不会在服务器上存储邮箱。",
+      "sellerTypes": [
+        "Shopify 卖家",
+        "Amazon 卖家",
+        "Etsy 卖家",
+        "eBay 卖家",
+        "TikTok Shop 卖家",
+        "多平台卖家",
+        "代理商",
+        "其他"
+      ]
+    },
+    "disclaimer": {
+      "title": "规划免责声明",
+      "body": "这些计算器仅用于规划和估算。平台费用、支付手续费、税费、关税、运费和广告成本都可能变化。重要数字请始终通过官方来源或合格专业人士核实。"
+    }
+  },
+  "modal": {
+    "title": "Pro 即将上线",
+    "body": "第一版不包含登录、支付、导出或真实邮件集成。你可以加入演示等候名单，状态会保存在本地。",
+    "close": "关闭",
+    "cta": "前往等候名单"
+  },
+  "placeholder": {
+    "badge": "页面骨架",
+    "calculatorBadge": "计算器骨架",
+    "calculatorBody": "本次第一版故意不实现计算器 UI 和公式。后续开发该工具时，费用假设会以可编辑默认值形式提供。",
+    "pageBody": "这是第一版内容骨架。更完整的页面文案可以在后续提示中补充。",
+    "backHome": "返回首页"
+  },
+  "multiPlatform": {
+    "hero": {
+      "eyebrow": "多平台利润对比",
+      "title": "跨平台电商利润计算器",
+      "subtitle": "用可编辑的费用假设，对比同一个产品在 Shopify、Etsy、eBay、Amazon 和 TikTok Shop 上销售时的预估净利润。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日"
+    },
+    "notice": {
+      "title": "费用假设可编辑",
+      "body": "费用假设只是可编辑的估算值。平台费用可能因国家、类目、账号类型、支付方式和政策变化而不同。费用假设最后检查：2026-06。"
+    },
+    "currency": {
+      "label": "货币"
+    },
+    "sections": {
+      "inputs": "产品基础信息",
+      "platforms": "选择比较平台",
+      "feeAssumptions": "可编辑费用假设",
+      "results": "对比结果",
+      "summary": "最佳选项",
+      "formulas": "公式说明",
+      "example": "示例计算",
+      "mistakes": "常见错误",
+      "faq": "FAQ",
+      "related": "相关工具",
+      "pro": "Pro 功能预告"
+    },
+    "inputs": {
+      "sellingPrice": "售价",
+      "productCost": "产品成本",
+      "shippingCost": "卖家承担运费",
+      "packagingCost": "包装成本",
+      "adCostPerOrder": "每单广告成本",
+      "refundRate": "退款率",
+      "discountRate": "折扣率",
+      "otherVariableCost": "其他可变成本"
+    },
+    "refundReserveNote": "退款预留按净收入保守估算，仅用于规划，不代表实际退款损失预测。",
+    "platforms": {
+      "shopify": "Shopify",
+      "etsy": "Etsy",
+      "ebay": "eBay",
+      "amazon": "Amazon",
+      "tiktok": "TikTok Shop"
+    },
+    "feeFields": {
+      "paymentFeePercent": "支付手续费百分比",
+      "fixedPaymentFee": "固定支付手续费",
+      "thirdPartyTransactionFeePercent": "第三方交易费",
+      "marketplaceTransactionFeePercent": "平台交易费百分比",
+      "listingFee": "刊登费",
+      "finalValueFeePercent": "成交费百分比",
+      "fixedOrderFee": "固定订单费",
+      "promotedListingAdFeePercent": "可选推广刊登广告费",
+      "referralFeePercent": "佣金百分比",
+      "fulfillmentFeePerUnit": "单件履约费",
+      "storageOrOtherFeePerUnit": "单件仓储或其他费用",
+      "otherFixedPlatformFee": "其他固定平台费用",
+      "affiliateCommissionPercent": "达人佣金百分比"
+    },
+    "results": {
+      "grossRevenue": "销售额",
+      "platform": "平台",
+      "discountAmount": "折扣金额",
+      "netRevenue": "净收入",
+      "platformFee": "平台费用",
+      "paymentFee": "支付费用",
+      "fulfillmentFee": "履约费用",
+      "productCost": "产品成本",
+      "shippingCost": "运费",
+      "packagingCost": "包装成本",
+      "adCost": "广告成本",
+      "refundReserve": "退款预留",
+      "otherVariableCost": "其他可变成本",
+      "totalCost": "总成本",
+      "netProfit": "净利润",
+      "profitMargin": "利润率",
+      "grossRoas": "销售额 ROAS",
+      "netRevenueRoas": "净收入 ROAS",
+      "poas": "POAS",
+      "bestNetProfit": "净利润最高平台",
+      "bestMargin": "利润率最高平台",
+      "lowestFee": "费用最低平台"
+    },
+    "badges": {
+      "bestProfit": "最高利润",
+      "bestMargin": "最高利润率",
+      "lowestFee": "最低费用"
+    },
+    "actions": {
+      "reset": "重置演示输入",
+      "saved": "已保存到本地",
+      "editable": "可编辑",
+      "selectAtLeastOne": "请至少选择一个平台。"
+    },
+    "validation": {
+      "required": "此字段为必填项。",
+      "invalidNumber": "请输入有效数字。",
+      "nonNegative": "请输入 0 或正数。",
+      "positive": "请输入大于 0 的数字。",
+      "selectAtLeastOne": "请至少选择一个平台。",
+      "percentLikelyFraction": "你是否想输入 30%？如果是，请输入 30。",
+      "percentVeryHigh": "百分比输入非常高，请确认是否正确。",
+      "netRevenueNonPositive": "折扣后的净收入小于或等于 0。请降低折扣或提高售价后再比较利润。"
+    },
+    "formulas": [
+      "折扣金额 = 售价 x 折扣率",
+      "净收入 = 售价 - 折扣金额",
+      "退款预留 = 净收入 x 退款率",
+      "平台费用 = 净收入 x 平台费用百分比 + 固定平台费用。TikTok Shop 还可计入可编辑的达人佣金。",
+      "支付费用 = 净收入 x 支付手续费百分比 + 固定支付手续费",
+      "总成本 = 产品成本 + 运费 + 包装成本 + 广告成本 + 退款预留 + 平台费用 + 支付费用 + 履约费用 + 其他可变成本",
+      "净利润 = 净收入 - 总成本",
+      "利润率 = 净利润 / 净收入 x 100",
+      "销售额 ROAS = 售价 / 广告成本；净收入 ROAS = 净收入 / 广告成本；POAS = 净利润 / 广告成本。如果广告成本为 0，三项都显示 N/A。"
+    ],
+    "example": {
+      "body": "如果一个产品售价为 49.99，折扣率为 10%，每单广告成本为 8.00，计算器会先得到净收入，再扣除产品成本、卖家承担运费、包装、退款预留、广告成本，以及每个平台可编辑的费用假设。"
+    },
+    "mistakes": [
+      "把默认费用假设当成官方准确费率，而不是可编辑估算值。",
+      "漏算固定订单费、刊登费、支付费用或履约费用。",
+      "忽略折扣、退款和卖家承担运费。",
+      "只看 ROAS，却没有检查扣除平台费用后的订单是否盈利。"
+    ],
+    "faq": [
+      {
+        "question": "为什么同一个产品在不同平台的利润不一样？",
+        "answer": "不同平台可能有不同的佣金、交易费、支付费、刊登费、履约费和推广费用假设。"
+      },
+      {
+        "question": "这些平台费用假设是否准确？",
+        "answer": "它们只是可编辑的规划假设，不是官方长期费率表。重要数字请到对应平台核实。"
+      },
+      {
+        "question": "这个计算器是否包含 VAT、销售税或所得税？",
+        "answer": "不包含。这个计算器用于运营利润估算，不提供税务、会计、法律或金融建议。"
+      },
+      {
+        "question": "我应该如何估算每单广告成本？",
+        "answer": "可以使用你通过付费广告获取一笔订单的平均成本，也可以在扩大投放前测试多个场景。"
+      },
+      {
+        "question": "跨境电商卖家的合理利润率是多少？",
+        "answer": "这取决于类目、履约模式、退货率、广告强度和增长阶段。建议用计算器比较不同场景，而不是只依赖单一基准。"
+      }
+    ],
+    "pro": {
+      "subtitle": "这些工作流功能计划在后续 Pro 版本中提供，当前版本不启用真实功能。",
+      "buttons": [
+        "保存计算历史 - Pro",
+        "导出 CSV - Pro",
+        "导出 PDF - Pro",
+        "批量计算 - Pro"
+      ],
+      "modalTitle": "Pro 功能即将上线",
+      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "close": "关闭"
+    }
+  },
+  "adBreakEven": {
+    "hero": {
+      "eyebrow": "广告回本规划",
+      "title": "广告回本 ROAS 计算器",
+      "subtitle": "计算广告最多能花多少钱、ROAS 达到多少才不会亏损，以及要达到目标利润需要多少 ROAS。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日"
+    },
+    "notice": {
+      "title": "可编辑估算",
+      "body": "费用和成本假设均为可编辑估算值。平台、支付、广告、退款和履约成本可能因国家、账号、类目及政策变化而不同。重要数据请以当前官方来源为准。"
+    },
+    "sections": {
+      "inputs": "产品经济模型",
+      "target": "目标利润",
+      "currentMetrics": "当前广告指标",
+      "results": "回本结果",
+      "warnings": "警告",
+      "formulas": "公式说明",
+      "example": "示例计算",
+      "mistakes": "常见错误",
+      "faq": "FAQ",
+      "related": "相关工具",
+      "pro": "Pro 功能预告"
+    },
+    "inputs": {
+      "sellingPrice": "售价",
+      "productCost": "产品成本",
+      "shippingCost": "运费",
+      "packagingCost": "包装成本",
+      "platformFeePercent": "平台费用百分比",
+      "paymentFeePercent": "支付手续费百分比",
+      "fixedPaymentFee": "固定支付手续费",
+      "otherVariableCost": "其他可变成本",
+      "targetProfitPerOrder": "每单目标利润",
+      "targetProfitMarginPercent": "目标利润率",
+      "currentRoas": "当前 ROAS",
+      "currentCpa": "当前 CPA"
+    },
+    "targetModes": {
+      "profitAmount": "按每单目标利润",
+      "marginPercent": "按目标利润率"
+    },
+    "outputs": {
+      "revenue": "收入",
+      "variableCostBeforeAds": "投放前可变成本",
+      "contributionMarginBeforeAds": "投放前贡献毛利",
+      "breakEvenAdSpendPerOrder": "每单回本广告花费",
+      "maxCpaAtBreakEven": "回本 Max CPA",
+      "breakEvenRoas": "回本 ROAS",
+      "targetProfit": "目标利润",
+      "targetAdSpendPerOrder": "每单目标广告花费",
+      "targetCpa": "目标 CPA",
+      "targetRoas": "目标 ROAS",
+      "breakEvenAcos": "回本 ACoS",
+      "targetAcos": "目标 ACoS",
+      "profitStatus": "利润状态",
+      "platformFee": "平台费用",
+      "paymentFee": "支付费用"
+    },
+    "warnings": {
+      "revenueNonPositive": "售价必须大于 0，才能计算 ROAS 或利润率。",
+      "contributionMarginNonPositive": "根据当前输入，这个产品在投放广告前已经不盈利。",
+      "targetAdSpendNonPositive": "你的目标利润高于当前可用贡献毛利。你可能需要提高售价、降低成本或下调目标利润率。"
+    },
+    "validation": {
+      "required": "此字段为必填项。",
+      "invalidNumber": "请输入有效数字。",
+      "nonNegative": "请输入 0 或正数。",
+      "sellingPricePositive": "售价必须大于 0。",
+      "percentLikelyFraction": "你是否想输入 30%？如果是，请输入 30。",
+      "percentVeryHigh": "百分比输入非常高，请确认是否正确。"
+    },
+    "statuses": {
+      "profitable": "盈利",
+      "aboveBreakEvenBelowTarget": "高于回本线，但低于目标利润",
+      "breakingEven": "刚好回本",
+      "losingMoney": "亏损",
+      "notAvailable": "请输入当前 ROAS 以评估盈利状态。"
+    },
+    "actions": {
+      "reset": "重置演示输入",
+      "saved": "已保存到本地"
+    },
+    "formulas": [
+      "收入 = 售价",
+      "平台费用 = 收入 x 平台费用百分比",
+      "支付费用 = 收入 x 支付手续费百分比 + 固定支付手续费",
+      "投放前可变成本 = 产品成本 + 运费 + 包装成本 + 平台费用 + 支付费用 + 其他可变成本",
+      "投放前贡献毛利 = 收入 - 投放前可变成本",
+      "每单回本广告花费 = 投放前贡献毛利",
+      "回本 Max CPA = 每单回本广告花费",
+      "回本 ROAS = 收入 / 每单回本广告花费",
+      "目标利润 = 每单固定目标利润，或收入 x 目标利润率",
+      "每单目标广告花费 = 投放前贡献毛利 - 目标利润",
+      "目标 ROAS = 收入 / 每单目标广告花费",
+      "回本 ACoS = 每单回本广告花费 / 收入",
+      "目标 ACoS = 每单目标广告花费 / 收入"
+    ],
+    "example": {
+      "body": "如果收入为 50.00，投放前可变成本为 30.00，那么投放前贡献毛利为 20.00。也就是说每单回本广告花费和回本 Max CPA 都是 20.00。如果目标利润是 8.00，则每单目标广告花费为 12.00，目标 ROAS 等于收入除以 12.00。"
+    },
+    "mistakes": [
+      "只看 ROAS，没有先扣除平台费用和支付费用。",
+      "漏算固定支付手续费或其他可变成本。",
+      "设置的目标利润高于当前可用贡献毛利。",
+      "把回本 ROAS 当成目标 ROAS，而不是亏损前的最低线。"
+    ],
+    "faq": [
+      {
+        "question": "什么是 break-even ROAS？",
+        "answer": "Break-even ROAS 是刚好不亏损所需的 ROAS，也就是收入除以回本广告花费。"
+      },
+      {
+        "question": "ROAS 和 ACoS 有什么区别？",
+        "answer": "ROAS 是收入除以广告花费，ACoS 是广告花费除以收入，它们从相反方向描述同一组广告效率数据。"
+      },
+      {
+        "question": "如何计算 Max CPA？",
+        "answer": "单笔订单的回本 Max CPA 等于投放广告前的贡献毛利。"
+      },
+      {
+        "question": "为什么我的目标 ROAS 这么高？",
+        "answer": "当成本较高、贡献毛利较低，或目标利润接近可用毛利时，目标 ROAS 会变高。"
+      },
+      {
+        "question": "如何降低广告回本 ROAS？",
+        "answer": "可以提高售价、降低产品或履约成本、降低平台/支付费用，或提升转化率，让每笔订单能承受更多广告花费。"
+      }
+    ],
+    "pro": {
+      "subtitle": "这些工作流功能计划在后续 Pro 版本中提供，当前版本不启用真实功能。",
+      "buttons": [
+        "保存场景历史 - Pro",
+        "导出 CSV - Pro",
+        "导出 PDF - Pro",
+        "批量广告场景 - Pro"
+      ],
+      "modalTitle": "Pro 功能即将上线",
+      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "close": "关闭"
+    }
+  },
+  "paymentFees": {
+    "hero": {
+      "eyebrow": "支付手续费对比",
+      "title": "Stripe vs PayPal 手续费计算器",
+      "subtitle": "对比 Stripe、PayPal、Shopify Payments 等支付方式的可编辑手续费假设，估算手续费、实际到账金额和潜在节省。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日"
+    },
+    "notice": {
+      "title": "费用假设可编辑",
+      "body": "费用假设是可编辑的估算值。支付手续费可能因国家、货币、银行卡类型、账号类型、交易类型和政策变化而不同。请始终以各支付服务商的官方最新费率为准。费用假设最后检查：2026-06。"
+    },
+    "sections": {
+      "inputs": "交易设置",
+      "assumptions": "可编辑支付手续费假设",
+      "results": "支付方式结果",
+      "summary": "成本汇总",
+      "formulas": "公式说明",
+      "example": "示例计算",
+      "mistakes": "常见错误",
+      "faq": "FAQ",
+      "related": "相关工具",
+      "pro": "Pro 功能预告"
+    },
+    "inputs": {
+      "transactionAmount": "交易金额",
+      "numberOfTransactions": "每月交易笔数",
+      "currency": "货币",
+      "percentageFee": "百分比手续费",
+      "fixedFee": "固定手续费",
+      "internationalCardSurchargePercent": "国际卡附加费百分比",
+      "currencyConversionFeePercent": "货币转换费百分比",
+      "refundRetainedPercentageFee": "退款保留百分比费用",
+      "refundNonRefundableFixedFee": "每笔退款不退还的固定费用",
+      "chargebackFixedFee": "每笔拒付固定费用",
+      "optionalExtraFeePercent": "可选额外费用百分比",
+      "refundRate": "退款率",
+      "chargebackRate": "拒付率"
+    },
+    "providers": {
+      "stripe": "Stripe",
+      "paypal": "PayPal",
+      "shopifyPayments": "Shopify Payments"
+    },
+    "outputs": {
+      "grossTransactionVolume": "总交易额",
+      "baseFeePerTransaction": "每笔基础手续费",
+      "extraPercentageFeePerTransaction": "每笔额外百分比费用",
+      "feePerTransaction": "每笔手续费",
+      "estimatedRefundCost": "预估退款费用",
+      "estimatedChargebackCost": "预估拒付费用",
+      "totalFees": "总手续费",
+      "netReceived": "实际到账金额",
+      "effectiveFeeRate": "有效费率",
+      "differenceVsLowestCostProvider": "相比最低成本支付方式的差额",
+      "monthlyEstimatedFees": "月度预估手续费",
+      "annualEstimatedFees": "年度预估手续费",
+      "lowestCostProvider": "最低成本支付方式",
+      "highestCostProvider": "最高成本支付方式",
+      "estimatedMonthlySavings": "预估月度节省",
+      "estimatedAnnualSavings": "预估年度节省",
+      "estimatedRefundTransactions": "预估退款笔数",
+      "estimatedChargebackTransactions": "预估拒付笔数"
+    },
+    "validation": {
+      "required": "此字段为必填项。",
+      "invalidNumber": "请输入有效数字。",
+      "nonNegative": "请输入 0 或正数。",
+      "positive": "请输入大于 0 的数字。",
+      "positiveInteger": "请输入大于 0 的整数。",
+      "percentLikelyFraction": "你是否想输入 30%？如果是，请输入 30。",
+      "percentVeryHigh": "百分比输入非常高，请确认是否正确。",
+      "transactionAmountNonPositive": "Transaction amount must be greater than zero.",
+      "numberOfTransactionsNonPositive": "Number of transactions must be greater than zero.",
+      "refundRateNegative": "退款率不能为负数。",
+      "chargebackRateNegative": "拒付率不能为负数。",
+      "extremePercentage": "一个或多个百分比假设达到或超过 1000%，请检查是否为有意输入。"
+    },
+    "actions": {
+      "reset": "重置演示输入",
+      "saved": "已保存到本地",
+      "editable": "可编辑"
+    },
+    "riskNote": "退款和拒付估算只包含你在此输入的支付侧费用，不估算退回收入、货损、物流、追偿或服务商特定政策影响。",
+    "refundRetainedPercentageFeeTooltip": "退款保留百分比费用表示支付服务商在退款时保留或不退还的百分比手续费假设，具体规则因服务商和地区而异。",
+    "formulas": [
+      "总交易额 = 交易金额 x 交易笔数",
+      "每笔基础手续费 = 交易金额 x 百分比手续费 + 固定手续费",
+      "每笔额外百分比费用 = 交易金额 x（国际卡附加费 + 货币转换费 + 可选额外费用）",
+      "预估退款费用 = 预估退款交易额 x 退款保留百分比费用 + 预估退款笔数 x 每笔退款不退还的固定费用",
+      "预估拒付费用 = 交易笔数 x 拒付率 x 每笔拒付固定费用",
+      "总手续费 =（每笔基础手续费 + 每笔额外百分比费用）x 交易笔数 + 预估退款费用 + 预估拒付费用",
+      "实际到账金额 = 总交易额 - 总手续费",
+      "有效费率 = 总手续费 / 总交易额 x 100",
+      "最低成本支付方式 = 总手续费最低的支付方式",
+      "节省金额 = 最高总手续费 - 最低总手续费",
+      "月度预估手续费 = 总手续费",
+      "年度预估手续费 = 月度预估手续费 x 12"
+    ],
+    "example": {
+      "body": "如果每笔交易金额为 50.00，月交易笔数为 500，则总交易额为 25,000.00。若百分比手续费为 2.9%，固定手续费为 0.30，则每笔手续费为 1.75，未计入可选额外费用；月度总手续费为每笔手续费乘以 500。"
+    },
+    "mistakes": [
+      "把可编辑估算值当成当前官方费率。",
+      "客单价较低时漏算固定手续费。",
+      "只比较百分比费率，却忽略货币、银行卡类型、账号类型和交易类型。",
+      "忽略退款、拒付和货币转换政策可能带来的最终成本变化。"
+    ],
+    "faq": [
+      {
+        "question": "为什么 Stripe 和 PayPal 的手续费不同？",
+        "answer": "支付服务商可能会根据国家、货币、卡组织、账号类型、交易类型、风控规则和政策变化采用不同定价。"
+      },
+      {
+        "question": "这些支付费用假设是官网吗？",
+        "answer": "不是。它们是可编辑的规划假设，不是官方费率表。重要决策请始终以各服务商官方最新费率为准。"
+      },
+      {
+        "question": "这些费用包含货币转换费吗？",
+        "answer": "只有当你把预估货币转换成本填入可选额外费用百分比时才包含。货币转换规则会因服务商和交易情况而不同。"
+      },
+      {
+        "question": "退款和拒付会影响最终成本吗？",
+        "answer": "会。退款率和拒付率会影响你的实际经营成本，但不同服务商规则不同，本计算器不会自动写死特定服务商的退款或拒付罚金。"
+      },
+      {
+        "question": "在线卖家如何降低支付手续费？",
+        "answer": "可以比较不同支付方式、提高客单价、降低退款和拒付、复核账号定价，并确认本地支付方式或不同套餐是否能降低有效费率。"
+      }
+    ],
+    "pro": {
+      "subtitle": "这些工作流功能计划在后续 Pro 版本中提供，当前版本不启用真实功能。",
+      "buttons": [
+        "保存支付场景 - Pro",
+        "导出 CSV - Pro",
+        "导出 PDF - Pro",
+        "批量结账对比 - Pro"
+      ],
+      "modalTitle": "Pro 功能即将上线",
+      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "close": "关闭"
+    }
+  },
+  "landedCost": {
+    "hero": {
+      "eyebrow": "进口成本规划",
+      "title": "到岸成本计算器",
+      "subtitle": "帮助小型进口商和跨境卖家估算产品从采购、国际运输、清关到入库和销售前的真实单位成本。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日"
+    },
+    "notice": {
+      "title": "估算提示",
+      "body": "本计算器仅用于估算。关税、VAT、GST、清关规则和物流费用会因国家、产品类别、HS 编码和政策变化而不同。请始终以海关官方信息或专业人士意见为准。费用假设最后检查：2026-06。"
+    },
+    "sections": {
+      "product": "产品",
+      "logistics": "国际物流",
+      "import": "进口费用",
+      "selling": "销售费用",
+      "results": "单位成本与利润结果",
+      "warnings": "定价警告",
+      "breakdown": "成本拆解",
+      "formulas": "公式说明",
+      "example": "示例计算",
+      "mistakes": "常见错误",
+      "faq": "FAQ",
+      "related": "相关工具",
+      "pro": "Pro 功能预告"
+    },
+    "inputs": {
+      "productUnitCost": "产品单位成本",
+      "quantity": "数量",
+      "currency": "货币",
+      "hsCode": "HS 编码",
+      "hsCodePlaceholder": "可选，仅作备注",
+      "supplierCountry": "供应商国家",
+      "destinationCountry": "目的地国家",
+      "internationalFreightCost": "国际物流费用",
+      "insuranceCost": "保险费用",
+      "freightType": "物流类型",
+      "customsDutyRate": "关税税率",
+      "importTaxRate": "进口税 / VAT / GST 税率",
+      "includeImportTaxAsCost": "将 VAT/GST 计入成本",
+      "customsValuationMethod": "海关完税价格口径",
+      "customsBrokerFee": "清关代理费用",
+      "otherImportFees": "其他进口费用",
+      "sellingPricePerUnit": "每件销售价格",
+      "platformFeePercent": "平台费百分比",
+      "paymentFeePercent": "支付手续费百分比",
+      "fixedPaymentFee": "固定支付手续费",
+      "adCostPerOrder": "每单广告成本",
+      "refundRate": "退款率",
+      "domesticDeliveryCostPerUnit": "每件国内配送费用",
+      "packagingCostPerUnit": "每件包装成本",
+      "warehousePrepCostPerUnit": "每件仓储或预处理成本",
+      "otherCostPerUnit": "每件其他成本",
+      "targetMarginPercent": "目标利润率"
+    },
+    "customsValuationMethods": {
+      "cif": "CIF：产品成本 + 运费 + 保险",
+      "fob": "FOB：仅产品价值"
+    },
+    "customsValuationNote": "请选择适合当前估算场景的口径。实际海关估价规则会因国家和产品而不同。",
+    "importTaxTreatmentNote": "如果 VAT/GST 可抵扣，可选择“否”，税额仍会显示但不计入到岸成本。请向专业人士确认处理方式。",
+    "freightTypes": {
+      "sea": "海运",
+      "air": "空运",
+      "express": "快递",
+      "other": "其他"
+    },
+    "toggle": {
+      "yes": "是",
+      "no": "否"
+    },
+    "outputs": {
+      "totalProductCost": "产品总成本",
+      "freightPerUnit": "每件国际运费",
+      "insurancePerUnit": "每件保险费用",
+      "customsValuePerUnit": "每件海关完税价格",
+      "dutyPerUnit": "每件关税金额",
+      "importTaxPerUnit": "每件进口税 / VAT / GST",
+      "brokerFeePerUnit": "每件清关代理费用",
+      "otherImportFeesPerUnit": "每件其他进口费用",
+      "landedCostPerUnit": "每件到岸成本",
+      "platformFeePerUnit": "每件平台费用",
+      "paymentFeePerUnit": "每件支付费用",
+      "sellingFeesPerUnit": "每件销售手续费",
+      "refundReservePerUnit": "每件退款预留",
+      "fixedCostPerUnit": "不含百分比销售成本的每件固定成本",
+      "variableSellingRateCostPercent": "可变销售成本率",
+      "totalCostPerUnit": "每件总成本",
+      "netProfitPerUnit": "每件净利润",
+      "profitMargin": "利润率",
+      "breakEvenSellingPrice": "回本销售价格",
+      "suggestedPriceFor30PercentMargin": "30% 利润率建议售价",
+      "suggestedPriceFor50PercentMargin": "50% 利润率建议售价",
+      "suggestedPriceForTargetMargin": "自定义目标利润率建议售价"
+    },
+    "breakdown": {
+      "cost": "成本项目",
+      "amount": "每件金额",
+      "status": "到岸成本状态",
+      "included": "已计入",
+      "excluded": "显示但未计入"
+    },
+    "validation": {
+      "required": "此字段为必填项。",
+      "invalidNumber": "请输入有效数字。",
+      "nonNegative": "请输入 0 或正数。",
+      "positiveInteger": "请输入大于 0 的整数。",
+      "invalidCustomsValuationMethod": "请选择 CIF 或 FOB。",
+      "invalidFreightType": "请选择海运、空运、快递或其他。",
+      "percentLikelyFraction": "你是否想输入 30%？如果是，请输入 30。",
+      "percentVeryHigh": "百分比输入非常高，请确认是否正确。",
+      "quantityNonPositive": "数量必须大于 0。",
+      "targetMarginInvalid": "目标利润率必须低于 100%。",
+      "breakEvenDenominatorNonPositive": "平台费率、支付费率和退款率之和导致无法计算有效回本价，请将合计可变费率降到 100% 以下。",
+      "breakEvenDenominatorNearZero": "费用率占比非常高，反推售价可能不现实。",
+      "targetDenominatorNonPositive": "目标利润率与可变销售费率之和必须低于 100%，才能计算建议售价。"
+    },
+    "actions": {
+      "reset": "重置演示输入",
+      "saved": "已保存到本地"
+    },
+    "formulas": [
+      "产品总成本 = 产品单位成本 x 数量",
+      "每件国际运费 = 国际物流费用 / 数量",
+      "每件保险费用 = 保险费用 / 数量",
+      "CIF 完税价格 = 产品单位成本 + 每件国际运费 + 每件保险费用；FOB 完税价格 = 产品单位成本",
+      "每件关税 = 每件海关完税价格 x 关税税率",
+      "每件进口税 =（每件海关完税价格 + 每件关税）x 进口税率",
+      "每件清关代理费用 = 清关代理费用 / 数量",
+      "每件其他进口费用 = 其他进口费用 / 数量",
+      "每件到岸成本 = 产品单位成本 + 运费 + 保险 + 关税 + 已选择计入的进口税 + 清关代理费 + 其他进口费用",
+      "每件销售手续费 = 售价 x 平台费百分比 + 售价 x 支付手续费百分比 + 固定支付手续费",
+      "退款预留 = 售价 x 退款率",
+      "每件总成本 = 到岸成本 + 销售手续费 + 广告成本 + 退款预留 + 国内配送 + 包装 + 仓储/预处理 + 其他成本",
+      "每件净利润 = 售价 - 每件总成本",
+      "利润率 = 每件净利润 / 售价 x 100",
+      "每件固定成本不包含平台百分比费、支付百分比费和退款预留",
+      "可变销售成本率 = 平台费率 + 支付费率 + 退款率",
+      "回本销售价格 = 每件固定成本 /（1 - 可变销售成本率）",
+      "目标利润率建议售价 = 每件固定成本 /（1 - 可变销售成本率 - 目标利润率）"
+    ],
+    "example": {
+      "body": "采购 100 件产品，每件成本 10.00，国际运费 500.00，保险费用 100.00，则每件运费为 5.00，每件保险为 1.00，每件海关完税价格为 16.00。若关税率为 5%，每件关税为 0.80；进口税率为 10% 时，每件进口税为 1.68，是否计入到岸成本取决于 VAT/GST 开关。"
+    },
+    "mistakes": [
+      "使用错误的数量分摊国际运费或清关代理费用。",
+      "只对产品采购成本计算关税，却忽略海关完税价格可能包含运费和保险。",
+      "没有判断 VAT 或 GST 是否可抵扣，就自动当成永久成本。",
+      "只按到岸成本定价，却忽略平台、支付、广告、退款、国内配送和仓储预处理费用。"
+    ],
+    "faq": [
+      {
+        "question": "什么是到岸成本？",
+        "answer": "到岸成本是产品采购、国际物流、保险、关税、选定的进口税处理、清关代理和其他进口费用分摊后的预计单位成本。"
+      },
+      {
+        "question": "为什么到岸成本对跨境卖家很重要？",
+        "answer": "它能显示库存达到可销售状态前的真实成本，避免卖家只根据供应商报价进行定价。"
+      },
+      {
+        "question": "如何查询关税税率？",
+        "answer": "根据产品 HS 编码，在目的地国家海关官方网站查询，或向合格的清关代理和关务专业人士确认。"
+      },
+      {
+        "question": "VAT 或 GST 是否应该计入成本？",
+        "answer": "这取决于税款是否可抵扣、你的税务登记状态、当地规则和会计处理方式，请向专业人士确认。"
+      },
+      {
+        "question": "到岸成本和销售总成本有什么区别？",
+        "answer": "到岸成本主要覆盖产品进口并达到可销售状态的费用；销售总成本还包括平台费、支付费、广告、退款、国内配送、包装、仓储和其他单件费用。"
+      }
+    ],
+    "pro": {
+      "subtitle": "这些工作流功能计划在后续 Pro 版本中提供，当前版本不启用真实功能。",
+      "buttons": [
+        "保存进口场景 - Pro",
+        "导出 CSV - Pro",
+        "导出 PDF - Pro",
+        "批量 SKU 到岸成本 - Pro"
+      ],
+      "modalTitle": "Pro 功能即将上线",
+      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "close": "关闭"
+    }
+  },
+  "infoPages": {
+    "about": {
+      "eyebrow": "关于 SellerMargin",
+      "title": "面向电商卖家的实用规划工具",
+      "intro": "SellerMargin 是一个免费的电商计算工具站，帮助卖家理解定价、投放和增长决策背后的关键数字。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "sections": [
+        {
+          "title": "网站可以帮助你估算什么",
+          "paragraphs": [
+            "这些计算器帮助卖家估算产品利润、广告回本点、平台费用、支付手续费和到岸成本。"
+          ],
+          "bullets": [
+            "比较产品在不同电商平台上的预计利润。",
+            "计算回本 ROAS、目标 ROAS、Max CPA 和 ACoS。",
+            "比较可编辑的支付手续费假设。",
+            "估算每件产品的进口、清关、物流和销售成本。"
+          ]
+        },
+        {
+          "title": "第一版无需注册",
+          "paragraphs": [
+            "第一版无需创建账号即可使用。最近一次计算器输入可能保存在浏览器本地，刷新页面后可以继续调整同一个场景。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "用于规划和估算，不是专业建议",
+          "paragraphs": [
+            "所有计算结果仅用于规划和估算。SellerMargin 不提供金融、税务、法律或会计建议。重要数字应通过官方来源或合格专业人士核实。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "未来可能推出的 Pro 功能",
+          "paragraphs": [
+            "未来版本可能增加可选的付费工作流功能，这些功能在当前版本中尚未启用。"
+          ],
+          "bullets": [
+            "保存计算历史",
+            "批量 SKU 计算",
+            "CSV 和 PDF 导出",
+            "白标报告"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "联系",
+      "title": "联系 SellerMargin",
+      "intro": "如果你对计算器或指南有一般问题、纠错建议或反馈，可以通过本页联系。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "emailLabel": "临时联系邮箱",
+      "emailNotice": "上线前必须处理：请通过 NEXT_PUBLIC_CONTACT_EMAIL 配置站点所有者的真实支持邮箱。",
+      "formTitle": "提交演示消息",
+      "formNotice": "此表单仅用于界面演示，不会向服务器或邮件服务发送数据。",
+      "demoNotice": "仅为演示：提交后不会发送邮件，也不会把消息保存到服务器或数据库。",
+      "fields": {
+        "name": "姓名",
+        "email": "邮箱",
+        "topic": "主题",
+        "message": "消息",
+        "namePlaceholder": "你的姓名",
+        "emailPlaceholder": "you@example.com",
+        "topicPlaceholder": "你想咨询什么？",
+        "messagePlaceholder": "填写你的消息"
+      },
+      "submit": "提交演示消息",
+      "success": "演示提交成功。消息没有被发送或存储。"
+    },
+    "privacyPolicy": {
+      "eyebrow": "法律信息",
+      "title": "隐私政策",
+      "intro": "本政策说明 SellerMargin 第一版使用的有限数据处理方式。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "sections": [
+        {
+          "title": "账号和计算器处理",
+          "paragraphs": [
+            "第一版不需要账号。计算器输入和结果通常直接在你的浏览器中处理。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "浏览器本地存储",
+          "paragraphs": [
+            "SellerMargin 可能使用 localStorage 在你的设备上保存最近一次计算器输入、语言偏好和演示等候名单状态。"
+          ],
+          "bullets": [
+            "除非你清除网站数据，否则这些信息会保留在当前浏览器中。",
+            "第一版不会使用 localStorage 保存密码或支付信息。",
+            "演示联系表单和等候名单不会把消息或邮箱发送到服务器或数据库。"
+          ]
+        },
+        {
+          "title": "不收集的信息",
+          "paragraphs": [
+            "当前版本不收集支付卡信息，也不存储账号密码。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "未来可能加入的分析工具",
+          "paragraphs": [
+            "V1 默认不使用非必要 cookies，不接入 analytics，也不进行广告追踪。",
+            "如果未来接入 analytics、邮件服务、支付、账号系统、广告追踪或其他第三方脚本，必须更新本隐私政策，并在需要时启用 Cookie consent。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "联系方式",
+          "paragraphs": [
+            "用户可以通过 Contact 页面联系站点所有者，提出隐私相关问题或请求。"
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "法律信息",
+      "title": "服务条款",
+      "intro": "这些条款说明使用 SellerMargin 计算器、指南和估算内容时适用的基本条件。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "sections": [
+        {
+          "title": "按现状提供",
+          "paragraphs": [
+            "使用本网站即表示你接受这些条款。",
+            "SellerMargin 的工具和内容按“现状”和“可用状态”提供。功能可能在不另行通知的情况下调整、修正或移除。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "不保证完全准确",
+          "paragraphs": [
+            "SellerMargin 不保证计算结果、默认假设、费用、公式或指南内容始终完整、最新或没有错误。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "商业决策由用户负责",
+          "paragraphs": [
+            "用户应自行检查输入，并自行承担定价、广告、进口、平台选择和其他商业决策的责任。"
+          ],
+          "bullets": [
+            "通过官方来源核对费用、税费、关税、政策和费率。",
+            "当决策涉及金融、税务、法律或会计专业知识时，应咨询合格专业人士。"
+          ]
+        },
+        {
+          "title": "不提供专业建议",
+          "paragraphs": [
+            "SellerMargin 不提供金融、税务、法律或会计建议。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "责任限制",
+          "paragraphs": [
+            "在适用法律允许的范围内，站点所有者不对用户依据网站估算结果作出的商业决策或由此产生的损失负责。"
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "disclaimer": {
+      "eyebrow": "法律信息",
+      "title": "计算器和内容免责声明",
+      "intro": "SellerMargin 提供的估算工具和教育内容仅用于规划目的。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "sections": [
+        {
+          "title": "所有结果仅供估算",
+          "paragraphs": [
+            "所有计算器结果都基于用户填写的信息和假设，仅供估算。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "成本和规则可能变化",
+          "paragraphs": [
+            "平台费用、支付费用、税费、关税、物流费用和广告成本都可能变化。"
+          ],
+          "bullets": [
+            "不同国家和司法管辖区可能适用不同规则。",
+            "平台可能根据类目或账号类型采用不同规则。",
+            "不同支付方式和交易类型可能采用不同费用结构。",
+            "默认费率是可编辑假设，不代表官方费率，也不保证长期准确。"
+          ]
+        },
+        {
+          "title": "核实重要信息",
+          "paragraphs": [
+            "用户应通过平台、支付服务商、海关、税务和物流官方来源核实重要假设，或咨询合格专业人士。"
+          ],
+          "bullets": []
+        },
+        {
+          "title": "不提供专业建议",
+          "paragraphs": [
+            "本网站不提供法律、税务、金融或会计建议。"
+          ],
+          "bullets": []
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "卖家指南",
+      "title": "电商利润指南",
+      "intro": "通过实用说明理解成本、贡献毛利、广告效率和定价决策。",
+      "featuredLabel": "已发布指南",
+      "articleTitle": "如何计算广告后的电商真实利润",
+      "articleDescription": "介绍广告后利润需要包含的成本、基础公式、示例计算和常见错误。",
+      "readGuide": "阅读指南",
+      "toolsTitle": "计算你自己的经营场景",
+      "toolsIntro": "可直接打开任一计算器，对比平台利润、广告目标、支付手续费或到岸成本。",
+      "futureTitle": "未来指南",
+      "futureBody": "后续可能增加更多指南。当前不会把尚未完成的文章或结果展示为已发布内容。"
+    },
+    "profitAfterAdsGuide": {
+      "eyebrow": "电商利润指南",
+      "title": "如何计算广告后的电商真实利润",
+      "intro": "收入和毛利润看起来可能不错，但广告、支付、平台、退款和履约成本会减少每笔订单最终留下的金额。",
+      "lastUpdated": "最后更新：2026 年 6 月 13 日",
+      "sections": {
+        "introduction": {
+          "title": "1. 简介",
+          "paragraphs": [
+            "广告后利润，是从订单收入中扣除生产、销售、履约和获取订单所需成本后的剩余金额。相比只看收入，它更适合日常经营决策。",
+            "实用的计算应从真实订单收入开始，并采用与你的产品、平台、支付方式、履约模式和广告表现一致的可编辑假设。"
+          ]
+        },
+        "grossProfit": {
+          "title": "2. 为什么只看毛利润不够",
+          "paragraphs": [
+            "毛利润通常只从收入中扣除产品成本。这个指标有参考价值，但不能说明订单扣除销售成本和获客成本后是否仍然盈利。",
+            "即使产品毛利率看起来不错，计入平台费、支付费、运费补贴、退款、广告和进口成本后，仍可能亏损。"
+          ]
+        },
+        "keyCosts": {
+          "title": "3. 需要包含的关键成本",
+          "intro": "尽量使用属于一笔已完成订单的成本，并保持各项假设口径一致。",
+          "items": [
+            {
+              "title": "产品成本",
+              "body": "订单中售出产品对应的供应商采购成本或生产成本。"
+            },
+            {
+              "title": "运费",
+              "body": "包括卖家承担的配送、履约、邮费或运费补贴。"
+            },
+            {
+              "title": "平台费用",
+              "body": "包括平台佣金、交易费、刊登相关费用和其他平台扣款。"
+            },
+            {
+              "title": "支付费用",
+              "body": "支付服务商收取的百分比手续费和固定手续费。"
+            },
+            {
+              "title": "退款预留",
+              "body": "根据预期退款和无法收回的相关成本设置的估算预留。"
+            },
+            {
+              "title": "广告花费",
+              "body": "通过付费广告获得一笔订单所需的平均成本，也常称为 CPA。"
+            },
+            {
+              "title": "进口或到岸成本",
+              "body": "分摊到每件产品的国际物流、保险、关税、选定的进口税处理、清关和其他进口费用。"
+            }
+          ]
+        },
+        "formula": {
+          "title": "4. 基础公式",
+          "lines": [
+            "净收入 = 销售价格 - 折扣",
+            "广告后利润 = 净收入 - 产品成本 - 运费 - 平台费用 - 支付费用 - 退款预留 - 广告花费 - 其他可变成本",
+            "利润率 = 广告后利润 / 净收入 x 100"
+          ]
+        },
+        "example": {
+          "title": "5. 示例计算",
+          "paragraphs": [
+            "假设一笔订单的净收入为 50.00。产品成本为 16.00，运费和包装为 6.00，平台费和支付费为 6.50，退款预留为 1.50，广告花费为 10.00。"
+          ],
+          "steps": [
+            "可变成本合计 = 16.00 + 6.00 + 6.50 + 1.50 + 10.00 = 40.00",
+            "广告后利润 = 50.00 - 40.00 = 10.00",
+            "利润率 = 10.00 / 50.00 x 100 = 20%"
+          ]
+        },
+        "calculators": {
+          "title": "6. 如何使用本站计算器",
+          "intro": "先选择与你当前最大不确定因素对应的计算器，分别测试保守和乐观场景，并在作出决策前核实重要假设。",
+          "links": [
+            {
+              "href": "/multi-platform-profit-calculator",
+              "title": "多平台利润计算器",
+              "body": "比较不同可编辑平台费用场景下的预计订单利润。"
+            },
+            {
+              "href": "/ad-spend-break-even-calculator",
+              "title": "广告回本 ROAS 计算器",
+              "body": "计算回本 ROAS、目标 ROAS、Max CPA 和 ACoS。"
+            },
+            {
+              "href": "/stripe-vs-paypal-fee-calculator",
+              "title": "Stripe vs PayPal 手续费计算器",
+              "body": "比较可编辑支付手续费假设和实际到账金额。"
+            },
+            {
+              "href": "/landed-cost-calculator",
+              "title": "到岸成本计算器",
+              "body": "将物流、清关、进口、仓储和销售成本分摊到每件产品。"
+            }
+          ]
+        },
+        "mistakes": {
+          "title": "7. 常见错误",
+          "items": [
+            "把收入或毛利润当成最终利润。",
+            "忽略固定支付手续费、退款、包装或卖家承担的运费。",
+            "只看平均 ROAS，没有结合贡献毛利判断。",
+            "把可编辑费用假设当成官方保证费率。",
+            "忘记进口、税务和平台规则可能发生变化。"
+          ]
+        },
+        "faq": {
+          "title": "8. 常见问题",
+          "items": [
+            {
+              "question": "利润率应该使用销售额还是净收入计算？",
+              "answer": "建议以扣除折扣后的净收入作为利润率分母，同时单独列出退款率或退款预留，让假设保持清晰。"
+            },
+            {
+              "question": "ROAS 是否等于利润？",
+              "answer": "不等于。ROAS 只比较收入和广告花费，利润还需要扣除产品、履约、平台、支付、退款及其他经营成本。"
+            },
+            {
+              "question": "多久应该重新计算一次？",
+              "answer": "当售价、广告成本、平台费、物流费、退款情况或供应商成本出现明显变化时，应重新计算。"
+            },
+            {
+              "question": "是否要把固定开支分摊到每笔订单？",
+              "answer": "本指南重点分析订单可变成本。为了观察完整经营利润，可以按一致口径分摊固定开支，但应与可变成本分开记录。"
+            }
+          ]
+        },
+        "cta": {
+          "title": "把公式转化为可比较的经营场景",
+          "body": "使用本站计算器测试当前数据，并单独记录已经通过平台、支付服务商、物流商或海关来源核实的假设。",
+          "label": "打开利润计算器",
+          "href": "/multi-platform-profit-calculator"
+        },
+        "disclaimer": {
+          "title": "9. 免责声明",
+          "paragraphs": [
+            "本指南和计算器仅用于规划和估算，不承诺收益，也不提供税务、法律、金融或会计建议。",
+            "重要费用、税务处理、清关规则和商业假设应通过官方来源或合格专业人士核实。"
+          ]
+        }
+      }
+    }
+  },
+  "pages": {
+    "multi-platform-profit-calculator": {
+      "title": "跨平台电商利润计算器",
+      "description": "用可编辑的费用假设，对比同一个产品在 Shopify、Etsy、eBay、Amazon 和 TikTok Shop 上销售时的预估净利润。"
+    },
+    "ad-spend-break-even-calculator": {
+      "title": "广告回本 ROAS 计算器",
+      "description": "计算广告最多能花多少钱、回本 ROAS、目标 ROAS、Max CPA、回本 ACoS 和目标 ACoS。"
+    },
+    "stripe-vs-paypal-fee-calculator": {
+      "title": "Stripe vs PayPal 手续费计算器",
+      "description": "对比 Stripe、PayPal、Shopify Payments 的可编辑支付手续费假设，估算总手续费、实际到账金额和潜在节省。"
+    },
+    "landed-cost-calculator": {
+      "title": "到岸成本计算器",
+      "description": "估算产品采购、国际物流、保险、关税、进口税、仓储、销售成本、单位利润和建议售价。"
+    },
+    "about": {
+      "title": "关于 SellerMargin",
+      "description": "了解 SellerMargin 如何为电商卖家提供免费的利润、广告回本、平台费用、支付手续费和到岸成本规划工具。"
+    },
+    "contact": {
+      "title": "联系 SellerMargin",
+      "description": "就计算器和指南提出问题、纠错或反馈。当前联系表单仅为无后端的本地演示。"
+    },
+    "privacy-policy": {
+      "title": "隐私政策",
+      "description": "了解 SellerMargin 第一版如何处理浏览器本地计算器输入、语言偏好和演示状态。"
+    },
+    "terms": {
+      "title": "服务条款",
+      "description": "使用 SellerMargin 计算器、指南、费用假设和商业规划估算时适用的条款。"
+    },
+    "disclaimer": {
+      "title": "计算器和内容免责声明",
+      "description": "关于 SellerMargin 估算结果、费用变化、税费、关税、物流和广告成本的重要限制。"
+    },
+    "guides": {
+      "title": "电商利润指南",
+      "description": "用于理解电商利润、成本、贡献毛利、广告效率和定价的实用指南。"
+    },
+    "how-to-calculate-ecommerce-profit-after-ads": {
+      "title": "如何计算广告后的电商真实利润",
+      "description": "了解广告后利润应包含的成本、基础公式、示例计算和常见电商利润错误。"
+    }
+  }
+}

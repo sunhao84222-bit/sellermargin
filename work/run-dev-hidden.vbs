@@ -1,0 +1,2 @@
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "cmd.exe /d /c ""C:\Users\Sun\Documents\Codex\2026-06-12\files-mentioned-by-the-user-sellermargin\work\start-dev.cmd"" > ""C:\Users\Sun\Documents\Codex\2026-06-12\files-mentioned-by-the-user-sellermargin\work\dev-server.out.log"" 2> ""C:\Users\Sun\Documents\Codex\2026-06-12\files-mentioned-by-the-user-sellermargin\work\dev-server.err.log""", 0, False

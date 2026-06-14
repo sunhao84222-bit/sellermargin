@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+*.log
+
+.env*
+!.env.example
+
+.chrome-*/
+.edge-*/
+qa-*.png
+qa-*.log
+qa-*.err
