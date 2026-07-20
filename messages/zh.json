@@ -12,7 +12,7 @@
     "guides": "指南",
     "about": "关于",
     "contact": "联系",
-    "joinWaitlist": "加入 Pro 等候名单",
+    "joinWaitlist": "反馈 Pro 需求",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单",
     "primaryNavigation": "主导航",
@@ -47,7 +47,7 @@
       "title": "在扩大投放前，先算清楚你的真实利润",
       "subtitle": "面向跨境卖家的免费计算工具，帮助你对比 Shopify、Amazon、Etsy、eBay、TikTok Shop 的平台费用、支付费用、广告成本、到岸成本和真实利润率。",
       "primaryCta": "开始计算",
-      "secondaryCta": "加入 Pro 等候名单"
+      "secondaryCta": "反馈 Pro 需求"
     },
     "toolsSection": {
       "title": "选择一个工具",
@@ -105,7 +105,7 @@
       "eyebrow": "即将上线",
       "title": "为更复杂工作流准备的 Pro 功能",
       "subtitle": "未来付费功能会聚焦保存历史、导出报告和处理更多 SKU。",
-      "button": "加入 Pro 等候名单",
+      "button": "反馈 Pro 需求",
       "features": [
         "保存计算历史",
         "导出 CSV",
@@ -115,18 +115,20 @@
       ]
     },
     "waitlist": {
-      "title": "加入 Pro 早期访问名单",
+      "title": "反馈你的 Pro 功能需求",
       "subtitle": "SellerMargin Pro 还在规划中。你可以通过邮件告诉我们你的卖家类型、常用平台，以及最想要的功能。",
       "email": "你的邮箱",
       "emailPlaceholder": "you@example.com",
       "sellerType": "卖家类型",
       "submit": "发送邮件表达兴趣",
-      "demoNotice": "当前版本不会在服务器上收集或保存你的邮箱。点击按钮会打开邮箱应用并生成邮件草稿，由你决定是否发送。",
+      "demoNotice": "当前版本不会在服务器上提交或保存这些信息。点击按钮只会在你的邮箱应用中生成邮件草稿，由你决定是否发送。",
       "recipientLabel": "收件邮箱",
       "mailtoSubject": "SellerMargin Pro 兴趣登记",
       "mailtoIntro": "我想表达对 SellerMargin Pro 的兴趣。",
       "platformsPrompt": "我常用的平台：",
+      "platformsPlaceholder": "例如：Shopify、Amazon",
       "featuresPrompt": "我最希望使用的 Pro 功能：",
+      "featuresPlaceholder": "例如：保存方案、CSV 导出、批量 SKU 计算",
       "sellerTypes": [
         "Shopify 卖家",
         "Amazon 卖家",
@@ -145,9 +147,9 @@
   },
   "modal": {
     "title": "Pro 即将上线",
-    "body": "SellerMargin Pro 还在规划中。你可以通过兴趣登记表打开邮件草稿，告诉我们常用平台和最需要的功能。",
+    "body": "SellerMargin Pro 还在规划中。你可以在兴趣登记区域生成邮件草稿，告诉我们常用平台和最需要的功能。",
     "close": "关闭",
-    "cta": "前往兴趣登记"
+    "cta": "反馈 Pro 需求"
   },
   "placeholder": {
     "badge": "页面骨架",
@@ -312,7 +314,7 @@
         "批量计算 - Pro"
       ],
       "modalTitle": "Pro 功能即将上线",
-      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "modalBody": "这个 Pro 功能仍在规划中。你可以通过邮件告诉我们哪些功能对你最有用。",
       "close": "关闭"
     }
   },
@@ -454,7 +456,7 @@
         "批量广告场景 - Pro"
       ],
       "modalTitle": "Pro 功能即将上线",
-      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "modalBody": "这个 Pro 功能仍在规划中。你可以通过邮件告诉我们哪些功能对你最有用。",
       "close": "关闭"
     }
   },
@@ -596,7 +598,7 @@
         "批量结账对比 - Pro"
       ],
       "modalTitle": "Pro 功能即将上线",
-      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "modalBody": "这个 Pro 功能仍在规划中。你可以通过邮件告诉我们哪些功能对你最有用。",
       "close": "关闭"
     }
   },
@@ -781,7 +783,7 @@
         "批量 SKU 到岸成本 - Pro"
       ],
       "modalTitle": "Pro 功能即将上线",
-      "modalBody": "这个 Pro 功能即将上线。加入等候名单即可获得早期访问资格。",
+      "modalBody": "这个 Pro 功能仍在规划中。你可以通过邮件告诉我们哪些功能对你最有用。",
       "close": "关闭"
     }
   },

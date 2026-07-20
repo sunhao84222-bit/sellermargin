@@ -18,14 +18,13 @@ const accentClasses = [
 export default function ToolCard({ tool, locale, openLabel, index }: ToolCardProps) {
   return (
     <article className="group flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-100 hover:shadow-soft">
-      <div className="flex items-start justify-between gap-4">
+      <div>
         <div
           className={`grid h-12 w-12 shrink-0 place-items-center rounded-md border text-sm font-black ${accentClasses[index % accentClasses.length]}`}
           aria-hidden="true"
         >
           {tool.label}
         </div>
-        <span className="mt-1 h-2 w-2 rounded-full bg-mint-500" aria-hidden="true" />
       </div>
       <h3 className="mt-5 text-lg font-bold leading-7 text-ink-950">{tool.name}</h3>
       <p className="mt-3 flex-1 text-sm leading-6 text-ink-500">{tool.description}</p>

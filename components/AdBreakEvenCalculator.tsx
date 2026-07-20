@@ -104,24 +104,24 @@ export default function AdBreakEvenCalculator({ locale, messages }: AdBreakEvenC
   return (
     <>
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
           <p className="text-sm font-bold uppercase text-brand-700">{copy.hero.eyebrow}</p>
-          <div className="mt-3 grid gap-6 lg:grid-cols-[1fr_320px] lg:items-end">
+          <div className="mt-3 grid gap-4 lg:grid-cols-[1fr_320px] lg:items-end">
             <div>
               <h1 className="max-w-4xl text-3xl font-black text-ink-950 sm:text-4xl lg:text-5xl">{copy.hero.title}</h1>
-              <p className="mt-4 max-w-3xl text-base leading-7 text-ink-500">{copy.hero.subtitle}</p>
+              <p className="mt-3 max-w-3xl text-base leading-7 text-ink-500">{copy.hero.subtitle}</p>
             </div>
-            <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
               <CurrencySelector messages={messages} showNotice />
             </div>
           </div>
-          <div className="mt-8">
-            <DisclaimerBox title={copy.notice.title} body={copy.notice.body} />
+          <div className="mt-4">
+            <DisclaimerBox title={copy.notice.title} body={copy.notice.body} compact />
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 py-12">
+      <section className="bg-slate-50 py-8 sm:py-10">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[380px_1fr] lg:px-8">
           <div className="min-w-0 space-y-6">
             <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">

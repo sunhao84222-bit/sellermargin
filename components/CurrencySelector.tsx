@@ -19,7 +19,7 @@ export default function CurrencySelector({
 
   return (
     <div className={joinClassNames("min-w-0", className)}>
-      <label className="block">
+      <label className={showNotice ? "flex items-center justify-between gap-3" : "block"}>
         <span className={showNotice ? "text-sm font-bold text-ink-700" : "sr-only"}>
           {messages.currency.label}
         </span>
@@ -28,7 +28,7 @@ export default function CurrencySelector({
           onChange={(event) => setCurrency(event.target.value as CurrencyCode)}
           className={joinClassNames(
             "h-10 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-ink-800 shadow-sm outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-100",
-            showNotice && "mt-2 h-11 w-full",
+            showNotice && "h-10 w-32 shrink-0",
           )}
           aria-label={messages.currency.label}
         >
@@ -40,7 +40,7 @@ export default function CurrencySelector({
         </select>
       </label>
       {showNotice ? (
-        <p className="mt-3 text-xs font-medium leading-5 text-ink-500">{messages.currency.notice}</p>
+        <p className="mt-2 text-xs font-medium leading-5 text-ink-500">{messages.currency.notice}</p>
       ) : null}
     </div>
   );

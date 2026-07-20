@@ -42,7 +42,8 @@ export default async function HomePage({ params }: HomePageProps) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(16,24,40,0.92)_0%,rgba(16,24,40,0.74)_38%,rgba(16,24,40,0.18)_78%)]" />
+        <div className="absolute inset-0 bg-ink-950/75 sm:hidden" />
+        <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(16,24,40,0.92)_0%,rgba(16,24,40,0.74)_38%,rgba(16,24,40,0.18)_78%)] sm:block" />
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="max-w-3xl">
             <p className="text-sm font-bold uppercase text-cyan-200">{messages.home.hero.eyebrow}</p>
@@ -117,9 +118,9 @@ export default async function HomePage({ params }: HomePageProps) {
       </section>
 
       <section id="waitlist" className="bg-slate-50 py-14 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-start lg:gap-10 lg:px-8">
           <div>
-            <h2 className="text-3xl font-bold text-ink-950">{messages.home.waitlist.title}</h2>
+            <h2 className="text-2xl font-bold leading-tight text-ink-950 sm:text-3xl">{messages.home.waitlist.title}</h2>
             <p className="mt-4 text-base leading-7 text-ink-500">{messages.home.waitlist.subtitle}</p>
           </div>
           <WaitlistForm messages={messages} contactEmail={contactEmail} />

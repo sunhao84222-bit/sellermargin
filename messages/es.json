@@ -12,7 +12,7 @@
     "guides": "Guías",
     "about": "Acerca de",
     "contact": "Contacto",
-    "joinWaitlist": "Unirse a Pro",
+    "joinWaitlist": "Compartir interés en Pro",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "primaryNavigation": "Navegación principal",
@@ -47,7 +47,7 @@
       "title": "Calcula tu beneficio ecommerce real antes de escalar",
       "subtitle": "Calculadoras gratuitas para vendedores ecommerce. Compara comisiones de plataforma, pagos, publicidad, costes puestos en destino y márgenes reales en Shopify, Amazon, Etsy, eBay y TikTok Shop.",
       "primaryCta": "Empezar a calcular",
-      "secondaryCta": "Unirse a Pro"
+      "secondaryCta": "Compartir interés en Pro"
     },
     "toolsSection": {
       "title": "Elige una calculadora",
@@ -105,7 +105,7 @@
       "eyebrow": "Próximamente",
       "title": "Funciones Pro para flujos de trabajo más pesados",
       "subtitle": "Las funciones de pago futuras se centrarán en guardar trabajo, exportar informes y manejar más SKUs.",
-      "button": "Unirse a Pro",
+      "button": "Compartir interés en Pro",
       "features": [
         "Guardar historial de cálculos",
         "Exportar CSV",
@@ -115,27 +115,29 @@
       ]
     },
     "waitlist": {
-      "title": "Únete a la lista de acceso temprano Pro",
+      "title": "Cuéntanos qué necesitas de Pro",
       "subtitle": "SellerMargin Pro todavía está en planificación. Puedes escribirnos sobre tu tipo de vendedor, las plataformas que utilizas y las funciones que más te interesan.",
       "email": "Tu email",
       "emailPlaceholder": "you@example.com",
       "sellerType": "Tipo de vendedor",
       "submit": "Enviar un email para mostrar interés",
-      "demoNotice": "Esta versión no recopila ni guarda tu email en un servidor. El botón abre un borrador en tu aplicación de correo y tú decides si lo envías.",
+      "demoNotice": "Esta versión no envía ni guarda estos datos en un servidor. El botón solo prepara un borrador en tu aplicación de correo y tú decides si lo envías.",
       "recipientLabel": "Destinatario",
       "mailtoSubject": "Interés en SellerMargin Pro",
       "mailtoIntro": "Quiero compartir mi interés en SellerMargin Pro.",
       "platformsPrompt": "Plataformas que utilizo:",
+      "platformsPlaceholder": "Por ejemplo: Shopify y Amazon",
       "featuresPrompt": "Funciones Pro que me resultarían más útiles:",
+      "featuresPlaceholder": "Por ejemplo: escenarios guardados, CSV o cálculos por lotes",
       "sellerTypes": [
-        "Shopify seller",
-        "Amazon seller",
-        "Etsy seller",
-        "eBay seller",
-        "TikTok Shop seller",
-        "Multi-platform seller",
-        "Agency",
-        "Other"
+        "Vendedor de Shopify",
+        "Vendedor de Amazon",
+        "Vendedor de Etsy",
+        "Vendedor de eBay",
+        "Vendedor de TikTok Shop",
+        "Vendedor multiplataforma",
+        "Agencia",
+        "Otro"
       ]
     },
     "disclaimer": {
@@ -145,9 +147,9 @@
   },
   "modal": {
     "title": "Pro llegará pronto",
-    "body": "SellerMargin Pro todavía está en planificación. Utiliza el formulario de interés para abrir un borrador de email y contarnos qué plataformas y funciones son más importantes para ti.",
+    "body": "SellerMargin Pro todavía está en planificación. Utiliza la sección de interés para preparar un borrador y contarnos qué plataformas y funciones son más importantes para ti.",
     "close": "Cerrar",
-    "cta": "Ir al formulario de interés"
+    "cta": "Compartir interés en Pro"
   },
   "placeholder": {
     "badge": "Esqueleto de página",
@@ -312,7 +314,7 @@
         "Batch calculation - Pro"
       ],
       "modalTitle": "Pro feature coming soon",
-      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "modalBody": "Esta función Pro todavía está en planificación. Escríbenos para contarnos qué te resultaría más útil.",
       "close": "Close"
     }
   },
@@ -454,7 +456,7 @@
         "Batch ad scenarios - Pro"
       ],
       "modalTitle": "Pro feature coming soon",
-      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "modalBody": "Esta función Pro todavía está en planificación. Escríbenos para contarnos qué te resultaría más útil.",
       "close": "Close"
     }
   },
@@ -596,7 +598,7 @@
         "Batch checkout comparison - Pro"
       ],
       "modalTitle": "Pro feature coming soon",
-      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "modalBody": "Esta función Pro todavía está en planificación. Escríbenos para contarnos qué te resultaría más útil.",
       "close": "Close"
     }
   },
@@ -781,7 +783,7 @@
         "Batch SKU landed cost - Pro"
       ],
       "modalTitle": "Pro feature coming soon",
-      "modalBody": "This Pro feature is coming soon. Join the waitlist to get early access.",
+      "modalBody": "Esta función Pro todavía está en planificación. Escríbenos para contarnos qué te resultaría más útil.",
       "close": "Close"
     }
   },
