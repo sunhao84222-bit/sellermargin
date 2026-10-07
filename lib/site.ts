@@ -24,12 +24,12 @@ export function getSiteUrl() {
   const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   const vercelProductionDomain = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
   const candidate =
-    configuredUrl || (vercelProductionDomain ? `https://${vercelProductionDomain}` : "https://sellermargin.com");
+    configuredUrl || (vercelProductionDomain ? `https://${vercelProductionDomain}` : "http://localhost:3000");
 
   try {
     return new URL(candidate).origin;
   } catch {
-    return "https://sellermargin.com";
+    return "http://localhost:3000";
   }
 }
 
