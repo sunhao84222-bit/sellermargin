@@ -855,7 +855,8 @@
         "messagePlaceholder": "Escribe tu mensaje"
       },
       "submit": "Enviar mensaje de demostración",
-      "success": "Demostración completada. El mensaje no se envió ni se guardó."
+      "success": "Demostración completada. El mensaje no se envió ni se guardó.",
+      "unavailableNotice": "El contacto todavía no está disponible. Vuelve cuando se haya configurado una dirección de correo."
     },
     "privacyPolicy": {
       "eyebrow": "Información legal",
