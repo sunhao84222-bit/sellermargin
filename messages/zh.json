@@ -855,7 +855,8 @@
         "messagePlaceholder": "填写你的消息"
       },
       "submit": "提交演示消息",
-      "success": "演示提交成功。消息没有被发送或存储。"
+      "success": "演示提交成功。消息没有被发送或存储。",
+      "unavailableNotice": "联系渠道尚未开放。配置联系邮箱后，此页面将显示联系方法。"
     },
     "privacyPolicy": {
       "eyebrow": "法律信息",
