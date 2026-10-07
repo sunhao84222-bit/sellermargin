@@ -54,16 +54,14 @@ export default function Footer({ locale, messages }: FooterProps) {
               {link.label}
             </FooterLink>
           ))}
-          {contactEmail === contactEmailPlaceholder ? (
-            <p className="break-all text-sm font-medium text-ink-500">{contactEmail}</p>
-          ) : (
+          {contactEmail !== contactEmailPlaceholder && contactEmail.trim() ? (
             <a
               href={`mailto:${contactEmail}`}
               className="break-all text-sm font-medium text-ink-500 transition hover:text-brand-700"
             >
               {contactEmail}
             </a>
-          )}
+          ) : null}
         </FooterColumn>
 
         <FooterColumn title={messages.footer.legal}>
