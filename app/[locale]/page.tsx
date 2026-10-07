@@ -94,7 +94,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="mt-3 text-3xl font-bold">{messages.home.pro.title}</h2>
             <p className="mt-4 text-base leading-7 text-slate-300">{messages.home.pro.subtitle}</p>
             <div className="mt-7">
-              <p className="text-sm text-slate-300">{messages.home.waitlist.demoNotice}</p>
+              <p className="text-sm text-slate-300">{messages.home.pro.unavailableNotice}</p>
             </div>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
