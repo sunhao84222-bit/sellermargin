@@ -45,6 +45,7 @@ http://localhost:3000/es
 ```bash
 npx tsc --noEmit
 npm run lint
+npm run test:calculators
 npm run build
 npm run start
 ```
@@ -140,7 +141,7 @@ NEXT_PUBLIC_CONTACT_EMAIL=你的真实支持邮箱
 NEXT_PUBLIC_ANALYTICS_ENABLED=false
 ```
 
-未设置站点 URL 时使用 `https://sellermargin.com` 占位；未设置联系邮箱时显示
+未设置站点 URL 且不在 Vercel 生产环境时回退到本地开发地址 `http://localhost:3000`，不要将其作为公开站点配置；未设置联系邮箱时显示
 `[replace-with-real-email@yourdomain.com]`。`NEXT_PUBLIC_ANALYTICS_ENABLED` 只有明确设置为
 `true` 时才允许渲染 Cookie consent 预留组件。V1 未接入 analytics SDK，也不设置非必要 cookies。
 
@@ -175,14 +176,20 @@ vercel --prod
 - AI 内容生成
 - 管理后台
 
-Contact 和等候名单仅为前端演示，不发送邮件，也不把个人数据保存到服务器或数据库。
+未配置有效联系邮箱时，Contact 页面只显示暂不可用提示，页脚不展示占位邮箱；首页不展示 Pro 等候名单入口。此版本不收集联系人资料，不发送邮件，也不把个人数据保存到服务器或数据库。
 
 ## 上线前 TODO
 
 - 在 `NEXT_PUBLIC_CONTACT_EMAIL` 中配置真实邮箱。
 - 将 `NEXT_PUBLIC_SITE_URL` 设置为正式域名。
 - 完成西班牙语全文人工校对。
-- 安装并接入 V2 指定的 `next-intl` 后替换当前 messages helper。
-- 增加公式单元测试和浏览器端端到端测试。
+- `next-intl` 迁移属于可选的未来技术升级；当前使用的 JSON messages 多语言架构无需为上线而迁移。
+- 已有 `npm run test:calculators` 公式验证脚本；继续补充边界回归用例和浏览器端端到端测试。
 - 由合格专业人士复核法律页和税务、海关提示。
 - 如接入 analytics，先更新隐私政策和同意机制。
+
+## 封闭测试与公开发布的区别
+
+- 封闭测试：不需要正式域名、联系邮箱、数据库或第三方服务。验证公式结果、输入校验、手机端和三语言页面。使用非公开预览或访问控制，避免被搜索引擎收录。
+- 公开发布：必须配置可用站点 URL 和联系渠道，完成人工西语校对、默认费率核验、法律及税务海关提示专业复核，并检查 sitemap、canonical、robots 的实际输出。
+- 不要把 Vercel 部署成功误认为功能测试通过；PR 检查应完成公式验证、TS、ESLint 与生产构建。
