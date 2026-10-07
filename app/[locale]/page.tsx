@@ -54,12 +54,6 @@ export default async function HomePage({ params }: HomePageProps) {
               >
                 {messages.home.hero.primaryCta}
               </Link>
-              <Link
-                href={`/${locale}#waitlist`}
-                className="inline-flex h-12 items-center justify-center rounded-md border border-white/45 bg-white/10 px-5 text-sm font-bold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-4 focus:ring-white/20"
-              >
-                {messages.home.hero.secondaryCta}
-              </Link>
             </div>
           </div>
         </div>
