@@ -112,7 +112,8 @@
         "Export PDF report",
         "Batch SKU calculator",
         "White-label reports for agencies"
-      ]
+      ],
+      "unavailableNotice": "Pro interest registration is currently unavailable. Features shown are planned and not yet offered."
     },
     "waitlist": {
       "title": "Tell us what you need from Pro",
@@ -855,7 +856,8 @@
         "messagePlaceholder": "Write your message"
       },
       "submit": "Submit demo message",
-      "success": "Demo success. No message was sent or stored."
+      "success": "Demo success. No message was sent or stored.",
+      "unavailableNotice": "Contact is not available yet. Please check back after an email address has been configured."
     },
     "privacyPolicy": {
       "eyebrow": "Legal",

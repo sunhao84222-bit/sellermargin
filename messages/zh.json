@@ -112,7 +112,8 @@
         "导出 PDF 报告",
         "批量 SKU 计算器",
         "面向代理商的白标报告"
-      ]
+      ],
+      "unavailableNotice": "Pro 兴趣登记暂未开放；下方展示的是规划功能，目前尚未提供。"
     },
     "waitlist": {
       "title": "反馈你的 Pro 功能需求",
@@ -855,7 +856,8 @@
         "messagePlaceholder": "填写你的消息"
       },
       "submit": "提交演示消息",
-      "success": "演示提交成功。消息没有被发送或存储。"
+      "success": "演示提交成功。消息没有被发送或存储。",
+      "unavailableNotice": "联系渠道尚未开放。配置联系邮箱后，此页面将显示联系方法。"
     },
     "privacyPolicy": {
       "eyebrow": "法律信息",

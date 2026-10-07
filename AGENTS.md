@@ -69,6 +69,7 @@ Run the commands that match the current repository setup. If the project uses np
 
 ```bash
 npm run test:calculators
+npx tsc --noEmit
 npm run lint
 npm run build
 ```

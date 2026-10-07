@@ -744,4 +744,37 @@ const nonPositiveDenominatorLanded = calculateLandedCost({
 assert.ok(nonPositiveDenominatorLanded.warnings.includes("breakEvenDenominatorNonPositive"));
 assert.equal(nonPositiveDenominatorLanded.result.breakEvenSellingPrice, null);
 
+
+const zeroDiscountMulti = calculateMultiPlatformProfit(
+  { sellingPrice: 100, productCost: 0, shippingCost: 0, packagingCost: 0, adCostPerOrder: 0, refundRate: 0, discountRate: 0, otherVariableCost: 0 },
+  ["shopify"],
+  { shopify: { paymentFeePercent: 0, fixedPaymentFee: 0, thirdPartyTransactionFeePercent: 0, otherFixedPlatformFee: 0 } },
+);
+assert.deepEqual(zeroDiscountMulti.errors, []);
+closeTo(zeroDiscountMulti.result.results[0].netProfit, 100);
+const fullDiscountMulti = calculateMultiPlatformProfit(
+  { sellingPrice: 100, productCost: 0, shippingCost: 0, packagingCost: 0, adCostPerOrder: 0, refundRate: 0, discountRate: 100, otherVariableCost: 0 },
+  ["shopify"], {},
+);
+assert.ok(fullDiscountMulti.errors.includes("netRevenueNonPositive"));
+const adNoContribution = calculateAdBreakEven({
+  sellingPrice: 10, productCost: 12, shippingCost: 0, packagingCost: 0,
+  platformFeePercent: 0, paymentFeePercent: 0, fixedPaymentFee: 0,
+  otherVariableCost: 0, targetMode: "profitAmount", targetProfitPerOrder: 0,
+  targetProfitMarginPercent: 0, currentRoas: 0, currentCpa: 0,
+});
+assert.equal(adNoContribution.result.breakEvenRoas, null);
+assert.ok(adNoContribution.warnings.includes("contributionMarginNonPositive"));
+const invalidZeroPayment = calculatePaymentFees(
+  { transactionAmount: 0, numberOfTransactions: 0, optionalExtraFeePercent: 0, refundRate: 0, chargebackRate: 0 },
+  { stripe: { percentageFee: 2.9, fixedFee: 0.3, internationalCardSurchargePercent: 0, currencyConversionFeePercent: 0, refundRetainedPercentageFee: 0, refundNonRefundableFixedFee: 0, chargebackFixedFee: 15 } },
+);
+assert.ok(invalidZeroPayment.errors.includes("transactionAmountNonPositive"));
+assert.ok(invalidZeroPayment.errors.includes("numberOfTransactionsNonPositive"));
+const zeroTaxLanded = calculateLandedCost({
+  ...landedInput, customsDutyRate: 0, importTaxRate: 0, internationalFreightCost: 0,
+  insuranceCost: 0, customsBrokerFee: 0, otherImportFees: 0,
+});
+closeTo(zeroTaxLanded.result.landedCostPerUnit, landedInput.productUnitCost);
+
 console.log("Calculator verification passed.");

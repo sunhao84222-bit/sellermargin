@@ -2,12 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import DisclaimerBox from "@/components/DisclaimerBox";
-import ProFeatureModal from "@/components/ProFeatureModal";
 import ToolCard from "@/components/ToolCard";
-import WaitlistForm from "@/components/WaitlistForm";
 import { createPageMetadata } from "@/lib/seo";
 import { getLocaleContext, type LocaleParams } from "@/lib/page-helpers";
-import { getContactEmail } from "@/lib/site";
 
 type HomePageProps = {
   params: LocaleParams;
@@ -27,7 +24,6 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale, messages } = await getLocaleContext(params);
-  const contactEmail = getContactEmail();
 
   return (
     <>
@@ -57,12 +53,6 @@ export default async function HomePage({ params }: HomePageProps) {
                 className="inline-flex h-12 items-center justify-center rounded-md bg-white px-5 text-sm font-bold text-ink-950 shadow-sm transition hover:bg-slate-100 focus:outline-none focus:ring-4 focus:ring-white/30"
               >
                 {messages.home.hero.primaryCta}
-              </Link>
-              <Link
-                href={`/${locale}#waitlist`}
-                className="inline-flex h-12 items-center justify-center rounded-md border border-white/45 bg-white/10 px-5 text-sm font-bold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-4 focus:ring-white/20"
-              >
-                {messages.home.hero.secondaryCta}
               </Link>
             </div>
           </div>
@@ -104,7 +94,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="mt-3 text-3xl font-bold">{messages.home.pro.title}</h2>
             <p className="mt-4 text-base leading-7 text-slate-300">{messages.home.pro.subtitle}</p>
             <div className="mt-7">
-              <ProFeatureModal messages={messages} />
+              <p className="text-sm text-slate-300">{messages.home.pro.unavailableNotice}</p>
             </div>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -114,16 +104,6 @@ export default async function HomePage({ params }: HomePageProps) {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="waitlist" className="bg-slate-50 py-14 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-start lg:gap-10 lg:px-8">
-          <div>
-            <h2 className="text-2xl font-bold leading-tight text-ink-950 sm:text-3xl">{messages.home.waitlist.title}</h2>
-            <p className="mt-4 text-base leading-7 text-ink-500">{messages.home.waitlist.subtitle}</p>
-          </div>
-          <WaitlistForm messages={messages} contactEmail={contactEmail} />
         </div>
       </section>
 
