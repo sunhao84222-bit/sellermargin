@@ -112,7 +112,8 @@
         "Export PDF report",
         "Batch SKU calculator",
         "White-label reports for agencies"
-      ]
+      ],
+      "unavailableNotice": "Pro interest registration is currently unavailable. Features shown are planned and not yet offered."
     },
     "waitlist": {
       "title": "Tell us what you need from Pro",
